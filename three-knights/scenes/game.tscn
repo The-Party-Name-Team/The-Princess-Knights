@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d8lbfbanm4aw"]
+
+[ext_resource type="PackedScene" uid="uid://coatf4kod7m3q" path="res://scenes/pausemenu.tscn" id="1_uwrxv"]
+
+[node name="GAME" type="Node2D" unique_id=612820248]
+
+[node name="Label" type="Label" parent="." unique_id=531202386]
+offset_left = 479.0
+offset_top = 293.0
+offset_right = 652.0
+offset_bottom = 389.0
+text = "this that game scene
+
+try pressing esc"
+horizontal_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=685394789]
+
+[node name="pausemenu" parent="CanvasLayer" unique_id=191889806 instance=ExtResource("1_uwrxv")]
+visible = true
