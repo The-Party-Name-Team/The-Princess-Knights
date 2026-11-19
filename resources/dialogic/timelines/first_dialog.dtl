@@ -1,0 +1,7 @@
+join Mikhela center
+Mikhela: Hey sisters
+- hi
+	[signal arg_type="dict" arg="{"id":"add_gold","qty":1}"]
+	Mikhela: hell no
+- no
+	Mikhela: hell yeah
