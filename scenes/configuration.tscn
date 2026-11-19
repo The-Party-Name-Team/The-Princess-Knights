@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cbdqm2ysavj43"]
+
+[ext_resource type="Script" uid="uid://bb3fjeajtpu4j" path="res://configuration.gd" id="1_hc4xr"]
+
+[node name="configuration" type="Node2D" unique_id=397059200]
+script = ExtResource("1_hc4xr")
+
+[node name="Control" type="Control" parent="." unique_id=1281579542]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="justabutton" type="Button" parent="Control" unique_id=488676357]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 260.0
+offset_right = 801.0
+offset_bottom = 359.0
+text = "on hold lol still figuring out how to make settings"
+
+[node name="back" type="Button" parent="Control" unique_id=1735702679]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 72.0
+offset_right = 496.0
+offset_bottom = 151.0
+text = "this is an exit button back to the main menu"
+
+[connection signal="pressed" from="Control/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Control/back" to="Control/back" method="_on_pressed"]
