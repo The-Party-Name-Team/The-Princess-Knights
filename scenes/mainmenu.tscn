@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dlldbr5pacigc"]
+
+[ext_resource type="Script" uid="uid://cvujrm5xy2opl" path="res://mainmenu.gd" id="1_5mbse"]
+
+[node name="mainmenu" type="Node2D" unique_id=1921545605]
+script = ExtResource("1_5mbse")
+
+[node name="titleorlogo" type="Sprite2D" parent="." unique_id=2114392876]
+
+[node name="mainmenubg" type="Sprite2D" parent="." unique_id=668555517]
+
+[node name="mainmenubuttons" type="Control" parent="." unique_id=876944569]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 78.0
+offset_bottom = 62.0
+
+[node name="start" type="Button" parent="mainmenubuttons" unique_id=1410600979]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 179.0
+offset_right = 359.0
+offset_bottom = 265.0
+text = "start"
+
+[node name="leave" type="Button" parent="mainmenubuttons" unique_id=1586125000]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 436.0
+offset_right = 355.0
+offset_bottom = 522.0
+text = "leave"
+
+[node name="config" type="Button" parent="mainmenubuttons" unique_id=2111006422]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 302.0
+offset_right = 358.0
+offset_bottom = 388.0
+text = "config"
+
+[connection signal="pressed" from="mainmenubuttons/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="mainmenubuttons/leave" to="." method="_on_leave_pressed"]
+[connection signal="pressed" from="mainmenubuttons/config" to="." method="_on_config_pressed"]
