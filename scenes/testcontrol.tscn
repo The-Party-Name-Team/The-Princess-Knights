@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://df6w2ido8t3ub"]
+
+[ext_resource type="Script" uid="uid://bhjht6dmqv2gw" path="res://scripts/ggg_connector.gd" id="1_1nf31"]
+
+[node name="Control" type="Control" unique_id=1421785620]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GGGConnector" type="Node" parent="." unique_id=847412453]
+script = ExtResource("1_1nf31")
+metadata/_custom_type_script = "uid://bhjht6dmqv2gw"
