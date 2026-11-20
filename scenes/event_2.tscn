@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bc38i5gnpv0m0"]
+
+[ext_resource type="PackedScene" uid="uid://coatf4kod7m3q" path="res://scenes/pausemenu.tscn" id="1_4wcco"]
+[ext_resource type="Script" uid="uid://dl6awrht1dxm0" path="res://scenes/nextbutton.gd" id="2_j3w6l"]
+
+[node name="event2" type="Node2D" unique_id=839065370]
+
+[node name="pausemenu" parent="." unique_id=191889806 instance=ExtResource("1_4wcco")]
+visible = false
+
+[node name="Label" type="Label" parent="." unique_id=210699613]
+offset_left = 163.0
+offset_top = 105.0
+offset_right = 1013.0
+offset_bottom = 545.0
+text = "this is event 2
+
+press next to go back to the map"
+horizontal_alignment = 1
+
+[node name="nextbutton" type="Control" parent="." unique_id=1568993503]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_j3w6l")
+
+[node name="next" type="Button" parent="nextbutton" unique_id=859601127]
+layout_mode = 0
+offset_left = 858.0
+offset_top = 473.0
+offset_right = 1056.0
+offset_bottom = 582.0
+text = "next"
+
+[connection signal="pressed" from="nextbutton/next" to="nextbutton" method="_on_next_pressed"]

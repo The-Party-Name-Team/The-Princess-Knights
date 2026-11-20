@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dlldbr5pacigc"]
 
-[ext_resource type="Script" uid="uid://cvujrm5xy2opl" path="res://mainmenu.gd" id="1_5mbse"]
+[ext_resource type="Script" uid="uid://cvujrm5xy2opl" path="res://scripts/mainmenu.gd" id="1_5mbse"]
 
 [node name="mainmenu" type="Node2D" unique_id=1921545605]
 script = ExtResource("1_5mbse")
@@ -16,6 +16,15 @@ offset_left = 4.0
 offset_top = 2.0
 offset_right = 78.0
 offset_bottom = 62.0
+
+[node name="mapbut" type="Button" parent="mainmenubuttons" unique_id=1170097964]
+layout_mode = 0
+offset_left = 626.0
+offset_top = 298.0
+offset_right = 822.0
+offset_bottom = 384.0
+text = "map
+"
 
 [node name="start" type="Button" parent="mainmenubuttons" unique_id=1410600979]
 layout_mode = 0
@@ -41,6 +50,7 @@ offset_right = 358.0
 offset_bottom = 388.0
 text = "config"
 
+[connection signal="pressed" from="mainmenubuttons/mapbut" to="." method="_on_mapbut_pressed"]
 [connection signal="pressed" from="mainmenubuttons/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="mainmenubuttons/leave" to="." method="_on_leave_pressed"]
 [connection signal="pressed" from="mainmenubuttons/config" to="." method="_on_config_pressed"]
