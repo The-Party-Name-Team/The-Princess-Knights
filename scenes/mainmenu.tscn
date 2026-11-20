@@ -1,13 +1,21 @@
 [gd_scene format=3 uid="uid://dlldbr5pacigc"]
 
 [ext_resource type="Script" uid="uid://cvujrm5xy2opl" path="res://scripts/mainmenu.gd" id="1_5mbse"]
+[ext_resource type="Texture2D" uid="uid://bojbj8hoqm68b" path="res://assets/mainmenus/mainmenu.png" id="2_r3g3c"]
+[ext_resource type="Texture2D" uid="uid://crivt8vdk7tc0" path="res://assets/mainmenus/mainmenu-logo.png" id="3_3vvtq"]
 
 [node name="mainmenu" type="Node2D" unique_id=1921545605]
 script = ExtResource("1_5mbse")
 
-[node name="titleorlogo" type="Sprite2D" parent="." unique_id=2114392876]
+[node name="Mainmenu" type="Sprite2D" parent="." unique_id=1324428158]
+position = Vector2(583, 292)
+scale = Vector2(1.0768518, 1)
+texture = ExtResource("2_r3g3c")
 
-[node name="mainmenubg" type="Sprite2D" parent="." unique_id=668555517]
+[node name="MainmenuLogo" type="Sprite2D" parent="." unique_id=1769264153]
+position = Vector2(229, 108)
+scale = Vector2(0.7057143, 0.74334604)
+texture = ExtResource("3_3vvtq")
 
 [node name="mainmenubuttons" type="Control" parent="." unique_id=876944569]
 layout_mode = 3
@@ -17,30 +25,40 @@ offset_top = 2.0
 offset_right = 78.0
 offset_bottom = 62.0
 
+[node name="mapbut" type="Button" parent="mainmenubuttons" unique_id=1170097964]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 53.0
+offset_right = 669.0
+offset_bottom = 139.0
+text = "map
+"
+
 [node name="start" type="Button" parent="mainmenubuttons" unique_id=1410600979]
 layout_mode = 0
-offset_left = 163.0
-offset_top = 179.0
-offset_right = 359.0
-offset_bottom = 265.0
+offset_left = 113.0
+offset_top = 231.0
+offset_right = 309.0
+offset_bottom = 317.0
 text = "start"
 
 [node name="leave" type="Button" parent="mainmenubuttons" unique_id=1586125000]
 layout_mode = 0
-offset_left = 161.0
-offset_top = 436.0
-offset_right = 355.0
-offset_bottom = 522.0
+offset_left = 117.0
+offset_top = 492.0
+offset_right = 311.0
+offset_bottom = 578.0
 text = "leave"
 
 [node name="config" type="Button" parent="mainmenubuttons" unique_id=2111006422]
 layout_mode = 0
-offset_left = 164.0
-offset_top = 302.0
-offset_right = 358.0
-offset_bottom = 388.0
+offset_left = 112.0
+offset_top = 359.0
+offset_right = 306.0
+offset_bottom = 445.0
 text = "config"
 
+[connection signal="pressed" from="mainmenubuttons/mapbut" to="." method="_on_mapbut_pressed"]
 [connection signal="pressed" from="mainmenubuttons/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="mainmenubuttons/leave" to="." method="_on_leave_pressed"]
 [connection signal="pressed" from="mainmenubuttons/config" to="." method="_on_config_pressed"]

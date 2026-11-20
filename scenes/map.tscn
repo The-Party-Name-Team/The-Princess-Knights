@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dokm2ivonog08"]
+
+[ext_resource type="Texture2D" uid="uid://c875qm4g778kk" path="res://assets/maps/map-placeholder.png" id="1_0cso3"]
+[ext_resource type="PackedScene" uid="uid://coatf4kod7m3q" path="res://scenes/pausemenu.tscn" id="1_4xfga"]
+[ext_resource type="Script" uid="uid://cnfk03665ocmt" path="res://scenes/levelbuttons.gd" id="2_paxxb"]
+[ext_resource type="Texture2D" uid="uid://crc2jpcbw6m42" path="res://assets/maps/map-levelpoint.png" id="4_2klcf"]
+
+[node name="map" type="Node2D" unique_id=1486222276]
+
+[node name="MapPlaceholder" type="Sprite2D" parent="." unique_id=1525580811]
+position = Vector2(587.5, 327)
+scale = Vector2(1.050926, 0.9666666)
+texture = ExtResource("1_0cso3")
+
+[node name="pausemenu" parent="." unique_id=191889806 instance=ExtResource("1_4xfga")]
+
+[node name="levelbuttons" type="Control" parent="." unique_id=1121476499]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1158.0
+offset_bottom = 646.0
+script = ExtResource("2_paxxb")
+
+[node name="level1" type="Button" parent="levelbuttons" unique_id=1341862975]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 453.0
+offset_right = 263.0
+offset_bottom = 502.0
+text = "level 1"
+icon = ExtResource("4_2klcf")
+
+[node name="level2" type="Button" parent="levelbuttons" unique_id=881151540]
+layout_mode = 0
+offset_left = 722.0
+offset_top = 489.0
+offset_right = 827.0
+offset_bottom = 538.0
+text = "level 2"
+icon = ExtResource("4_2klcf")
+
+[node name="level3" type="Button" parent="levelbuttons" unique_id=1586278205]
+layout_mode = 0
+offset_left = 471.0
+offset_top = 252.0
+offset_right = 567.0
+offset_bottom = 301.0
+text = "level 3"
+icon = ExtResource("4_2klcf")
+
+[connection signal="pressed" from="levelbuttons/level1" to="levelbuttons" method="_on_level_1_pressed"]
+[connection signal="pressed" from="levelbuttons/level2" to="levelbuttons" method="_on_level_2_pressed"]
+[connection signal="pressed" from="levelbuttons/level3" to="levelbuttons" method="_on_level_3_pressed"]

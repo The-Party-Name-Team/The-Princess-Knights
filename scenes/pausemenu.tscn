@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://coatf4kod7m3q"]
 
-[ext_resource type="Script" uid="uid://brby58sxkege5" path="res://pausemenu.gd" id="1_3otxd"]
+[ext_resource type="Script" uid="uid://brby58sxkege5" path="res://scripts/pausemenu.gd" id="1_3otxd"]
 
 [sub_resource type="Animation" id="Animation_r33we"]
 length = 0.001
@@ -41,7 +41,6 @@ _data = {
 
 [node name="pausemenu" type="Control" unique_id=191889806]
 process_mode = 3
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

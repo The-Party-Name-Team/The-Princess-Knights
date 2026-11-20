@@ -8,3 +8,6 @@ func _on_leave_pressed() -> void:
 
 func _on_config_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/configuration.tscn")
+
+func _on_mapbut_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/map.tscn")
