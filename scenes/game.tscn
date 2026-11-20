@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://d8lbfbanm4aw"]
 
+[ext_resource type="Script" uid="uid://can13mqavghd5" path="res://scenes/label_2.gd" id="1_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://coatf4kod7m3q" path="res://scenes/pausemenu.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://bhjht6dmqv2gw" path="res://scripts/ggg_connector.gd" id="2_yqjtg"]
+[ext_resource type="Script" uid="uid://kupdo4ba08mq" path="res://scripts/player_data.gd" id="4_lbhrr"]
 
 [node name="GAME" type="Node2D" unique_id=612820248]
 
@@ -15,10 +17,25 @@ text = "this that game scene
 try pressing esc"
 horizontal_alignment = 1
 
+[node name="Label2" type="Label" parent="." unique_id=1984630160 node_paths=PackedStringArray("plr_data")]
+offset_left = 431.0
+offset_top = 150.0
+offset_right = 604.0
+offset_bottom = 246.0
+text = "asdasdfs"
+horizontal_alignment = 1
+script = ExtResource("1_lnu2h")
+plr_data = NodePath("../PlayerData")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=685394789]
 
 [node name="pausemenu" parent="CanvasLayer" unique_id=191889806 instance=ExtResource("1_uwrxv")]
 
-[node name="GGGConnector" type="Node" parent="." unique_id=2029467434]
+[node name="GGGConnector" type="Node" parent="." unique_id=2029467434 node_paths=PackedStringArray("plrData")]
 script = ExtResource("2_yqjtg")
+plrData = NodePath("../PlayerData")
 metadata/_custom_type_script = "uid://bhjht6dmqv2gw"
+
+[node name="PlayerData" type="Node" parent="." unique_id=909051020]
+script = ExtResource("4_lbhrr")
+metadata/_custom_type_script = "uid://kupdo4ba08mq"
