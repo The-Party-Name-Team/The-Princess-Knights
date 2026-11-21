@@ -22,10 +22,12 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
+"Alfonso": "res://resources/dialogic/characters/Alfonso.dch",
+"Marius": "res://resources/dialogic/characters/Marius.dch",
 "Mikhela": "res://resources/dialogic/characters/Mikhela.dch"
 }
 directories/dtl_directory={
-"first_dialog": "res://resources/dialogic/timelines/first_dialog.dtl"
+"timeline_0_1": "res://resources/dialogic/timelines/timeline_0_1.dtl"
 }
 layout/style_directory={
 "": "res://resources/dialogic/styles/standard.tres",
