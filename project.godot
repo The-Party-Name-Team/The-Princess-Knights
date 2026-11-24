@@ -27,6 +27,8 @@ directories/dch_directory={
 "Mikhela": "res://resources/dialogic/characters/Mikhela.dch"
 }
 directories/dtl_directory={
+"chapter_0": "res://resources/dialogic/timelines/chapter_0.dtl",
+"first_dialog": "res://resources/dialogic/timelines/first_dialog.dtl",
 "timeline_0_1": "res://resources/dialogic/timelines/timeline_0_1.dtl"
 }
 layout/style_directory={
