@@ -18,5 +18,10 @@ horizontal_alignment = 1
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=685394789]
 
 [node name="pausemenu" parent="CanvasLayer" unique_id=191889806 instance=ExtResource("1_uwrxv")]
+z_index = 5
 
-[node name="diary" parent="CanvasLayer" unique_id=1075798468 instance=ExtResource("2_yqjtg")]
+[node name="diary" parent="." unique_id=1075798468 instance=ExtResource("2_yqjtg")]
+offset_left = 629.0
+offset_top = 382.0
+offset_right = 629.0
+offset_bottom = 382.0

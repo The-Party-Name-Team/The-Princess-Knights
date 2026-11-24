@@ -22,7 +22,6 @@ offset_top = -250.0
 offset_bottom = 250.0
 grow_horizontal = 2
 grow_vertical = 2
-rotation = -0.10471976
 color = Color(1, 1, 0.8666667, 1)
 script = ExtResource("1_vybku")
 _container = NodePath("Content")
@@ -67,7 +66,8 @@ autowrap_mode = 3
 [node name="4" type="Label" parent="chapter0_1/Content" unique_id=1296840812]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "I’ve lost my whole world and everyone seems to be busy with theirs,"
+text = "I’ve lost my whole world and everyone seems to be
+busy with theirs,"
 autowrap_mode = 3
 autowrap_trim_flags = 0
 
@@ -75,7 +75,8 @@ autowrap_trim_flags = 0
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "To even care…
-It’s selfish, I know. I just wish I had the power to stop time and breathe for a little."
+It’s selfish, I know. I just wish I had the power to stop
+time and breathe for a little."
 autowrap_mode = 3
 
 [node name="space" type="Label" parent="chapter0_1/Content" unique_id=673100589]
@@ -86,14 +87,16 @@ autowrap_mode = 3
 [node name="6" type="Label" parent="chapter0_1/Content" unique_id=1171101114]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "It all started when Lady Thalia woke me up in the dead of night.
+text = "It all started when Lady Thalia woke me up in the dead
+of night.
 She’d been crying, I could tell."
 autowrap_mode = 3
 
 [node name="7" type="Label" parent="chapter0_1/Content" unique_id=1051954095]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Yet, she wouldn’t mutter a word as she forced me out of my own home."
+text = "Yet, she wouldn’t mutter a word as she forced me out
+of my own home."
 autowrap_mode = 3
 
 [node name="8" type="Label" parent="chapter0_1/Content" unique_id=1391958594]
