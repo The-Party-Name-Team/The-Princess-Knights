@@ -1,6 +1,8 @@
 extends Node
 class_name GGGConnector
 
+@export var plrData: PlayerData = null
+
 func _ready():
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	Dialogic.start("first_dialog")
@@ -20,7 +22,7 @@ func _on_dialogic_signal(argument: Variant):
 						_add_gold(argument.get("qty"))
 			
 func _add_gold(amount: int):
-	print("Added %d amounts of gold!" % amount)
+	plrData.add_gold(amount)
 
 func _add_glory(amount: int):
 	pass
