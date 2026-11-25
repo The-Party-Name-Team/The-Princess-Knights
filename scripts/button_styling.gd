@@ -9,6 +9,7 @@ extends Button
 
 @export var _hover_anim_duration: float = 0.1
 
+@export var _has_tween_position: bool = true
 @export var _how_much_rise: float = 20
 
 #properties
@@ -24,17 +25,21 @@ func _ready() -> void:
 			_event_textures.base = _texture_label.texture
 			
 		await get_tree().process_frame
-		_init_position = _texture_label.position
-		_final_position = _init_position + Vector2(0, -_how_much_rise)
+		#tweening
+		if _has_tween_position:
+			_init_position = _texture_label.position
+			_final_position = _init_position + Vector2(0, -_how_much_rise)
 	
 func _on_mouse_enter() -> void:
 	if not _event_textures.get("hover") == null:
 		_texture_label.texture = _event_textures.get("hover")
-		var _btn_tween := _texture_label.create_tween()
-		_btn_tween.tween_property(_texture_label, "position", _final_position, _hover_anim_duration)
+		if _has_tween_position:
+			var _btn_tween := _texture_label.create_tween()
+			_btn_tween.tween_property(_texture_label, "position", _final_position, _hover_anim_duration)
 	
 func _on_mouse_exit() -> void:
 	if not _event_textures.get("base") == null:
 		_texture_label.texture = _event_textures.get("base")
-		var _btn_tween := _texture_label.create_tween()
-		_btn_tween.tween_property(_texture_label, "position", _init_position, _hover_anim_duration)
+		if _has_tween_position:
+			var _btn_tween := _texture_label.create_tween()
+			_btn_tween.tween_property(_texture_label, "position", _init_position, _hover_anim_duration)

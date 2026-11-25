@@ -26,7 +26,6 @@ func _prep(): #extended prep - after UIs have loaded
 		if _container.find_child(str(_i+1)):
 			var cc: Control = _container.get_node(str(_i+1))
 			cc.custom_minimum_size = cc.size #jitter prevention
-			print(cc.size, cc.custom_minimum_size) 
 			
 			_contained_labels.append(cc)
 			_len_s.append(len(cc.text)) #add lengths of strings
@@ -39,6 +38,7 @@ func _prep(): #extended prep - after UIs have loaded
 	_allowed = true
 
 func _process(delta: float) -> void:
+	
 	if _allowed:
 		#makeshift loop
 		_time_passed += delta

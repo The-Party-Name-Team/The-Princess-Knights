@@ -1,13 +1,14 @@
 [gd_scene format=3 uid="uid://df6w2ido8t3ub"]
 
-[ext_resource type="Texture2D" uid="uid://bcksnj8b24f7q" path="res://media/UI/GGG.png" id="1_1nf31"]
-[ext_resource type="Script" uid="uid://dyxwacakefpos" path="res://scripts/ggg_counter.gd" id="2_5ysmq"]
-[ext_resource type="FontFile" uid="uid://by85dch1nluya" path="res://assets/fonts/AppleGaramond.ttf" id="2_oo0fn"]
-[ext_resource type="Script" uid="uid://c3j5noj8rsmad" path="res://resources/classes/player.gd" id="3_6fi6k"]
-
-[sub_resource type="Resource" id="Resource_5ysmq"]
-script = ExtResource("3_6fi6k")
-metadata/_custom_type_script = "uid://c3j5noj8rsmad"
+[ext_resource type="Texture2D" uid="uid://8skjg1es6pa7" path="res://media/UI/buttons/base/screenwide-border.png" id="1_0i1j5"]
+[ext_resource type="Script" uid="uid://btslig2kxbe1o" path="res://scenes/side_buttons_hud.gd" id="2_uo2fv"]
+[ext_resource type="Texture2D" uid="uid://bol27wwgiaauv" path="res://media/UI/buttons/base/mapbutton.png" id="3_047uy"]
+[ext_resource type="Texture2D" uid="uid://u3airrjul5sn" path="res://media/UI/buttons/base/convohistorybutton.png" id="4_5pdws"]
+[ext_resource type="Texture2D" uid="uid://c685urinflnxf" path="res://media/UI/buttons/base/statsbutton.png" id="5_hd3ao"]
+[ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scripts/button_styling.gd" id="6_047uy"]
+[ext_resource type="Texture2D" uid="uid://cqguhayrfa3s0" path="res://media/UI/buttons/hover/mapbutton-hover.png" id="7_0i1j5"]
+[ext_resource type="Texture2D" uid="uid://cx6jcq601gqhe" path="res://media/UI/buttons/hover/convohistorybutton-hover.png" id="8_mphia"]
+[ext_resource type="Texture2D" uid="uid://ciffiecdok4a5" path="res://media/UI/buttons/hover/statsbutton-hover.png" id="9_0m4u7"]
 
 [node name="HUD" type="Control" unique_id=1421785620]
 layout_mode = 3
@@ -17,59 +18,121 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GGGCounter" type="TextureRect" parent="." unique_id=370501976 node_paths=PackedStringArray("_Container")]
-layout_mode = 1
-offset_left = 30.0
-offset_top = 30.0
-offset_right = 1886.0
-offset_bottom = 1017.0
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("1_1nf31")
-script = ExtResource("2_5ysmq")
-_Container = NodePath("HBoxContainer")
-_Player_Data = SubResource("Resource_5ysmq")
+[node name="Border" type="TextureRect" parent="." unique_id=1355626394]
+z_index = -1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_0i1j5")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="GGGCounter" unique_id=806314727]
-custom_minimum_size = Vector2(1400, 350)
+[node name="SideButtons" type="Control" parent="." unique_id=1541738748]
+anchors_preset = 0
+offset_right = 1080.0
+offset_bottom = 720.0
+script = ExtResource("2_uo2fv")
+
+[node name="Marks" type="Control" parent="SideButtons" unique_id=53434607]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = 4
 anchor_top = 0.5
-anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -700.0
-offset_top = 56.5
-offset_right = 700.0
-offset_bottom = 406.5
-grow_horizontal = 2
+offset_top = -309.0
+offset_right = 211.0
+offset_bottom = 927.0
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+
+[node name="Map" type="TextureRect" parent="SideButtons/Marks" unique_id=332184305]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -309.0
+offset_right = 211.0
+offset_bottom = 309.0
+grow_vertical = 2
+texture = ExtResource("3_047uy")
+
+[node name="Conversations" type="TextureRect" parent="SideButtons/Marks" unique_id=1394955867]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -309.0
+offset_right = 211.0
+offset_bottom = 309.0
+grow_vertical = 2
+texture = ExtResource("4_5pdws")
+
+[node name="Stats" type="TextureRect" parent="SideButtons/Marks" unique_id=145209491]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -309.0
+offset_right = 211.0
+offset_bottom = 309.0
+grow_vertical = 2
+texture = ExtResource("5_hd3ao")
+
+[node name="Buttons" type="Control" parent="SideButtons" unique_id=497049016]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -125.0
+offset_right = 80.0
+offset_bottom = 125.0
 grow_vertical = 2
 
-[node name="Gold" type="Label" parent="GGGCounter/HBoxContainer" unique_id=902868831]
-layout_mode = 2
+[node name="Map" type="Button" parent="SideButtons/Buttons" unique_id=2019570264 node_paths=PackedStringArray("_texture_label")]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 65.0
+offset_bottom = 80.0
 size_flags_horizontal = 3
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_oo0fn")
-theme_override_font_sizes/font_size = 240
-text = "999"
-horizontal_alignment = 1
+script = ExtResource("6_047uy")
+_event_textures = Dictionary[String, Texture2D]({
+"base": ExtResource("3_047uy"),
+"hover": ExtResource("7_0i1j5")
+})
+_texture_label = NodePath("../../Marks/Map")
+_how_much_rise = 10.0
 
-[node name="Glory" type="Label" parent="GGGCounter/HBoxContainer" unique_id=1725965034]
-layout_mode = 2
+[node name="Conversations" type="Button" parent="SideButtons/Buttons" unique_id=989354236 node_paths=PackedStringArray("_texture_label")]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 65.0
+offset_bottom = 45.0
+grow_vertical = 2
 size_flags_horizontal = 3
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_oo0fn")
-theme_override_font_sizes/font_size = 240
-text = "999"
-horizontal_alignment = 1
+script = ExtResource("6_047uy")
+_event_textures = Dictionary[String, Texture2D]({
+"base": ExtResource("4_5pdws"),
+"hover": ExtResource("8_mphia")
+})
+_texture_label = NodePath("../../Marks/Conversations")
+_how_much_rise = 10.0
 
-[node name="Gospel" type="Label" parent="GGGCounter/HBoxContainer" unique_id=2127494912]
-layout_mode = 2
+[node name="Stats" type="Button" parent="SideButtons/Buttons" unique_id=1378572863 node_paths=PackedStringArray("_texture_label")]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -65.0
+offset_right = 65.0
+grow_vertical = 0
 size_flags_horizontal = 3
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_oo0fn")
-theme_override_font_sizes/font_size = 240
-text = "999"
-horizontal_alignment = 1
+script = ExtResource("6_047uy")
+_event_textures = Dictionary[String, Texture2D]({
+"base": ExtResource("5_hd3ao"),
+"hover": ExtResource("9_0m4u7")
+})
+_texture_label = NodePath("../../Marks/Stats")
+_how_much_rise = 10.0

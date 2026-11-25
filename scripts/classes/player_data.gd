@@ -1,17 +1,17 @@
 extends Resource
-class_name Player
+class_name PlayerData
 
 signal gold_changed(gold: int)
 
 @export var _Gold: int = 0:
 	set(val):
 		_Gold = max(0, val)
-		gold_changed.emit(_Gold)
-		
+		gold_changed.emit()
 		
 @export var _Glory: int = 0:
 	set(val):
 		_Glory = max(0, val)
+		
 
 @export var _Gospel: int = 0:
 	set(val):

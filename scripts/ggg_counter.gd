@@ -1,7 +1,7 @@
 extends TextureRect
 
 @export var _Container: Control = null
-@export var _Player_Data: Player = null
+@export var _Player_Data: Resource = null
 
 var _Gold_UI: Label = null
 var _Glory_UI: Label = null

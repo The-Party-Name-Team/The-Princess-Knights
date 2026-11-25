@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpsgleva0lddd"
-path="res://.godot/imported/mainmenu-leave.png-2f79c7bc4b2c81c8f45a275c2464cc33.ctex"
+uid="uid://8skjg1es6pa7"
+path="res://.godot/imported/screenwide-border.png-31f077dd41d401e76de00eab45595ece.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/UI/mainmenu-leave.png"
-dest_files=["res://.godot/imported/mainmenu-leave.png-2f79c7bc4b2c81c8f45a275c2464cc33.ctex"]
+source_file="res://media/UI/buttons/base/screenwide-border.png"
+dest_files=["res://.godot/imported/screenwide-border.png-31f077dd41d401e76de00eab45595ece.ctex"]
 
 [params]
 

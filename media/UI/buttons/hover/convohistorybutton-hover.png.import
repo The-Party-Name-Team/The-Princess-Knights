@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du4oyaf4gl8ng"
-path="res://.godot/imported/mainmenu-config-hover.png-7425c545e7bc4cf0c27e9cfc9822e089.ctex"
+uid="uid://cx6jcq601gqhe"
+path="res://.godot/imported/convohistorybutton-hover.png-d4e531512c0823c05988122cc958b53b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/UI/mainmenu-config-hover.png"
-dest_files=["res://.godot/imported/mainmenu-config-hover.png-7425c545e7bc4cf0c27e9cfc9822e089.ctex"]
+source_file="res://media/UI/buttons/hover/convohistorybutton-hover.png"
+dest_files=["res://.godot/imported/convohistorybutton-hover.png-d4e531512c0823c05988122cc958b53b.ctex"]
 
 [params]
 
