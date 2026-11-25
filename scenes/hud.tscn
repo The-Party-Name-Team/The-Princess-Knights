@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://df6w2ido8t3ub"]
+
+[ext_resource type="Texture2D" uid="uid://bcksnj8b24f7q" path="res://media/UI/GGG.png" id="1_1nf31"]
+[ext_resource type="Script" uid="uid://dyxwacakefpos" path="res://scripts/ggg_counter.gd" id="2_5ysmq"]
+[ext_resource type="FontFile" uid="uid://by85dch1nluya" path="res://assets/fonts/AppleGaramond.ttf" id="2_oo0fn"]
+[ext_resource type="Script" uid="uid://c3j5noj8rsmad" path="res://resources/classes/player.gd" id="3_6fi6k"]
+
+[sub_resource type="Resource" id="Resource_5ysmq"]
+script = ExtResource("3_6fi6k")
+metadata/_custom_type_script = "uid://c3j5noj8rsmad"
+
+[node name="HUD" type="Control" unique_id=1421785620]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GGGCounter" type="TextureRect" parent="." unique_id=370501976 node_paths=PackedStringArray("_Container")]
+layout_mode = 1
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 1886.0
+offset_bottom = 1017.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_1nf31")
+script = ExtResource("2_5ysmq")
+_Container = NodePath("HBoxContainer")
+_Player_Data = SubResource("Resource_5ysmq")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GGGCounter" unique_id=806314727]
+custom_minimum_size = Vector2(1400, 350)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -700.0
+offset_top = 56.5
+offset_right = 700.0
+offset_bottom = 406.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Gold" type="Label" parent="GGGCounter/HBoxContainer" unique_id=902868831]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_oo0fn")
+theme_override_font_sizes/font_size = 240
+text = "999"
+horizontal_alignment = 1
+
+[node name="Glory" type="Label" parent="GGGCounter/HBoxContainer" unique_id=1725965034]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_oo0fn")
+theme_override_font_sizes/font_size = 240
+text = "999"
+horizontal_alignment = 1
+
+[node name="Gospel" type="Label" parent="GGGCounter/HBoxContainer" unique_id=2127494912]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_oo0fn")
+theme_override_font_sizes/font_size = 240
+text = "999"
+horizontal_alignment = 1

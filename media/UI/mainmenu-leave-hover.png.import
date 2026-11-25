@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du4oyaf4gl8ng"
-path="res://.godot/imported/mainmenu-config-hover.png-b6d7976bab8f0c45a4af4064c5c65b8d.ctex"
+uid="uid://b1potiduk0yib"
+path="res://.godot/imported/mainmenu-leave-hover.png-d0b4c83d91d0e9bd86079cec18881354.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/mainmenu-config-hover.png"
-dest_files=["res://.godot/imported/mainmenu-config-hover.png-b6d7976bab8f0c45a4af4064c5c65b8d.ctex"]
+source_file="res://media/UI/mainmenu-leave-hover.png"
+dest_files=["res://.godot/imported/mainmenu-leave-hover.png-d0b4c83d91d0e9bd86079cec18881354.ctex"]
 
 [params]
 
