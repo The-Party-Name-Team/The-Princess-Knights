@@ -2,29 +2,23 @@
 
 [ext_resource type="Script" uid="uid://cvujrm5xy2opl" path="res://scripts/mainmenu.gd" id="1_5mbse"]
 [ext_resource type="Texture2D" uid="uid://bojbj8hoqm68b" path="res://assets/mainmenus/mainmenu.png" id="2_r3g3c"]
-[ext_resource type="Texture2D" uid="uid://gklinu1ykhsl" path="res://assets/UI/mainmenu-logo.png" id="3_h73c4"]
-[ext_resource type="Texture2D" uid="uid://cwj1cj76irgqy" path="res://assets/UI/mainmenu-start.png" id="4_3vvtq"]
-[ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scenes/button_scripts.gd" id="4_s5g8n"]
-[ext_resource type="FontFile" uid="uid://ijt12uand1uh" path="res://assets/fonts/Cardinal.ttf" id="4_uui5l"]
-[ext_resource type="Texture2D" uid="uid://c66583weh4bcf" path="res://assets/UI/mainmenu-start-hover.png" id="6_7yvfd"]
-[ext_resource type="Texture2D" uid="uid://brmrqyyfikfnl" path="res://assets/UI/mainmenu-config.png" id="7_h73c4"]
-[ext_resource type="Texture2D" uid="uid://du4oyaf4gl8ng" path="res://assets/UI/mainmenu-config-hover.png" id="8_uui5l"]
-[ext_resource type="Texture2D" uid="uid://bpsgleva0lddd" path="res://assets/UI/mainmenu-leave.png" id="9_4hago"]
-[ext_resource type="Texture2D" uid="uid://b1potiduk0yib" path="res://assets/UI/mainmenu-leave-hover.png" id="10_gjjcl"]
+[ext_resource type="Texture2D" uid="uid://crivt8vdk7tc0" path="res://assets/mainmenus/mainmenu-logo.png" id="3_3vvtq"]
+[ext_resource type="PackedScene" uid="uid://dly6sj7ikytf2" path="res://scenes/options.tscn" id="4_3vvtq"]
 
-[node name="MainMenu" type="Node2D" unique_id=1921545605]
+[node name="mainmenu" type="Node2D" unique_id=1921545605]
 script = ExtResource("1_5mbse")
 
-[node name="MainMenu" type="Sprite2D" parent="." unique_id=669501699]
-position = Vector2(540, 360)
+[node name="Mainmenu" type="Sprite2D" parent="." unique_id=1324428158]
+position = Vector2(583, 292)
+scale = Vector2(1.0768518, 1)
 texture = ExtResource("2_r3g3c")
 
 [node name="MainmenuLogo" type="Sprite2D" parent="." unique_id=1769264153]
-position = Vector2(260, 180)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("3_h73c4")
+position = Vector2(229, 108)
+scale = Vector2(0.7057143, 0.74334604)
+texture = ExtResource("3_3vvtq")
 
-[node name="abc" type="Control" parent="." unique_id=876944569]
+[node name="mainmenubuttons" type="Control" parent="." unique_id=876944569]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 4.0
@@ -32,125 +26,47 @@ offset_top = 2.0
 offset_right = 78.0
 offset_bottom = 62.0
 
-[node name="mapbut" type="Button" parent="abc" unique_id=1170097964]
+[node name="mapbut" type="Button" parent="mainmenubuttons" unique_id=1170097964]
 layout_mode = 0
 offset_left = 473.0
 offset_top = 53.0
 offset_right = 669.0
 offset_bottom = 139.0
-theme_override_fonts/font = ExtResource("4_uui5l")
-theme_override_font_sizes/font_size = 50
 text = "map
 "
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1832462358]
+[node name="start" type="Button" parent="mainmenubuttons" unique_id=1410600979]
+layout_mode = 0
+offset_left = 113.0
+offset_top = 231.0
+offset_right = 309.0
+offset_bottom = 317.0
+text = "start"
 
-[node name="MainMenuButtons" type="Control" parent="CanvasLayer" unique_id=400976480]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 1080.0
-offset_bottom = 720.0
+[node name="leave" type="Button" parent="mainmenubuttons" unique_id=1586125000]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 492.0
+offset_right = 311.0
+offset_bottom = 578.0
+text = "leave"
 
-[node name="Container" type="VBoxContainer" parent="CanvasLayer/MainMenuButtons" unique_id=914766023]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 120.0
-offset_top = -390.0
-offset_right = 480.0
-offset_bottom = -30.0
-grow_vertical = 0
-scale = Vector2(0.8, 0.8)
+[node name="config" type="Button" parent="mainmenubuttons" unique_id=2111006422]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 358.0
+offset_right = 310.0
+offset_bottom = 444.0
+text = "config"
 
-[node name="Start" type="Button" parent="CanvasLayer/MainMenuButtons/Container" unique_id=1410600979 node_paths=PackedStringArray("_texture_label")]
-self_modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_vertical = 3
-script = ExtResource("4_s5g8n")
-_event_textures = {
-"base": ExtResource("4_3vvtq"),
-"hover": ExtResource("6_7yvfd")
-}
-_texture_label = NodePath("Icon")
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1308332122]
+bus = &"sound"
 
-[node name="Icon" type="TextureRect" parent="CanvasLayer/MainMenuButtons/Container/Start" unique_id=82874295]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = 21.5
-offset_right = 20.0
-offset_bottom = 61.5
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("4_3vvtq")
-expand_mode = 3
-stretch_mode = 3
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=660346648]
 
-[node name="Config" type="Button" parent="CanvasLayer/MainMenuButtons/Container" unique_id=2111006422 node_paths=PackedStringArray("_texture_label")]
-self_modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_vertical = 3
-script = ExtResource("4_s5g8n")
-_event_textures = Dictionary[String, Texture2D]({
-"base": ExtResource("7_h73c4"),
-"hover": ExtResource("8_uui5l")
-})
-_texture_label = NodePath("Icon")
+[node name="options" parent="CanvasLayer" unique_id=700432999 instance=ExtResource("4_3vvtq")]
 
-[node name="Icon" type="TextureRect" parent="CanvasLayer/MainMenuButtons/Container/Config" unique_id=1248076968]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = 21.5
-offset_right = 20.0
-offset_bottom = 61.5
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("7_h73c4")
-expand_mode = 3
-stretch_mode = 3
-
-[node name="Leave" type="Button" parent="CanvasLayer/MainMenuButtons/Container" unique_id=1586125000 node_paths=PackedStringArray("_texture_label")]
-self_modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_vertical = 3
-script = ExtResource("4_s5g8n")
-_event_textures = Dictionary[String, Texture2D]({
-"base": ExtResource("9_4hago"),
-"hover": ExtResource("10_gjjcl")
-})
-_texture_label = NodePath("Icon")
-
-[node name="Icon" type="TextureRect" parent="CanvasLayer/MainMenuButtons/Container/Leave" unique_id=1977100925]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = 21.5
-offset_right = 20.0
-offset_bottom = 61.5
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("9_4hago")
-expand_mode = 3
-stretch_mode = 3
-
-[connection signal="pressed" from="abc/mapbut" to="." method="_on_mapbut_pressed"]
-[connection signal="pressed" from="CanvasLayer/MainMenuButtons/Container/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="CanvasLayer/MainMenuButtons/Container/Config" to="." method="_on_config_pressed"]
-[connection signal="pressed" from="CanvasLayer/MainMenuButtons/Container/Leave" to="." method="_on_leave_pressed"]
+[connection signal="pressed" from="mainmenubuttons/mapbut" to="." method="_on_mapbut_pressed"]
+[connection signal="pressed" from="mainmenubuttons/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="mainmenubuttons/leave" to="." method="_on_leave_pressed"]
+[connection signal="pressed" from="mainmenubuttons/config" to="." method="_on_config_pressed"]
