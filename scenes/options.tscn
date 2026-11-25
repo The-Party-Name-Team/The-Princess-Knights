@@ -13,10 +13,10 @@ grow_end = -300.0
 thickness = 0
 
 [node name="options" type="Panel" unique_id=700432999]
-offset_left = 116.0
-offset_top = 107.0
-offset_right = 1054.0
-offset_bottom = 524.0
+offset_left = 72.0
+offset_top = 114.0
+offset_right = 1010.0
+offset_bottom = 531.0
 
 [node name="Label" type="Label" parent="." unique_id=846872583]
 layout_mode = 0
@@ -27,14 +27,6 @@ offset_bottom = 59.0
 theme_override_font_sizes/font_size = 31
 text = "Options"
 horizontal_alignment = 1
-
-[node name="back" type="Button" parent="." unique_id=373996005]
-layout_mode = 0
-offset_left = 381.0
-offset_top = 309.0
-offset_right = 575.0
-offset_bottom = 395.0
-text = "Back"
 
 [node name="slider" type="Sprite2D" parent="." unique_id=1595333377]
 position = Vector2(461, 117.46094)
@@ -74,5 +66,19 @@ offset_right = 555.0
 offset_bottom = 194.0
 script = ExtResource("5_85aq5")
 
+[node name="backbutton" type="Control" parent="." unique_id=1024653265]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="back" type="Button" parent="backbutton" unique_id=373996005]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 309.0
+offset_right = 575.0
+offset_bottom = 395.0
+text = "Back"
+
 [connection signal="value_changed" from="sounds" to="sounds" method="_on_value_changed"]
 [connection signal="toggled" from="fullscreenbut" to="fullscreenbut" method="_on_toggled"]
+[connection signal="pressed" from="backbutton/back" to="sounds" method="_on_back_pressed"]

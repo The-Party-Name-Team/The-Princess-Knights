@@ -15,7 +15,7 @@ text = "this that game scene
 try pressing esc"
 horizontal_alignment = 1
 
-[node name="Label2" type="Label" parent="." unique_id=1984630160 node_paths=PackedStringArray("plr_data")]
+[node name="Label2" type="Label" parent="." unique_id=1984630160]
 offset_left = 431.0
 offset_top = 150.0
 offset_right = 604.0
@@ -23,7 +23,6 @@ offset_bottom = 246.0
 text = "asdasdfs"
 horizontal_alignment = 1
 script = ExtResource("1_lnu2h")
-plr_data = NodePath("")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1797066784]
 
