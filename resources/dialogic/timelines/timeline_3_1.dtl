@@ -1,0 +1,172 @@
+[i]You all stop at a nearby tavern
+[i]You wait outside for Sir Alfonso to find suitable rooms
+
+Random: Lea?
+join Marius (d) at left
+join  at right
+Marius: That’s Dame Mikhelea to you sir-
+Mikhela: Henry!
+Mikhela: Oh lighten up Marius, He’s my friend.
+Marius (irked): ...
+Mikhela: Your highness, let me introduce you to Sir Henry Fischer.
+leave Marius
+join Ardana (d) at left
+Ardana: Good evening sir Fischer
+leave Mikhela
+join Henry at right
+Henry: Oh please, your highness. Call me Henry.
+Henry: I see, you’re coming back east.
+Henry: I suppose the journey went well?
+leave Ardana
+join Mikhela (concerned) at left
+Mikhela (concerned): Not really…
+Mikhela (irked): That arrogant King Gabriel II was a real pain in the a-
+Henry: Language.
+Mikhela (irked): I’m sorry! It’s just now we have to travel all the way west to meet Queen Martina.
+Mikhela (concerned): Then again, we don’t even know if that’ll go well.
+Henry: ...
+Henry: Now I know this is a stretch…
+Henry: You see, I own a Mercenary guild
+Henry: For the right price-
+leave Mikhela
+join Marius (d) at left
+Marius: You’d lend us enough men to stop the coup.
+Henry: …
+Henry: Exactly correct, Sir Marius.
+Marius: Not a bad idea…
+leave Henry
+join Mikhela (concerned) at right
+Mikhela (concerned): Marius!
+Marius (confused): Lea?
+Mikhela (concerned): I know you’re like strategy-y and stuff but do you really think this is a good idea-
+Mikhela (d): No offense Henry.
+Mikhela: You’re my friend,
+Mikhela: But you’re a mercenary man first.
+leave Marius
+join Henry at left
+Henry: What a cut throat observation Mikhelea.
+Henry: And my job is loyal to the client…
+Henry: So, do we have a deal?
+leave Mikhela
+join Marius (d) at right
+Marius: Your highness?
+leave --All--
+- Agree with Marius
+	join Ardana (concerned) at left
+	join Marius (d) at right
+	Ardana (concerned): Time is ticking fast…
+	Marius: Exactly.
+	Marius: Mercenaries are loyal to their clients.
+	leave Ardana
+	join Mikhela (concerned) at left
+	Mikhela (concerned): You’re a holy knight-
+	Mikhela (concerned): This goes against everything you believe in.
+	Mikhela (concerned): The very ideals you've sworn to uphold!
+	Marius: If this is what Her Highness requires, then it is my duty to see it done.
+	Mikhela (concerned): ...
+	[i]Marius looks at you with eyes filled with sympathy
+	Marius: Even if heaven was on the line.
+	Ardana (d): …
+- Agree with Mikhela
+	join Ardana (concerned) at left
+	join Mikhela(d) at right
+	Ardana (concerned): Maybe we should take our time.
+	Ardana(d): I’m sorry Sir Marius, I don’t fully trust Henry.
+	Ardana: I’d rather gamble my chances with Queen Martina.
+	Mikhela: I’m glad you see it this way, your highness.
+	Mikhela: Sorry Henry.
+	Mikhela: Her highness has decided.
+leave --All--
+join Henry at center
+Henry: hmm…
+Henry: Since, it’s fallen to this.
+Henry: I’ll give you a discount!
+Henry: I don’t need your money.
+Henry: ahem I’m rich as is, your gold is pocket money to me.
+Henry: I’m looking to expand my business within your kingdom.
+Henry: What do you think?
+Henry: My men, for a plot of land.
+"Ardana, Lea, Marius": ...
+leave Henry 
+join Alfonso(d) at left
+Alfonso: I say take it.
+join Mikhela(irked) at right
+Mikhela (irked): Al?!
+leave Mikhela
+join Ardana(d) at right
+Ardana: You think so?
+Alfonso: Yes.
+Alfonso: He isn’t trying to deceive you, I can tell.
+Alfonso: I’ve met Sir Fischer before.
+Alfonso: He’s been trying to expand in the kingdom for years.
+leave Ardana 
+join Henry at right
+Henry: Oh please, call me Henry.
+Henry: Sir Alfonso, I haven’t seen you since you were just a squire!
+Alfonso: It’s vice captain Alfonso now.
+Henry: Prickly! Just how I remember you.
+
+[i]Sir Marius pats Henry on the back
+leave Alfonso 
+join Marius(d) at left
+Marius: How about we discuss the plan?
+Henry: Hard working aren’t we…
+Henry: Say, why does Mikhelea call Sir Alfonso by a nickname?
+Marius: None of your business.
+leave --All--
+join Alfonso(d) at center
+Alfonso: What a nuisance.
+leave --All--
+-Ask about Henry
+	join Ardana(d) at left
+	Ardana: You seem to have history with Henry Sir Alfonso.
+	[i]Dame Mikhelea follows Sir Marius and Henry inside the tavern
+	join Alfonso(d) at right
+	Alfonso: It isn’t a coincidence we met him here.
+	Alfonso: He’s been conjuring up schemes to enter the kingdom since I was just a squire.
+	Ardana (confused): Then why do you trust him to lend us his men?
+	Alfonso: He might be a shady man, but he doesn’t lie.
+	Alfonso: He’s incapable of lying.
+	Alfonso: That’s his fault.
+	[i]Sir Alfonso looks through the horizon with a saddened look
+	[i]You want to probe further,
+	[i]But you’re afraid.
+	[i]Sir Alfonso catches you looking at him
+	Alfonso: In truth, I envy his capability to restrain from lying.
+	Alfonso: What a different life I’d live.
+	[i]Sir Alfonso soon follows Dame Mikhelea
+	[i]You look at his red hair
+	[i]It seems to flow with the wind begrudgingly
+-Apologize to Dame Mikhelea
+	join Ardana(d) at left
+	join Mikhela(d) at right
+	Ardana: I’m sorry I didn’t trust your judgment Dame Mikhelea.
+	[i]Sir Alfonso follows Sir Marius and Henry inside the tavern
+	Mikhela: No It’s fine!
+	Mikhela: I understand the urgency of this journey.
+	Mikhela: I know sometimes I seem so carefree…
+	Mikhela: Trust me, I know how crucial it actually is.
+	Mikhela: I just…
+	Mikhela: Under all this stress, I don’t want you to feel the pressure.
+	Mikhela: Because, I know how it feels to be burdened at a young age.
+	[i]Dame Mikhelea takes your hand and clasps it gently
+	Mikhela: I hoped that I could relief the heaviness,
+	Mikhela: even just a little.
+	[i]She lets go before joining the others inside the tavern
+	[i]You look down at the hand she held
+	[i]You think of the times she’s thought of you in every choice she made
+-Stay quiet
+	Ardana: ...
+leave --All--
+[i]You stood outside the tavern
+[i]Your body refusing to move
+[i]Your mind thinks fondly of your memories with the knights
+[i]A selfish part of you not wanting it to end
+[i]Not wanting to face the reality
+join Marius(d) at center
+Marius: Your highness, It’s cold outside.
+Marius: Come in.
+leave --All--
+[i]You walk in the warm tavern
+[i]Your heart filled with familial warmth
+[i]As this might be your last time together

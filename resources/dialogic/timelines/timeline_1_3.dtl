@@ -1,0 +1,48 @@
+- accept
+	join Ardana(d) at left
+	join Marius(flustered) at right
+	Ardana: thank you…
+- decline
+	join Ardana(d) at left
+	join Marius(flustered) at right
+	Ardana: I’m good.
+Marius: I just thought because you know.
+Marius: People said tea calms the mind.
+Marius: That’s all!
+Marius: ....
+Ardana(confused): okay?
+Marius(d): ...
+Marius: ahem
+Marius: I added more herbs to help you sleep.
+Marius: I saw how bothered you looked…
+Marius: Maybe this will calm your mind, even a little.
+Ardana: ...
+Ardana(smile): How thoughtful.
+[i]You remember the times your mother used to bring you tea when times were tough
+Ardana[d]: ...
+- Continue the conversation
+	Ardana: You're unusually talkative right now.
+	Marius(rattled): ...
+	Marius(d): Ahem.
+	Marius: I am but your humble servant, your highness.
+	Marius: I obey your will without question.
+	Marius: For my sword and life is yours.
+	Ardana(confused): hm...
+	Ardana(d): Your duty is to God.
+	Ardana: Is it not?
+	Ardana: If there was a choice between me and heaven.
+	Ardana(melancholy): What would happen then?
+	Marius(concerned): ...
+	Marius: My duty is to help you spread the gospel, your highness.
+	Marius: It is written in the passages that you are to be our destined ruler.
+	Marius(empathetic): Isn't that part of my duty then?
+	Ardana(rattled): ...
+	Ardana: I suppose you're right
+	chuckle
+	Ardana(smile): You really did calm me down.
+	
+- Wish him goodnight
+	Ardana(d): I'm quite tired, thank you for the gesture.
+Ardana(d): Good night sir Marius.
+Marius(d): Good night, your highness.
+leave --All--
