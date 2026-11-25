@@ -32,6 +32,7 @@ scene = ExtResource("5_o0lw7")
 script = ExtResource("2_gt8f3")
 scene = ExtResource("6_3o443")
 overrides = {
+"box_panel": "\"res://resources/dialogic/styles/new_style_box_texture.tres\"",
 "box_size": "Vector2(700, 220)",
 "name_label_custom_font_size": "32.0",
 "text_size": "30.0",

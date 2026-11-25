@@ -12,6 +12,8 @@ position = Vector2(587.5, 327)
 scale = Vector2(1.050926, 0.9666666)
 texture = ExtResource("1_0cso3")
 
+[node name="pausemenu" parent="." unique_id=191889806 instance=ExtResource("1_4xfga")]
+
 [node name="levelbuttons" type="Control" parent="." unique_id=1121476499]
 layout_mode = 3
 anchors_preset = 0
@@ -45,8 +47,6 @@ offset_right = 567.0
 offset_bottom = 301.0
 text = "level 3"
 icon = ExtResource("4_2klcf")
-
-[node name="pausemenu" parent="." unique_id=191889806 instance=ExtResource("1_4xfga")]
 
 [connection signal="pressed" from="levelbuttons/level1" to="levelbuttons" method="_on_level_1_pressed"]
 [connection signal="pressed" from="levelbuttons/level2" to="levelbuttons" method="_on_level_2_pressed"]
