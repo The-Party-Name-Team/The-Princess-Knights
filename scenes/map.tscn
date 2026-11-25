@@ -7,8 +7,6 @@
 
 [node name="map" type="Node2D" unique_id=1486222276]
 
-[node name="pausemenu" parent="." unique_id=191889806 instance=ExtResource("1_4xfga")]
-
 [node name="MapPlaceholder" type="Sprite2D" parent="." unique_id=1525580811]
 position = Vector2(587.5, 327)
 scale = Vector2(1.050926, 0.9666666)
@@ -47,6 +45,8 @@ offset_right = 567.0
 offset_bottom = 301.0
 text = "level 3"
 icon = ExtResource("4_2klcf")
+
+[node name="pausemenu" parent="." unique_id=191889806 instance=ExtResource("1_4xfga")]
 
 [connection signal="pressed" from="levelbuttons/level1" to="levelbuttons" method="_on_level_1_pressed"]
 [connection signal="pressed" from="levelbuttons/level2" to="levelbuttons" method="_on_level_2_pressed"]

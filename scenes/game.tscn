@@ -7,8 +7,6 @@
 
 [node name="GAME" type="Node2D" unique_id=612820248]
 
-[node name="pausemenu" parent="." unique_id=191889806 instance=ExtResource("1_uwrxv")]
-
 [node name="Label" type="Label" parent="." unique_id=531202386]
 offset_left = 918.0
 offset_top = 303.0
@@ -38,8 +36,4 @@ metadata/_custom_type_script = "uid://bhjht6dmqv2gw"
 script = ExtResource("4_lbhrr")
 metadata/_custom_type_script = "uid://kupdo4ba08mq"
 
-[node name="diary" parent="." unique_id=1075798468]
-offset_left = 792.0
-offset_top = 345.0
-offset_right = 792.0
-offset_bottom = 345.0
+[node name="pausemenu" parent="." unique_id=191889806 instance=ExtResource("1_uwrxv")]
