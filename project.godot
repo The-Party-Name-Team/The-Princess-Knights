@@ -23,13 +23,32 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 directories/dch_directory={
 "Alfonso": "res://resources/dialogic/characters/Alfonso.dch",
+"Alfonso and Mikhela": "res://resources/dialogic/characters/Alfonso and Mikhela.dch",
+"Alwin": "res://resources/dialogic/characters/Alwin.dch",
+"Ardana": "res://resources/dialogic/characters/Ardana.dch",
+"Gabe": "res://resources/dialogic/characters/Gabe.dch",
+"Gabriel II": "res://resources/dialogic/characters/Gabriel II.dch",
+"GabrielII": "res://resources/dialogic/characters/GabrielII.dch",
+"Henry": "res://resources/dialogic/characters/Henry.dch",
 "Marius": "res://resources/dialogic/characters/Marius.dch",
-"Mikhela": "res://resources/dialogic/characters/Mikhela.dch"
+"Marius and Lea": "res://resources/dialogic/characters/Marius and Lea.dch",
+"Mikhela": "res://resources/dialogic/characters/Mikhela.dch",
+"Random": "res://resources/dialogic/characters/Random.dch"
 }
 directories/dtl_directory={
 "chapter_0": "res://resources/dialogic/timelines/chapter_0.dtl",
 "first_dialog": "res://resources/dialogic/timelines/first_dialog.dtl",
-"timeline_0_1": "res://resources/dialogic/timelines/timeline_0_1.dtl"
+"timeline_0_1": "res://resources/dialogic/timelines/timeline_0_1.dtl",
+"timeline_1_0": "res://resources/dialogic/timelines/timeline_1_0.dtl",
+"timeline_1_1": "res://resources/dialogic/timelines/timeline_1_1.dtl",
+"timeline_1_2": "res://resources/dialogic/timelines/timeline_1_2.dtl",
+"timeline_1_3": "res://resources/dialogic/timelines/timeline_1_3.dtl",
+"timeline_2_0": "res://resources/dialogic/timelines/timeline_2_0.dtl",
+"timeline_2_1": "res://resources/dialogic/timelines/timeline_2_1.dtl",
+"timeline_2_2": "res://resources/dialogic/timelines/timeline_2_2.dtl",
+"timeline_3_0": "res://resources/dialogic/timelines/timeline_3_0.dtl",
+"timeline_3_1": "res://resources/dialogic/timelines/timeline_3_1.dtl",
+"timeline_4_0": "res://resources/dialogic/timelines/timeline_4_0.dtl"
 }
 layout/style_directory={
 "": "res://resources/dialogic/styles/standard.tres",

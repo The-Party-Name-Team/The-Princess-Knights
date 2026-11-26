@@ -21,13 +21,10 @@ func _on_page_finished(string_name):
 		_sheets[_current_sheet].get_node_or_null("2").should_run = true
 	else:
 		if _current_sheet<len(_sheets)-1:
-			_next_btn.visible = true
-		else:
-			_end_process()
+			_on_next()
 
 func _on_next():
 	_sheets[_current_sheet].visible = false
-	_next_btn.visible = false
 	_current_sheet+=1
 	_sheets[_current_sheet].visible = true
 	_sheets[_current_sheet].get_node_or_null("1").should_run = true

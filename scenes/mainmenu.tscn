@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://dlldbr5pacigc"]
 
 [ext_resource type="Script" uid="uid://cvujrm5xy2opl" path="res://scripts/mainmenu.gd" id="1_5mbse"]
-[ext_resource type="Texture2D" uid="uid://bojbj8hoqm68b" path="res://assets/mainmenus/mainmenu.png" id="2_r3g3c"]
-[ext_resource type="Texture2D" uid="uid://gklinu1ykhsl" path="res://media/UI/mainmenu-logo.png" id="3_h73c4"]
-[ext_resource type="Texture2D" uid="uid://cwj1cj76irgqy" path="res://media/UI/buttons/base/mainmenu-start.png" id="4_3vvtq"]
+[ext_resource type="Texture2D" uid="uid://bojbj8hoqm68b" path="res://assets/visuals/mainmenus/mainmenu.png" id="2_r3g3c"]
+[ext_resource type="Texture2D" uid="uid://gklinu1ykhsl" path="res://assets/visuals/UI/mainmenu-logo.png" id="3_h73c4"]
+[ext_resource type="Texture2D" uid="uid://cwj1cj76irgqy" path="res://assets/visuals/UI/buttons/base/mainmenu-start.png" id="4_3vvtq"]
 [ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scripts/button_styling.gd" id="4_s5g8n"]
 [ext_resource type="FontFile" uid="uid://ijt12uand1uh" path="res://assets/fonts/Cardinal.ttf" id="4_uui5l"]
-[ext_resource type="Texture2D" uid="uid://c66583weh4bcf" path="res://media/UI/buttons/hover/mainmenu-start-hover.png" id="6_7yvfd"]
-[ext_resource type="Texture2D" uid="uid://brmrqyyfikfnl" path="res://media/UI/buttons/base/mainmenu-config.png" id="7_h73c4"]
-[ext_resource type="Texture2D" uid="uid://du4oyaf4gl8ng" path="res://media/UI/buttons/hover/mainmenu-config-hover.png" id="8_uui5l"]
-[ext_resource type="Texture2D" uid="uid://bpsgleva0lddd" path="res://media/UI/buttons/base/mainmenu-leave.png" id="9_4hago"]
-[ext_resource type="Texture2D" uid="uid://b1potiduk0yib" path="res://media/UI/buttons/hover/mainmenu-leave-hover.png" id="10_gjjcl"]
+[ext_resource type="Texture2D" uid="uid://c66583weh4bcf" path="res://assets/visuals/UI/buttons/hover/mainmenu-start-hover.png" id="6_7yvfd"]
+[ext_resource type="Texture2D" uid="uid://brmrqyyfikfnl" path="res://assets/visuals/UI/buttons/base/mainmenu-config.png" id="7_h73c4"]
+[ext_resource type="Texture2D" uid="uid://du4oyaf4gl8ng" path="res://assets/visuals/UI/buttons/hover/mainmenu-config-hover.png" id="8_uui5l"]
+[ext_resource type="Texture2D" uid="uid://bpsgleva0lddd" path="res://assets/visuals/UI/buttons/base/mainmenu-leave.png" id="9_4hago"]
+[ext_resource type="Texture2D" uid="uid://b1potiduk0yib" path="res://assets/visuals/UI/buttons/hover/mainmenu-leave-hover.png" id="10_gjjcl"]
 
 [node name="MainMenu" type="Node2D" unique_id=1921545605]
 script = ExtResource("1_5mbse")
@@ -20,8 +20,8 @@ position = Vector2(540, 360)
 texture = ExtResource("2_r3g3c")
 
 [node name="MainmenuLogo" type="Sprite2D" parent="." unique_id=1769264153]
-position = Vector2(260, 180)
-scale = Vector2(0.2, 0.2)
+position = Vector2(240, 170)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("3_h73c4")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1832462358]
