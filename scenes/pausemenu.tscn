@@ -1,19 +1,18 @@
 [gd_scene format=3 uid="uid://coatf4kod7m3q"]
 
 [ext_resource type="Script" uid="uid://brby58sxkege5" path="res://scripts/pausemenu.gd" id="1_3otxd"]
-[ext_resource type="AudioStream" uid="uid://c0h4kqw8ho015" path="res://assets/sounds/buttonclick.wav" id="2_elpj7"]
-[ext_resource type="AudioStream" uid="uid://bkkhxmhwhbtkx" path="res://assets/sounds/buttonhover.wav" id="2_kv823"]
+[ext_resource type="AudioStream" uid="uid://c0h4kqw8ho015" path="res://assets/fonts/sounds/buttonclick.wav" id="2_elpj7"]
+[ext_resource type="AudioStream" uid="uid://bkkhxmhwhbtkx" path="res://assets/fonts/sounds/buttonhover.wav" id="2_kv823"]
 [ext_resource type="Shader" uid="uid://objnmioit6gu" path="res://scenes/pausemenu.gdshader" id="2_r33we"]
-[ext_resource type="Texture2D" uid="uid://o24qbesdyi0q" path="res://assets/maps/blankmap.png" id="3_vpyy4"]
+[ext_resource type="Texture2D" uid="uid://o24qbesdyi0q" path="res://assets/visuals/maps/blankmap.png" id="3_vpyy4"]
 [ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scripts/button_styling.gd" id="4_e0wba"]
-[ext_resource type="Texture2D" uid="uid://gklinu1ykhsl" path="res://media/UI/mainmenu-logo.png" id="4_lkswt"]
-[ext_resource type="Texture2D" uid="uid://c6n7cu40bw61u" path="res://assets/mainmenus/resumebutton.png" id="5_klbn3"]
-[ext_resource type="Texture2D" uid="uid://d3lbls17ym0wq" path="res://assets/mainmenus/resumebutton-hover.png" id="6_g5jmi"]
-[ext_resource type="Texture2D" uid="uid://brmrqyyfikfnl" path="res://media/UI/buttons/base/mainmenu-config.png" id="7_lkswt"]
-[ext_resource type="Texture2D" uid="uid://dqlsntb6d23n5" path="res://assets/mainmenus/mainmenu-config.png" id="7_v4mab"]
-[ext_resource type="Texture2D" uid="uid://du4oyaf4gl8ng" path="res://media/UI/buttons/hover/mainmenu-config-hover.png" id="8_kv823"]
-[ext_resource type="Texture2D" uid="uid://dbho7tg1jc4n5" path="res://assets/mainmenus/quitbutton.png" id="8_lkswt"]
-[ext_resource type="Texture2D" uid="uid://bmvdgg22epkw3" path="res://assets/mainmenus/quitbutton-hover.png" id="11_elpj7"]
+[ext_resource type="Texture2D" uid="uid://c6n7cu40bw61u" path="res://assets/visuals/mainmenus/resumebutton.png" id="5_klbn3"]
+[ext_resource type="Texture2D" uid="uid://d3lbls17ym0wq" path="res://assets/visuals/mainmenus/resumebutton-hover.png" id="6_g5jmi"]
+[ext_resource type="Texture2D" uid="uid://c50txs8rsrvsf" path="res://assets/visuals/mainmenus/mainmenu-logo (2).png" id="6_kv823"]
+[ext_resource type="Texture2D" uid="uid://dqlsntb6d23n5" path="res://assets/visuals/mainmenus/mainmenu-config.png" id="7_v4mab"]
+[ext_resource type="Texture2D" uid="uid://dbho7tg1jc4n5" path="res://assets/visuals/mainmenus/quitbutton.png" id="8_lkswt"]
+[ext_resource type="Texture2D" uid="uid://bmvdgg22epkw3" path="res://assets/visuals/mainmenus/quitbutton-hover.png" id="11_elpj7"]
+[ext_resource type="Texture2D" uid="uid://bdbln5021rciq" path="res://assets/visuals/mainmenus/mainmenu-config-hover.png" id="11_sqm04"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bh68p"]
 shader = ExtResource("2_r33we")
@@ -21,8 +20,8 @@ shader_parameter/lod = 0.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bh68p"]
 texture = ExtResource("3_vpyy4")
-expand_margin_left = 597.0
-expand_margin_right = 663.0
+expand_margin_left = 747.0
+expand_margin_right = 810.0
 
 [sub_resource type="Animation" id="Animation_r33we"]
 length = 0.001
@@ -127,7 +126,7 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_bh68p")
 [node name="stuff`" type="Sprite2D" parent="PanelContainer" unique_id=765822608]
 position = Vector2(27.999992, 180.00002)
 scale = Vector2(0.1373291, 0.1373291)
-texture = ExtResource("4_lkswt")
+texture = ExtResource("6_kv823")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1612560047]
 layout_mode = 2
@@ -162,8 +161,8 @@ layout_mode = 2
 text = "settings"
 script = ExtResource("4_e0wba")
 _event_textures = Dictionary[String, Texture2D]({
-"base": ExtResource("7_lkswt"),
-"hover": ExtResource("8_kv823")
+"base": ExtResource("7_v4mab"),
+"hover": ExtResource("11_sqm04")
 })
 _texture_label = NodePath("optionsimage")
 _how_much_rise = 5.0

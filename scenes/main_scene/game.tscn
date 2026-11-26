@@ -17,15 +17,15 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="HUD" parent="CanvasLayer" unique_id=1421785620 instance=ExtResource("2_lnu2h")]
-mouse_filter = 2
 [node name="HUD" parent="CanvasLayer/MainUI" unique_id=1421785620 instance=ExtResource("2_lnu2h")]
 z_index = -1
 layout_mode = 1
 
-[node name="pausemenu" parent="CanvasLayer/MainUI" unique_id=191889806 instance=ExtResource("1_uwrxv")]
+[node name="HUD" parent="CanvasLayer" unique_id=64814607 instance=ExtResource("2_lnu2h")]
+mouse_filter = 2
+
+[node name="pausemenu" parent="CanvasLayer" unique_id=191889806 instance=ExtResource("1_uwrxv")]
 z_index = 1
-layout_mode = 1
 
 [node name="Diary" parent="." unique_id=284882189 instance=ExtResource("1_8vd3g")]
 anchors_preset = 0

@@ -1,53 +1,254 @@
 [gd_scene format=3 uid="uid://dokm2ivonog08"]
 
-[ext_resource type="Texture2D" uid="uid://c875qm4g778kk" path="res://assets/maps/map-placeholder.png" id="1_0cso3"]
+[ext_resource type="Texture2D" uid="uid://b40d2odr5wcbf" path="res://assets/visuals/maps/map.png" id="1_2klcf"]
 [ext_resource type="PackedScene" uid="uid://coatf4kod7m3q" path="res://scenes/pausemenu.tscn" id="1_4xfga"]
-[ext_resource type="Script" uid="uid://cnfk03665ocmt" path="res://scenes/levelbuttons.gd" id="2_paxxb"]
-[ext_resource type="Texture2D" uid="uid://crc2jpcbw6m42" path="res://assets/maps/map-levelpoint.png" id="4_2klcf"]
+[ext_resource type="Script" uid="uid://slu4cce2uaod" path="res://scenes/map.gd" id="1_be0no"]
+[ext_resource type="AudioStream" uid="uid://c0h4kqw8ho015" path="res://assets/fonts/sounds/buttonclick.wav" id="2_mlgqr"]
+[ext_resource type="AudioStream" uid="uid://bkkhxmhwhbtkx" path="res://assets/fonts/sounds/buttonhover.wav" id="3_wslke"]
+[ext_resource type="Texture2D" uid="uid://bpigydpje6un4" path="res://assets/visuals/maps/map-princessicon.png" id="4_2lpho"]
+[ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scripts/button_styling.gd" id="4_jh32y"]
+[ext_resource type="Texture2D" uid="uid://babhd0nij2bu7" path="res://assets/visuals/mainmenus/map-exitbutton.png" id="5_be0no"]
+[ext_resource type="Texture2D" uid="uid://kexy273vrsp8" path="res://assets/visuals/maps/map-kingdomicon.png" id="5_nakos"]
+[ext_resource type="Texture2D" uid="uid://bisikmbn1dnyk" path="res://assets/visuals/UI/buttons/hover/map-exitbutton-hover.png" id="6_blm8a"]
+[ext_resource type="Texture2D" uid="uid://bldqx6t35p5yd" path="res://assets/visuals/UI/buttons/base/map-levelpoint.png" id="8_c00ee"]
+[ext_resource type="Texture2D" uid="uid://o24qbesdyi0q" path="res://assets/visuals/maps/blankmap.png" id="12_gw3fx"]
+[ext_resource type="FontFile" uid="uid://u16bdrwd3xqf" path="res://assets/fonts/AppleGaramond-Bold.ttf" id="12_wslke"]
 
 [node name="map" type="Node2D" unique_id=1486222276]
+position = Vector2(0, 1)
+script = ExtResource("1_be0no")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=893951743]
+
+[node name="pausemenu" parent="CanvasLayer" unique_id=1731691978 instance=ExtResource("1_4xfga")]
+
+[node name="Buttonclick" type="AudioStreamPlayer" parent="." unique_id=11984043]
+stream = ExtResource("2_mlgqr")
+
+[node name="Buttonhover" type="AudioStreamPlayer" parent="." unique_id=776544527]
+stream = ExtResource("3_wslke")
 
 [node name="MapPlaceholder" type="Sprite2D" parent="." unique_id=1525580811]
-position = Vector2(587.5, 327)
-scale = Vector2(1.050926, 0.9666666)
-texture = ExtResource("1_0cso3")
-
-[node name="pausemenu" parent="." unique_id=191889806 instance=ExtResource("1_4xfga")]
+position = Vector2(540, 359.99997)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_2klcf")
 
 [node name="levelbuttons" type="Control" parent="." unique_id=1121476499]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1158.0
-offset_bottom = 646.0
-script = ExtResource("2_paxxb")
+offset_left = 22.0
+offset_top = -28.0
+offset_right = 1180.0
+offset_bottom = 618.0
 
 [node name="level1" type="Button" parent="levelbuttons" unique_id=1341862975]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 166.0
-offset_top = 453.0
-offset_right = 263.0
-offset_bottom = 502.0
+offset_left = 439.0
+offset_top = 645.0
+offset_right = 506.0
+offset_bottom = 715.0
 text = "level 1"
-icon = ExtResource("4_2klcf")
+
+[node name="levelicon" type="TextureRect" parent="levelbuttons/level1" unique_id=486409156]
+layout_mode = 0
+offset_left = -14.0
+offset_top = -15.0
+offset_right = 86.0
+offset_bottom = 85.0
+texture = ExtResource("8_c00ee")
+expand_mode = 1
 
 [node name="level2" type="Button" parent="levelbuttons" unique_id=881151540]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 722.0
-offset_top = 489.0
-offset_right = 827.0
-offset_bottom = 538.0
+offset_left = 559.0
+offset_top = 634.0
+offset_right = 620.0
+offset_bottom = 683.0
 text = "level 2"
-icon = ExtResource("4_2klcf")
+
+[node name="levelicon2" type="TextureRect" parent="levelbuttons/level2" unique_id=607814146]
+layout_mode = 0
+offset_left = -15.0
+offset_top = -26.0
+offset_right = 85.0
+offset_bottom = 74.0
+texture = ExtResource("8_c00ee")
+expand_mode = 1
 
 [node name="level3" type="Button" parent="levelbuttons" unique_id=1586278205]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 471.0
-offset_top = 252.0
-offset_right = 567.0
-offset_bottom = 301.0
+offset_left = 677.0
+offset_top = 578.0
+offset_right = 735.0
+offset_bottom = 627.0
 text = "level 3"
-icon = ExtResource("4_2klcf")
 
-[connection signal="pressed" from="levelbuttons/level1" to="levelbuttons" method="_on_level_1_pressed"]
-[connection signal="pressed" from="levelbuttons/level2" to="levelbuttons" method="_on_level_2_pressed"]
-[connection signal="pressed" from="levelbuttons/level3" to="levelbuttons" method="_on_level_3_pressed"]
+[node name="levelicon3" type="TextureRect" parent="levelbuttons/level3" unique_id=2041612816]
+layout_mode = 0
+offset_left = -19.0
+offset_top = -27.0
+offset_right = 81.0
+offset_bottom = 73.0
+texture = ExtResource("8_c00ee")
+expand_mode = 1
+
+[node name="level4" type="Button" parent="levelbuttons" unique_id=1150635864]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 700.0
+offset_top = 447.0
+offset_right = 758.0
+offset_bottom = 496.0
+text = "level 4"
+
+[node name="levelicon4" type="TextureRect" parent="levelbuttons/level4" unique_id=1247375446]
+layout_mode = 0
+offset_left = -20.0
+offset_top = -24.0
+offset_right = 80.0
+offset_bottom = 76.0
+texture = ExtResource("8_c00ee")
+expand_mode = 1
+
+[node name="level5" type="Button" parent="levelbuttons" unique_id=711425163]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 353.0
+offset_right = 602.0
+offset_bottom = 402.0
+text = "level 5"
+
+[node name="levelicon5" type="TextureRect" parent="levelbuttons/level5" unique_id=236469362]
+layout_mode = 0
+offset_left = -20.0
+offset_top = -25.0
+offset_right = 80.0
+offset_bottom = 75.0
+texture = ExtResource("8_c00ee")
+expand_mode = 1
+
+[node name="level6" type="Button" parent="levelbuttons" unique_id=489614018]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 409.0
+offset_top = 341.0
+offset_right = 467.0
+offset_bottom = 390.0
+text = "level 6"
+
+[node name="levelicon6" type="TextureRect" parent="levelbuttons/level6" unique_id=623926522]
+layout_mode = 0
+offset_left = -20.0
+offset_top = -26.0
+offset_right = 80.0
+offset_bottom = 74.0
+texture = ExtResource("8_c00ee")
+expand_mode = 1
+
+[node name="level7" type="Button" parent="levelbuttons" unique_id=1371113596]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 495.0
+offset_top = 276.0
+offset_right = 553.0
+offset_bottom = 325.0
+text = "level 7"
+
+[node name="levelicon7" type="TextureRect" parent="levelbuttons/level7" unique_id=503920205]
+layout_mode = 0
+offset_left = -25.0
+offset_top = -34.0
+offset_right = 75.0
+offset_bottom = 66.0
+texture = ExtResource("8_c00ee")
+expand_mode = 1
+
+[node name="level8" type="Button" parent="levelbuttons" unique_id=96634609]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 579.0
+offset_top = 191.0
+offset_right = 637.0
+offset_bottom = 240.0
+text = "level 8"
+
+[node name="levelicon8" type="TextureRect" parent="levelbuttons/level8" unique_id=619795974]
+layout_mode = 0
+offset_left = -18.0
+offset_top = -26.0
+offset_right = 82.0
+offset_bottom = 74.0
+texture = ExtResource("8_c00ee")
+expand_mode = 1
+
+[node name="level9" type="Button" parent="levelbuttons" unique_id=1127617953]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 483.0
+offset_top = 171.0
+offset_right = 541.0
+offset_bottom = 220.0
+text = "level 9"
+
+[node name="levelicon9" type="TextureRect" parent="levelbuttons/level9" unique_id=598971804]
+layout_mode = 0
+offset_left = -18.0
+offset_top = -26.0
+offset_right = 82.0
+offset_bottom = 74.0
+texture = ExtResource("8_c00ee")
+expand_mode = 1
+
+[node name="Exit" type="Button" parent="." unique_id=1686171548 node_paths=PackedStringArray("_texture_label")]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 967.0
+offset_top = 22.0
+offset_right = 1078.0
+offset_bottom = 211.0
+script = ExtResource("4_jh32y")
+_event_textures = Dictionary[String, Texture2D]({
+"base": ExtResource("5_be0no"),
+"hover": ExtResource("6_blm8a")
+})
+_texture_label = NodePath("mapexitbutton")
+_hover_anim_duration = 0.0
+_how_much_rise = 0.0
+
+[node name="mapexitbutton" type="TextureRect" parent="Exit" unique_id=623020757]
+layout_mode = 0
+offset_left = -121.0
+offset_top = -12.0
+offset_right = 115.0
+offset_bottom = 218.66974
+texture = ExtResource("5_be0no")
+expand_mode = 1
+
+[node name="princesscrown" type="Sprite2D" parent="." unique_id=1376441333]
+position = Vector2(344, 607)
+scale = Vector2(0.08770751, 0.08770751)
+texture = ExtResource("4_2lpho")
+
+[node name="kingdomicon" type="Sprite2D" parent="." unique_id=2014670975]
+position = Vector2(360, 181)
+scale = Vector2(0.10391236, 0.10391236)
+texture = ExtResource("5_nakos")
+
+[node name="blankslate" type="Sprite2D" parent="." unique_id=547093853]
+position = Vector2(115.5, 207.00002)
+scale = Vector2(0.10787038, 0.08806729)
+texture = ExtResource("12_gw3fx")
+
+[node name="DescriptionLabel" type="Label" parent="." unique_id=1611247623]
+offset_left = 49.0
+offset_top = 169.0
+offset_right = 175.18692
+offset_bottom = 255.0
+theme_override_colors/font_color = Color(0.34901962, 0.12941177, 0.0627451, 1)
+theme_override_fonts/font = ExtResource("12_wslke")
+autowrap_mode = 2
+
+[connection signal="mouse_entered" from="Exit" to="." method="_on_exit_mouse_entered"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

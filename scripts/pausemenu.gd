@@ -18,7 +18,7 @@ func pause():
 	$pausinganimation.play('blur')
 
 func testPause():
-	if options_instance != null:
+	if is_instance_valid(options_instance):
 		return
 		
 	if Input.is_action_just_pressed('pause') and get_tree().paused == false :
@@ -43,7 +43,7 @@ func _process(_delta):
 func _on_options_pressed() -> void:
 	$Buttonclick2.play()
 	await get_tree().create_timer(0.2).timeout
-	if options_instance == null:
+	if not is_instance_valid(options_instance):
 		options_instance = OPTIONS_SCENE.instantiate()
 		add_child(options_instance)
 		

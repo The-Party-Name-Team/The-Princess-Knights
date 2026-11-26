@@ -2,6 +2,9 @@ extends Panel
 
 @export var settings_res: PlayerSettings
 
+func _ready() :
+	$MusThePrincessknightsMenuLoop.play()
+
 func _on_back_pressed() -> void:
 	$Buttonclick2.play()
 	await get_tree().create_timer(0.2).timeout
