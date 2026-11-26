@@ -28,8 +28,15 @@ var _continue_disabled: bool = false
 func _ready() -> void:
 	if not _container is Control:
 		_end_process()
+<<<<<<< Updated upstream
 
 func _prep(): #extended prep - after UIs have loaded
+=======
+		modulate.a = 0
+
+func _prep(): #extended prep - after UIs have loaded
+	await get_tree().process_frame
+>>>>>>> Stashed changes
 	var _i:int = 0
 	while not is_ready:
 		if _container.find_child(str(_i+1)):
@@ -45,6 +52,10 @@ func _prep(): #extended prep - after UIs have loaded
 			is_ready = true
 	#Ready!
 	_allowed = true
+<<<<<<< Updated upstream
+=======
+	modulate.a = 1
+>>>>>>> Stashed changes
 
 func _process(delta: float) -> void:
 	
@@ -73,6 +84,10 @@ func _typewrite(item: CanvasItem) -> void:
 	var str_length = _len_s[_current_iteration]
 	tween.tween_property(item, "visible_characters", str_length, str_length/_letters_per_seconds)
 	await tween.finished
+<<<<<<< Updated upstream
+=======
+	item.visible_characters = -1
+>>>>>>> Stashed changes
 	_continue_disabled = false
 	_time_passed=0
 	_current_iteration+=1

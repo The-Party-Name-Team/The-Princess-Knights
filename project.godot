@@ -18,6 +18,10 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
+Player="*uid://bnr8bewg7v6rs"
+MariusData="*uid://boxrivn4b8nm0"
+AlfonsoData="*uid://fw35twdw6ryy"
+MikheleaData="*uid://bidj5xjcf10eg"
 
 [dialogic]
 

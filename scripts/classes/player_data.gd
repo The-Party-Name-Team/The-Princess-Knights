@@ -12,6 +12,7 @@ class_name PlayerData
 
 @export var _Gospel: int = 0:
 	set(val):
+<<<<<<< Updated upstream
 		_Gospel = max(0, val)
 
 
@@ -23,3 +24,6 @@ func add_glory(amount: int):
 	
 func add_gospel(amount: int):
 	_Gospel+=amount
+=======
+		Gospel = max(0, val)
+>>>>>>> Stashed changes
