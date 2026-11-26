@@ -4,12 +4,17 @@ extends Control
 @export var _lose_stats: Dictionary[String, int]
 
 @export var _dice_textures: Array[Texture]
+@export var _knight_textures: Dictionary[String, Texture]
 
 @export var _dice: TextureRect
+
+@export var _knight: Control
 
 @export var _initial_roll_int: float = 0.1
 @export var _final_roll_int: float = 1
 var _roll_interval: float
+
+@export var _player_data:PlayerData
 
 @export var _current_val:int
 
@@ -21,11 +26,13 @@ var _time_taken:float = 0
 
 var _time_after_change:float = 0
 
+var _rolled := false
+
 func _ready() -> void:
 	_roll_interval = _initial_roll_int
 	if _dice == null:
 		_dice = get_node_or_null("Dice")
-	_roll_time = randf()*5
+	_roll_time = randf()*3 ###the time that it rolls
 	
 func _process(delta: float) -> void:
 	_time_taken+=delta
@@ -35,18 +42,19 @@ func _process(delta: float) -> void:
 		_slow_roll()
 		
 func _physics_process(delta: float) -> void:
-	if _slowed_down:
-		_roll_interval += (_final_roll_int-_initial_roll_int)/300
-		if _roll_interval >= _final_roll_int:
-			_pick_result()
-			_roll_interval = 999
+	if not _rolled:
+		if _slowed_down:
+			_roll_interval += (_final_roll_int-_initial_roll_int)/300 ##slowingdownfactor
+			if _roll_interval >= _final_roll_int:
+				_pick_result()
+				_roll_interval = 999
 		
-	if _time_after_change >= _roll_interval-.05:
-		_change_dice()
-		print(_current_val)
-		_time_after_change=0
+		if _time_after_change >= _roll_interval-.05:
+			_change_dice()
+			print(_current_val)
+			_time_after_change=0
 	
-	_time_after_change += delta
+		_time_after_change += delta
 
 func _slow_roll() -> void:
 	_slowed_down = true

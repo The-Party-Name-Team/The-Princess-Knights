@@ -18,7 +18,7 @@ default_font_size = 23
 default_font = ExtResource("5_08tmx")
 default_font_size = 22
 
-[node name="Diary" type="Control" unique_id=284882189 node_paths=PackedStringArray("_sheets", "_next_btn")]
+[node name="Diary" type="Control" unique_id=284882189 node_paths=PackedStringArray("_sheets")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -27,11 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hmom6")
 _sheets = [NodePath("1"), NodePath("2")]
-<<<<<<< Updated upstream
-_next_btn = NodePath("Control/Next")
-=======
 _next_btn = NodePath("Background/Next")
->>>>>>> Stashed changes
 
 [node name="Background" type="TextureRect" parent="." unique_id=1187582543]
 layout_mode = 1
@@ -69,7 +65,6 @@ theme = SubResource("Theme_40w6j")
 text = "▼"
 
 [node name="1" type="HBoxContainer" parent="." unique_id=1603165110]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -92,6 +87,7 @@ script = ExtResource("2_w3um1")
 _container = NodePath("Content")
 _interval_in_seconds = 0.0
 _letters_per_seconds = 1000.0
+should_run = true
 
 [node name="Content" type="VBoxContainer" parent="1/1" unique_id=380203736]
 layout_mode = 1
@@ -296,7 +292,7 @@ mouse_filter = 2
 script = ExtResource("2_w3um1")
 _container = NodePath("Content")
 _interval_in_seconds = 0.0
-_letters_per_seconds = 1000.0
+_letters_per_seconds = 100.0
 
 [node name="Content" type="VBoxContainer" parent="2/1" unique_id=386085748]
 layout_mode = 1
@@ -358,7 +354,7 @@ mouse_filter = 2
 script = ExtResource("2_w3um1")
 _container = NodePath("Content")
 _interval_in_seconds = 0.0
-_letters_per_seconds = 1000.0
+_letters_per_seconds = 100.0
 
 [node name="Content" type="VBoxContainer" parent="2/2" unique_id=1993626227]
 layout_mode = 1
@@ -401,27 +397,3 @@ theme = ExtResource("3_08tmx")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Till the day I die."
 autowrap_mode = 3
-
-[node name="Control" type="Control" parent="." unique_id=967156898]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -40.0
-offset_top = -20.0
-offset_bottom = 20.0
-grow_horizontal = 0
-grow_vertical = 2
-
-[node name="Next" type="Button" parent="Control" unique_id=1909359417]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 24
-text = ">"
