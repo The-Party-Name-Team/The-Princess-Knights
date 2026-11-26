@@ -28,17 +28,23 @@ var _continue_disabled: bool = false
 func _ready() -> void:
 	if not _container is Control:
 		_end_process()
-		return
-	
-	# Hide text immediately without locking custom_minimum_size yet
-	var _i: int = 0
-	while true:
-		var cc: Control = _container.get_node_or_null(str(_i + 1))
-		if cc:
+
+func _prep(): #extended prep - after UIs have loaded
+	var _i:int = 0
+	while not is_ready:
+		if _container.find_child(str(_i+1)):
+			var cc: Control = _container.get_node(str(_i+1))
+			cc.custom_minimum_size = cc.size #jitter prevention
+			
+			_contained_labels.append(cc)
+			_len_s.append(len(cc.text)) #add lengths of strings
+			
 			cc.visible_characters = 0
 			_i += 1
 		else:
-			break
+			is_ready = true
+	#Ready!
+	_allowed = true
 
 func _process(delta: float) -> void:
 	if _allowed:
@@ -85,7 +91,6 @@ func _typewrite(item: CanvasItem) -> void:
 	tween.tween_property(item, "visible_characters", str_length, str_length/_letters_per_seconds)
 	
 	await tween.finished
-	print("hi")
 	_continue_disabled = false
 	_time_passed=0
 	_current_iteration+=1
