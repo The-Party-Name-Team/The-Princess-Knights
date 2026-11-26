@@ -35,14 +35,11 @@ directories/dch_directory={
 "Alwin": "res://resources/dialogic/characters/Alwin.dch",
 "Ardana": "res://resources/dialogic/characters/Ardana.dch",
 "Gabe": "res://resources/dialogic/characters/Gabe.dch",
-"Gabriel II": "res://resources/dialogic/characters/Gabriel II.dch",
-"GabrielII": "res://resources/dialogic/characters/GabrielII.dch",
 "Henry": "res://resources/dialogic/characters/Henry.dch",
 "Marius": "res://resources/dialogic/characters/Marius.dch",
 "Marius and Lea": "res://resources/dialogic/characters/Marius and Lea.dch",
 "Mikhela": "res://resources/dialogic/characters/Mikhelea.dch",
-"Random": "res://resources/dialogic/characters/Random.dch",
-"characters/Mikhela": "res://resources/dialogic/characters/Mikhela.dch"
+"Random": "res://resources/dialogic/characters/Random.dch"
 }
 directories/dtl_directory={
 "chapter_0": "res://resources/dialogic/timelines/chapter_0.dtl",
