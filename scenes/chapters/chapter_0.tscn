@@ -1,3 +1,23 @@
 [gd_scene format=3 uid="uid://csnotlof17mvj"]
 
-[node name="Chapter0" type="Node2D" unique_id=2090068154]
+[ext_resource type="PackedScene" uid="uid://bi2iptnj0yccm" path="res://scenes/diary.tscn" id="1_xxedx"]
+
+[node name="Chapter0" type="Control" unique_id=1731282069]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Diary" parent="." unique_id=284882189 instance=ExtResource("1_xxedx")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 540.0
+offset_top = 360.0
+offset_right = 540.0
+offset_bottom = 360.0
+grow_horizontal = 1
+grow_vertical = 1

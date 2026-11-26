@@ -1,0 +1,353 @@
+[gd_scene format=3 uid="uid://bi2iptnj0yccm"]
+
+[ext_resource type="Texture2D" uid="uid://bnjk8gb6tfifx" path="res://assets/visuals/UI/diary-intro.png" id="1_dsqgt"]
+[ext_resource type="Script" uid="uid://vkovffhbh48g" path="res://scenes/diary_handler.gd" id="1_hmom6"]
+[ext_resource type="Script" uid="uid://ccce8e5axem1a" path="res://scripts/diary_typewriter.gd" id="2_w3um1"]
+[ext_resource type="Theme" uid="uid://dpi72kmq7cdce" path="res://assets/fonts/styles/diary_heading.tres" id="3_08tmx"]
+[ext_resource type="Theme" uid="uid://ck52c8ueekbcb" path="res://assets/fonts/styles/diary_basic.tres" id="4_3jv7o"]
+[ext_resource type="FontFile" uid="uid://by85dch1nluya" path="res://assets/fonts/AppleGaramond.ttf" id="5_08tmx"]
+
+[sub_resource type="Theme" id="Theme_hmom6"]
+default_font = ExtResource("5_08tmx")
+default_font_size = 23
+
+[sub_resource type="Theme" id="Theme_08tmx"]
+default_font = ExtResource("5_08tmx")
+default_font_size = 22
+
+[node name="Diary" type="Control" unique_id=284882189 node_paths=PackedStringArray("_sheets")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hmom6")
+_sheets = [NodePath("1"), NodePath("2")]
+
+[node name="Background" type="TextureRect" parent="." unique_id=1187582543]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = -360.0
+offset_right = 1620.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_dsqgt")
+
+[node name="1" type="HBoxContainer" parent="." unique_id=1603165110]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -412.0
+offset_top = -272.0
+offset_right = 452.0
+offset_bottom = 272.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="1" type="Control" parent="1" unique_id=1849783890 node_paths=PackedStringArray("_container")]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("2_w3um1")
+_container = NodePath("Content")
+_interval_in_seconds = 0.0
+_letters_per_seconds = 1000.0
+should_run = true
+
+[node name="Content" type="VBoxContainer" parent="1/1" unique_id=380203736]
+layout_mode = 1
+offset_right = 408.0
+offset_bottom = 544.0
+size_flags_horizontal = 3
+
+[node name="space" type="Label" parent="1/1/Content" unique_id=993428331]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "entry"
+autowrap_mode = 2
+
+[node name="1" type="Label" parent="1/1/Content" unique_id=2104887938]
+layout_mode = 2
+theme = ExtResource("3_08tmx")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "To whoever this concerns"
+autowrap_mode = 3
+
+[node name="2" type="Label" parent="1/1/Content" unique_id=524608928]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "
+I’m not sure why I'm writing this."
+autowrap_mode = 2
+
+[node name="3" type="Label" parent="1/1/Content" unique_id=359409911]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Maybe because talking about it doesn’t help."
+autowrap_mode = 2
+
+[node name="4" type="Label" parent="1/1/Content" unique_id=391741685]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "I’ve lost my whole world and everyone seems to be busy with theirs,"
+autowrap_mode = 2
+autowrap_trim_flags = 0
+
+[node name="5" type="Label" parent="1/1/Content" unique_id=1394661326]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "To even care…
+It’s selfish, I know. I just wish I had the power to stop time and breathe for a little."
+autowrap_mode = 2
+
+[node name="6" type="Label" parent="1/1/Content" unique_id=1937394279]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+autowrap_mode = 2
+
+[node name="7" type="Label" parent="1/1/Content" unique_id=1339450584]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "It all started when Lady Thalia woke me up in the dead of night.
+She’d been crying, I could tell."
+autowrap_mode = 2
+
+[node name="8" type="Label" parent="1/1/Content" unique_id=634321822]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Yet, she wouldn’t mutter a word as she forced me out of my own home."
+autowrap_mode = 2
+
+[node name="9" type="Label" parent="1/1/Content" unique_id=1912164827]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+autowrap_mode = 2
+
+[node name="Gutter" type="Label" parent="1" unique_id=1215812978]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "lore"
+
+[node name="2" type="Control" parent="1" unique_id=1193409442 node_paths=PackedStringArray("_container")]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("2_w3um1")
+_container = NodePath("Content")
+_interval_in_seconds = 0.0
+_letters_per_seconds = 1000.0
+
+[node name="Content" type="VBoxContainer" parent="1/2" unique_id=1240544220]
+layout_mode = 1
+offset_right = 408.0
+offset_bottom = 544.0
+size_flags_horizontal = 3
+
+[node name="1" type="Label" parent="1/2/Content" unique_id=257388436]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "She begged me to go,"
+autowrap_mode = 3
+
+[node name="2" type="Label" parent="1/2/Content" unique_id=220746474]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "To travel far away,"
+autowrap_mode = 3
+
+[node name="3" type="RichTextLabel" parent="1/2/Content" unique_id=1720304341]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_hmom6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "And not to come back until I was ready to face [u][b]my[/b][/u] reality."
+autowrap_mode = 2
+
+[node name="4" type="Label" parent="1/2/Content" unique_id=720800038]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "I kept asking her to tell me the truth. Again and again,"
+autowrap_mode = 3
+
+[node name="5" type="Label" parent="1/2/Content" unique_id=91968751]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "even when she tried to change the subject. "
+autowrap_mode = 3
+
+[node name="6" type="Label" parent="1/2/Content" unique_id=1551494338]
+layout_mode = 2
+theme = SubResource("Theme_08tmx")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "I think she eventually realized I wasn't going to let it go.
+"
+autowrap_mode = 3
+autowrap_trim_flags = 0
+
+[node name="7" type="Label" parent="1/2/Content" unique_id=414525488]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "She went quiet for a moment before finally giving in. "
+autowrap_mode = 3
+
+[node name="8" type="Label" parent="1/2/Content" unique_id=1519384161]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Her words came slowly,
+As though saying them out loud would make everything a little less…"
+autowrap_mode = 3
+
+[node name="9" type="Label" parent="1/2/Content" unique_id=1265606621]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Devastating."
+autowrap_mode = 3
+
+[node name="2" type="HBoxContainer" parent="." unique_id=1379463433]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -412.0
+offset_top = -272.0
+offset_right = 452.0
+offset_bottom = 272.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="1" type="Control" parent="2" unique_id=134681445 node_paths=PackedStringArray("_container")]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("2_w3um1")
+_container = NodePath("Content")
+_interval_in_seconds = 0.0
+_letters_per_seconds = 100.0
+
+[node name="Content" type="VBoxContainer" parent="2/1" unique_id=386085748]
+layout_mode = 1
+offset_right = 408.0
+offset_bottom = 544.0
+size_flags_horizontal = 3
+
+[node name="1" type="Label" parent="2/1/Content" unique_id=315133743]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "I’m still not used to being the only one now."
+autowrap_mode = 3
+
+[node name="2" type="Label" parent="2/1/Content" unique_id=880681377]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "For the longest time, I thought my parents would always guide me through everything."
+autowrap_mode = 3
+
+[node name="3" type="Label" parent="2/1/Content" unique_id=355745737]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "All our small memories…
+Things that I thought meant nothing."
+autowrap_mode = 3
+
+[node name="4" type="Label" parent="2/1/Content" unique_id=1877660032]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "I’m starting to miss them,
+Their voice, their face, the little stories they’d tell,"
+autowrap_mode = 3
+
+[node name="5" type="Label" parent="2/1/Content" unique_id=1463364206]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "
+They aren’t there anymore…"
+autowrap_mode = 3
+
+[node name="Gutter" type="Label" parent="2" unique_id=1825501322]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "lore"
+
+[node name="2" type="Control" parent="2" unique_id=470340482 node_paths=PackedStringArray("_container")]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("2_w3um1")
+_container = NodePath("Content")
+_interval_in_seconds = 0.0
+_letters_per_seconds = 100.0
+
+[node name="Content" type="VBoxContainer" parent="2/2" unique_id=1993626227]
+layout_mode = 1
+offset_right = 408.0
+offset_bottom = 544.0
+size_flags_horizontal = 3
+
+[node name="1" type="Label" parent="2/2/Content" unique_id=1664642729]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "I’ve realized,"
+autowrap_mode = 3
+
+[node name="2" type="Label" parent="2/2/Content" unique_id=1097253699]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "I’m left holding something I was never supposed to carry alone."
+autowrap_mode = 3
+autowrap_trim_flags = 0
+
+[node name="3" type="Label" parent="2/2/Content" unique_id=1000840105]
+layout_mode = 2
+theme = ExtResource("4_3jv7o")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "This heavy crown that burdens my shoulders."
+autowrap_mode = 3
+
+[node name="4" type="Label" parent="2/2/Content" unique_id=1480923276]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+autowrap_mode = 3
+
+[node name="5" type="Label" parent="2/2/Content" unique_id=1626251040]
+layout_mode = 2
+theme = ExtResource("3_08tmx")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Till the day I die."
+autowrap_mode = 3
