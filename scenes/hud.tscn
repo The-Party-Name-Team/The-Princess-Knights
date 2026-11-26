@@ -24,12 +24,14 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(0.5, 0.5)
+mouse_filter = 2
 texture = ExtResource("1_0i1j5")
 
 [node name="SideButtons" type="Control" parent="." unique_id=1541738748]
 anchors_preset = 0
 offset_right = 1080.0
 offset_bottom = 720.0
+mouse_filter = 2
 script = ExtResource("2_uo2fv")
 
 [node name="Marks" type="Control" parent="SideButtons" unique_id=53434607]
@@ -42,6 +44,7 @@ offset_right = 211.0
 offset_bottom = 927.0
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
+mouse_filter = 2
 
 [node name="Map" type="TextureRect" parent="SideButtons/Marks" unique_id=332184305]
 layout_mode = 1
@@ -52,6 +55,7 @@ offset_top = -309.0
 offset_right = 211.0
 offset_bottom = 309.0
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("3_047uy")
 
 [node name="Conversations" type="TextureRect" parent="SideButtons/Marks" unique_id=1394955867]
@@ -63,6 +67,7 @@ offset_top = -309.0
 offset_right = 211.0
 offset_bottom = 309.0
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("4_5pdws")
 
 [node name="Stats" type="TextureRect" parent="SideButtons/Marks" unique_id=145209491]
@@ -74,6 +79,7 @@ offset_top = -309.0
 offset_right = 211.0
 offset_bottom = 309.0
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("5_hd3ao")
 
 [node name="Buttons" type="Control" parent="SideButtons" unique_id=497049016]
@@ -85,6 +91,7 @@ offset_top = -125.0
 offset_right = 80.0
 offset_bottom = 125.0
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="Map" type="Button" parent="SideButtons/Buttons" unique_id=2019570264 node_paths=PackedStringArray("_texture_label")]
 self_modulate = Color(1, 1, 1, 0)
@@ -92,6 +99,7 @@ layout_mode = 0
 offset_right = 65.0
 offset_bottom = 80.0
 size_flags_horizontal = 3
+mouse_filter = 2
 script = ExtResource("6_047uy")
 _event_textures = Dictionary[String, Texture2D]({
 "base": ExtResource("3_047uy"),
@@ -111,6 +119,7 @@ offset_right = 65.0
 offset_bottom = 45.0
 grow_vertical = 2
 size_flags_horizontal = 3
+mouse_filter = 2
 script = ExtResource("6_047uy")
 _event_textures = Dictionary[String, Texture2D]({
 "base": ExtResource("4_5pdws"),
@@ -129,6 +138,7 @@ offset_top = -65.0
 offset_right = 65.0
 grow_vertical = 0
 size_flags_horizontal = 3
+mouse_filter = 2
 script = ExtResource("6_047uy")
 _event_textures = Dictionary[String, Texture2D]({
 "base": ExtResource("5_hd3ao"),

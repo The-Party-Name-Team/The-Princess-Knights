@@ -30,3 +30,4 @@ metadata/_edit_use_anchors_ = true
 z_index = 5
 
 [node name="HUD" parent="CanvasLayer" unique_id=1421785620 instance=ExtResource("2_lnu2h")]
+mouse_filter = 2
