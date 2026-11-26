@@ -1,69 +1,104 @@
 [gd_scene format=3 uid="uid://dly6sj7ikytf2"]
 
-[ext_resource type="Texture2D" uid="uid://c13jljv43skks" path="res://assets/mainmenus/gold_slider_empty.png" id="1_1sggn"]
-[ext_resource type="Texture2D" uid="uid://b6y57xfkwn25u" path="res://assets/mainmenus/gold_grabber_normal.png" id="2_e6vpq"]
-[ext_resource type="Texture2D" uid="uid://nfbvg67mpi78" path="res://assets/mainmenus/gold_grabber_pressed.png" id="3_o7i7e"]
+[ext_resource type="Script" uid="uid://d27w1cjnwk7w2" path="res://scenes/options.gd" id="1_85aq5"]
+[ext_resource type="AudioStream" uid="uid://bkkhxmhwhbtkx" path="res://assets/fonts/sounds/buttonhover.wav" id="1_uon5e"]
+[ext_resource type="AudioStream" uid="uid://c0h4kqw8ho015" path="res://assets/fonts/sounds/buttonclick.wav" id="2_gycth"]
+[ext_resource type="Resource" uid="uid://cbuy6ujky02pw" path="res://data/settings.tres" id="2_gyu1t"]
+[ext_resource type="AudioStream" uid="uid://bxidnn8iup25" path="res://assets/fonts/sounds/mus_the_princessknights_menu_loop.mp3" id="3_g5hix"]
+[ext_resource type="FontFile" uid="uid://by85dch1nluya" path="res://assets/fonts/AppleGaramond.ttf" id="3_gycth"]
 [ext_resource type="Script" uid="uid://cost6ymrb3t7e" path="res://scenes/sounds.gd" id="4_uon5e"]
 [ext_resource type="Script" uid="uid://130ugvolmc13" path="res://scenes/fullscreenbut.gd" id="5_85aq5"]
-
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_dfy5j"]
-color = Color(0, 0, 0, 0)
-grow_begin = -300.0
-grow_end = -300.0
-thickness = 0
+[ext_resource type="Texture2D" uid="uid://o24qbesdyi0q" path="res://assets/visuals/maps/blankmap.png" id="5_gyu1t"]
+[ext_resource type="Texture2D" uid="uid://boyjcp3kltewr" path="res://assets/visuals/mainmenus/dialogueoption.png" id="6_gyu1t"]
+[ext_resource type="Texture2D" uid="uid://babhd0nij2bu7" path="res://assets/visuals/mainmenus/map-exitbutton.png" id="10_g5hix"]
+[ext_resource type="Texture2D" uid="uid://cw5o2q5s31vtg" path="res://assets/visuals/mainmenus/map-exitbutton-hover.png" id="11_rftt1"]
 
 [node name="options" type="Panel" unique_id=700432999]
 offset_left = 72.0
 offset_top = 114.0
 offset_right = 1010.0
 offset_bottom = 531.0
+script = ExtResource("1_85aq5")
+settings_res = ExtResource("2_gyu1t")
 
-[node name="Label" type="Label" parent="." unique_id=846872583]
-layout_mode = 0
-offset_left = 384.0
-offset_top = 36.0
-offset_right = 554.0
-offset_bottom = 59.0
-theme_override_font_sizes/font_size = 31
-text = "Options"
-horizontal_alignment = 1
+[node name="MusThePrincessknightsMenuLoop" type="AudioStreamPlayer" parent="." unique_id=2005272737]
+stream = ExtResource("3_g5hix")
+
+[node name="Buttonclick2" type="AudioStreamPlayer" parent="." unique_id=287476235]
+stream = ExtResource("2_gycth")
+
+[node name="Buttonhover2" type="AudioStreamPlayer" parent="." unique_id=121538891]
+stream = ExtResource("1_uon5e")
+
+[node name="configbackground" type="Sprite2D" parent="." unique_id=576513719]
+position = Vector2(495.5, 242.49995)
+scale = Vector2(1.0180556, 0.6354166)
+texture = ExtResource("5_gyu1t")
 
 [node name="slider" type="Sprite2D" parent="." unique_id=1595333377]
 position = Vector2(461, 117.46094)
 scale = Vector2(9.413793, 1.6753489)
-texture = ExtResource("1_1sggn")
+
+[node name="Dialogueoption" type="Sprite2D" parent="." unique_id=429188715]
+position = Vector2(270, -23)
+scale = Vector2(0.30439815, 0.32937014)
+texture = ExtResource("6_gyu1t")
 
 [node name="sounds" type="HSlider" parent="." unique_id=629433769]
 layout_mode = 0
-offset_left = 200.0
-offset_top = -7.0
-offset_right = 721.0
-offset_bottom = 242.0
-theme_override_icons/grabber = ExtResource("2_e6vpq")
-theme_override_icons/grabber_highlight = ExtResource("3_o7i7e")
-theme_override_styles/slider = SubResource("StyleBoxLine_dfy5j")
+offset_left = -30.0
+offset_top = 65.0
+offset_right = 491.0
+offset_bottom = 314.0
 max_value = 1.0
 step = 0.05
 value = 1.0
 script = ExtResource("4_uon5e")
-audio_bus_name = "sound"
+audio_bus_name = "Master"
+player_data = ExtResource("2_gyu1t")
+
+[node name="Label" type="Label" parent="." unique_id=846872583]
+modulate = Color(0.36078432, 0.13333334, 0.06666667, 1)
+layout_mode = 0
+offset_left = -24.0
+offset_top = -82.0
+offset_right = 546.0
+offset_bottom = 150.0
+theme_override_fonts/font = ExtResource("3_gycth")
+theme_override_font_sizes/font_size = 105
+text = "Options"
+horizontal_alignment = 1
+
+[node name="volume" type="Label" parent="." unique_id=1422317853]
+layout_mode = 0
+offset_left = -39.0
+offset_top = 91.0
+offset_right = 136.0
+offset_bottom = 157.0
+theme_override_colors/font_color = Color(0.5688157, 0.21322957, 0.1429899, 1)
+theme_override_fonts/font = ExtResource("3_gycth")
+theme_override_font_sizes/font_size = 56
+text = "Volume :"
+horizontal_alignment = 1
 
 [node name="Fullscreen" type="Label" parent="." unique_id=1806321609]
 layout_mode = 0
-offset_left = 333.0
-offset_top = 137.0
-offset_right = 503.0
-offset_bottom = 181.0
-theme_override_font_sizes/font_size = 31
+offset_left = -36.0
+offset_top = 246.0
+offset_right = 167.0
+offset_bottom = 312.0
+theme_override_colors/font_color = Color(0.6811675, 0.28690913, 0.17640817, 1)
+theme_override_fonts/font = ExtResource("3_gycth")
+theme_override_font_sizes/font_size = 56
 text = "Fullscreen"
 horizontal_alignment = 1
 
 [node name="fullscreenbut" type="CheckButton" parent="." unique_id=786428247]
 layout_mode = 0
-offset_left = 455.0
-offset_top = 134.0
-offset_right = 555.0
-offset_bottom = 194.0
+offset_left = 146.0
+offset_top = 255.0
+offset_right = 246.0
+offset_bottom = 315.0
 script = ExtResource("5_85aq5")
 
 [node name="backbutton" type="Control" parent="." unique_id=1024653265]
@@ -71,14 +106,16 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="back" type="Button" parent="backbutton" unique_id=373996005]
+[node name="back" type="TextureButton" parent="backbutton" unique_id=33319601]
 layout_mode = 0
-offset_left = 381.0
-offset_top = 309.0
-offset_right = 575.0
-offset_bottom = 395.0
-text = "Back"
+offset_left = 580.0
+offset_top = -124.0
+offset_right = 1016.0
+offset_bottom = 454.0
+texture_normal = ExtResource("10_g5hix")
+texture_hover = ExtResource("11_rftt1")
 
 [connection signal="value_changed" from="sounds" to="sounds" method="_on_value_changed"]
 [connection signal="toggled" from="fullscreenbut" to="fullscreenbut" method="_on_toggled"]
-[connection signal="pressed" from="backbutton/back" to="sounds" method="_on_back_pressed"]
+[connection signal="mouse_entered" from="backbutton/back" to="." method="_on_back_mouse_entered"]
+[connection signal="pressed" from="backbutton/back" to="." method="_on_back_pressed"]
