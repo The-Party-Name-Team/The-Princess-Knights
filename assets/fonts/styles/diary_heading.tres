@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://dpi72kmq7cdce"]
+
+[ext_resource type="FontFile" uid="uid://ijt12uand1uh" path="res://assets/fonts/Cardinal.ttf" id="1_tfo2k"]
+
+[resource]
+default_font = ExtResource("1_tfo2k")
+default_font_size = 40
