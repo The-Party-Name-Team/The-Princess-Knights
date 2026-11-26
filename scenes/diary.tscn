@@ -18,7 +18,7 @@ default_font_size = 23
 default_font = ExtResource("5_08tmx")
 default_font_size = 22
 
-[node name="Diary" type="Control" unique_id=284882189 node_paths=PackedStringArray("_sheets")]
+[node name="Diary" type="Control" unique_id=284882189 node_paths=PackedStringArray("_sheets", "_next_btn")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -86,7 +86,7 @@ mouse_filter = 2
 script = ExtResource("2_w3um1")
 _container = NodePath("Content")
 _interval_in_seconds = 0.0
-_letters_per_seconds = 1000.0
+_letters_per_seconds = 120.0
 should_run = true
 
 [node name="Content" type="VBoxContainer" parent="1/1" unique_id=380203736]
@@ -186,7 +186,7 @@ mouse_filter = 2
 script = ExtResource("2_w3um1")
 _container = NodePath("Content")
 _interval_in_seconds = 0.0
-_letters_per_seconds = 1000.0
+_letters_per_seconds = 120.0
 
 [node name="Content" type="VBoxContainer" parent="1/2" unique_id=1240544220]
 layout_mode = 1
@@ -292,7 +292,7 @@ mouse_filter = 2
 script = ExtResource("2_w3um1")
 _container = NodePath("Content")
 _interval_in_seconds = 0.0
-_letters_per_seconds = 100.0
+_letters_per_seconds = 120.0
 
 [node name="Content" type="VBoxContainer" parent="2/1" unique_id=386085748]
 layout_mode = 1
@@ -354,7 +354,7 @@ mouse_filter = 2
 script = ExtResource("2_w3um1")
 _container = NodePath("Content")
 _interval_in_seconds = 0.0
-_letters_per_seconds = 100.0
+_letters_per_seconds = 120.0
 
 [node name="Content" type="VBoxContainer" parent="2/2" unique_id=1993626227]
 layout_mode = 1

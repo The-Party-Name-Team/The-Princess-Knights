@@ -1,9 +1,10 @@
+[background arg="res://assets/visuals/night_camp.png" fade="0.0"]
 Random: Your highness, the map is ready.
 [i]You hear someone’s voice echoing behind your book[/i]
-join Marius at left
+join Marius center
 Marius (d): We’ve circled all potential allies in our vicinity.
 Marius (d): If all goes well, we should be able to set out at the crack of dawn.
-join Alfonso at right
+join Alfonso right
 Alfonso (d): Sir Marius, have sympathy.
 Alfonso (d): You have to understand what she's going through.
 Alfonso (d): Perhaps we should take a break till noon tomorrow.
@@ -16,14 +17,14 @@ Marius (d): hm...
 	Ardana (d): No, sir Marius is right. We should make haste.
 	Marius (d): hm.
 	leave Marius
-	join Mikhela at left
+	join Mikhela left
 	Mikhela (d): Alright! It’s settled. We should all get some rest. We’ve got a long day ahead of us.
 	leave Ardana
 	leave Mikhela
 - Agree with Alfonso
 	do AlfonsoData.change_relation(1)
 	leave Marius
-	join Ardana at left
+	join Ardana left
 	Ardana (d): I’d like to rest for a little while more.
 	Alfonso (d): I’m glad you agree, your highness. Rest well.
 	Alfonso (d): We’ll wake you as soon as noon comes tomorrow.
@@ -31,24 +32,23 @@ Marius (d): hm...
 	leave Alfonso
 - Stay quiet
 	set {choice} = 1.0
-	leave Marius
-	leave Alfonso
-	join Ardana at left
+	leave --All--
+	join Ardana right
 	Ardana (d): ...
-	join Mikhela at right
+	join Mikhela left
 	Mikhela (d): I’ll say, I’m beat!
 	Mikhela (d): I agree with Al, I’m due some beauty sleep.
 	Mikhela (d): See you all tomorrow.
 	leave Ardana
 	leave Mikhela
-join Marius at center
+join Marius right
 Marius (d): Then I'll keep watch for tonight.
 Marius (d): ...
 Marius (rattled): Good night, your highness.
 leave Marius
 if {choice} == 1.0:
-	join Ardana at left
-	join Mikhela at right
+	join Ardana left
+	join Mikhela right
 	Mikhela: Can't sleep huh?
 	Mikhela: Me neither.
 	Mikhela: oh! You're probably wondering why I'm awake.

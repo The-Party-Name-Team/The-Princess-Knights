@@ -40,7 +40,7 @@ directories/dch_directory={
 "Henry": "res://resources/dialogic/characters/Henry.dch",
 "Marius": "res://resources/dialogic/characters/Marius.dch",
 "Marius and Lea": "res://resources/dialogic/characters/Marius and Lea.dch",
-"Mikhela": "res://resources/dialogic/characters/Mikhela.dch",
+"Mikhela": "res://resources/dialogic/characters/Mikhelea.dch",
 "Random": "res://resources/dialogic/characters/Random.dch"
 }
 directories/dtl_directory={
@@ -59,11 +59,11 @@ directories/dtl_directory={
 "timeline_4_0": "res://resources/dialogic/timelines/timeline_4_0.dtl"
 }
 layout/style_directory={
-"": "res://resources/dialogic/styles/standard.tres",
-"standard": "res://resources/dialogic/styles/standard.tres"
+"": "res://resources/dialogic/styles/base.tres",
+"base": "res://resources/dialogic/styles/base.tres"
 }
-layout/style_list=["res://resources/dialogic/styles/standard.tres"]
-layout/default_style="res://resources/dialogic/styles/standard.tres"
+layout/style_list=["res://resources/dialogic/styles/base.tres"]
+layout/default_style="res://resources/dialogic/styles/base.tres"
 glossary/default_case_sensitive=true
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

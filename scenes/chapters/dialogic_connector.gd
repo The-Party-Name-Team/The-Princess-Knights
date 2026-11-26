@@ -10,7 +10,7 @@ func _ready() -> void:
 		allowed = true
 		
 func start():
-	print("fart")
 	if allowed:
-		Dialogic.start_timeline(timeline_name)
+		Dialogic.start(timeline_name)
+		await Dialogic.timeline_ended
 		finished.emit()

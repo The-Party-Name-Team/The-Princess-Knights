@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://csnotlof17mvj"]
 
-[ext_resource type="Script" uid="uid://bsnydp2ob5imt" path="res://scenes/chapters/chapter_0.gd" id="1_43rfn"]
+[ext_resource type="Script" uid="uid://bsnydp2ob5imt" path="res://scenes/chapters/chapter.gd" id="1_43rfn"]
 [ext_resource type="PackedScene" uid="uid://bi2iptnj0yccm" path="res://scenes/diary.tscn" id="1_xxedx"]
 [ext_resource type="Script" uid="uid://ck615hef0umhq" path="res://scenes/chapters/dialogic_connector.gd" id="3_g7b7s"]
 
-[node name="Chapter0" type="Control" unique_id=1731282069 node_paths=PackedStringArray("children_list")]
+[node name="Chapter0" type="Control" unique_id=1592052828 node_paths=PackedStringArray("children_list")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,9 +13,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_43rfn")
 children_list = [NodePath("Diary"), NodePath("DialogicConnector")]
+metadata/_custom_type_script = "uid://bsnydp2ob5imt"
 
 [node name="Diary" parent="." unique_id=284882189 instance=ExtResource("1_xxedx")]
-visible = false
 layout_mode = 0
 anchors_preset = 0
 anchor_right = 0.0
@@ -26,10 +26,8 @@ offset_right = 540.0
 offset_bottom = 360.0
 grow_horizontal = 1
 grow_vertical = 1
+scale = Vector2(1.1, 1.1)
 
 [node name="DialogicConnector" type="Node" parent="." unique_id=1881706190]
 script = ExtResource("3_g7b7s")
 timeline_name = "timeline_0_1"
-
-[connection signal="finished" from="Diary" to="." method="_on_diary_finished"]
-[connection signal="finished" from="DialogicConnector" to="." method="_on_dialogic_connector_finished"]
