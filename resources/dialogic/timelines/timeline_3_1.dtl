@@ -117,7 +117,7 @@ leave --All--
 join Alfonso (d) center
 Alfonso: What a nuisance.
 leave --All--
-- 
+- Ask about Henry
 	join Ardana (d) left
 	Ardana: You seem to have history with Henry Sir Alfonso.
 	[i]Dame Mikhelea follows Sir Marius and Henry inside the tavern
@@ -137,7 +137,7 @@ leave --All--
 	[i]Sir Alfonso soon follows Dame Mikhelea
 	[i]You look at his red hair
 	[i]It seems to flow with the wind begrudgingly
-- 
+- Apologize to Dame Mikhelea
 	join Ardana (d) left
 	join Mikhela (d) right
 	Ardana: I’m sorry I didn’t trust your judgment Dame Mikhelea.
@@ -155,7 +155,7 @@ leave --All--
 	[i]She lets go before joining the others inside the tavern
 	[i]You look down at the hand she held
 	[i]You think of the times she’s thought of you in every choice she made
-- 
+- Stay quiet
 	Ardana: ...
 leave --All--
 [i]You stood outside the tavern

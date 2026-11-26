@@ -4,7 +4,4 @@
 
 [resource]
 script = ExtResource("1_wd03v")
-_Gold = null
-_Glory = null
-_Gospel = null
 metadata/_custom_type_script = "uid://c3j5noj8rsmad"

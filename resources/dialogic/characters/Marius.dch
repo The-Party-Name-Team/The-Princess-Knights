@@ -10,76 +10,12 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "d",
+&"default_portrait": "",
 &"description": "",
 &"display_name": "Marius",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {
-"concerned": {
-"export_overrides": {
-"image": "\"res://assets/Charactersprites/Marius/MARIUS-CONCERNED(side look).png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"confused": {
-"export_overrides": {
-"image": "\"res://assets/Charactersprites/Marius/MARIUS-CONFUSED(closed).png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"d": {
-"export_overrides": {
-"image": "\"res://assets/Charactersprites/Marius/Untitled111_20261125225809.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"empathetic": {
-"export_overrides": {
-"image": "\"res://assets/Charactersprites/Marius/MARIUS-EMPATHETIC(closed).png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"flustered": {
-"export_overrides": {
-"image": "\"res://assets/Charactersprites/Marius/MARIUS-FLUSTERED(closed).png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"irked": {
-"export_overrides": {
-"image": "\"res://assets/Charactersprites/Marius/MARIUS-IRKED(closed).png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"rattled": {
-"export_overrides": {
-"image": "\"res://assets/Charactersprites/Marius/MARIUS-NERVOUS(open) (1).png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-}
-},
+&"portraits": {},
 &"scale": 1.0
 }
