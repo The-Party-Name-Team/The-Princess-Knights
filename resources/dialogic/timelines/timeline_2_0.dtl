@@ -8,9 +8,9 @@
 	[i]You decide not to disturb him
 	- Talk to Lea
 		[i]You see Dame Mikhelea mindlessly stir a pot filled with porridge
-		join Ardana (d) at left
+		join Ardana (d) left
 		Ardana: Dame Mikhelea?
-		join Mikhela (d) at right
+		join Mikhela (d) right
 		Mikhela: Your highness!
 		Mikhela (d): You're awake!
 		Mikhela: Would you care to pass me the bowl?
@@ -26,7 +26,7 @@
 		Ardana: Is there something you’re hiding from me-
 		[i]A voice disturbs your conversation with Dame Mikhelea
 		Random: Now your highness, let’s not disturb Dame Lea.
-		join Alfonso at right
+		join Alfonso right
 		[i]Sir Alfonso looks down at you with a solemn look
 		[i]He takes the bowl from your hand and gives it to Dame Mikhelea
 		[i]You feel the tension shift as the cold air springs up your spine
@@ -38,8 +38,8 @@
 		[i]You couldn’t see his facial expression
 		[i]But you could tell he was dazed and bothered
 		[i]You decide to help him tidy
-		join Ardana (d) at left
-		join Alfonso (shocked) at right
+		join Ardana (d) left
+		join Alfonso (shocked) right
 		Ardana: Would you like help, Sir Alfonso?
 		Alfonso (shocked): ...
 		Alfonso (nervous): Why thank you for the offer.
@@ -70,9 +70,9 @@
 		leave --All--
 - Talk to Lea
 	[i]You see Dame Mikhelea mindlessly stir a pot filled with porridge
-	join Ardana (d) at left
+	join Ardana (d) left
 	Ardana: Dame Mikhelea?
-	join Mikhela (d) at right
+	join Mikhela (d) right
 	Mikhela: Your highness!
 	Mikhela (d): You're awake!
 	Mikhela: Would you care to pass me the bowl?
@@ -88,7 +88,7 @@
 	Ardana: Is there something you’re hiding from me-
 	[i]A voice disturbs your conversation with Dame Mikhelea
 	Random: Now your highness, let’s not disturb Dame Lea.
-	join Alfonso at right
+	join Alfonso right
 	[i]Sir Alfonso looks down at you with a solemn look
 	[i]He takes the bowl from your hand and gives it to Dame Mikhelea
 	[i]You feel the tension shift as the cold air springs up your spine
@@ -100,8 +100,8 @@
 	[i]You couldn’t see his facial expression
 	[i]But you could tell he was dazed and bothered
 	[i]You decide to help him tidy
-	join Ardana (d) at left
-	join Alfonso (shocked) at right
+	join Ardana (d) left
+	join Alfonso (shocked) right
 	Ardana: Would you like help, Sir Alfonso?
 	Alfonso (shocked): ...
 	Alfonso (nervous): Why thank you for the offer.
@@ -130,7 +130,7 @@
 	Alfonso(smile): would [b]never.
 	Alfonso: ...
 	leave --All--
-join Mikhela at center
+join Mikhela center
 Mikhela: Al, are you done packing?
 Mikhela: Marius is done planning our next route.
 leave --All--

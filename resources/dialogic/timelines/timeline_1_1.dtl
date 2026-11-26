@@ -1,31 +1,32 @@
 [i]An almost sacred stillness enveloped your surroundings
-join Mikhela at left
+join Mikhela center
 Mikhela(concerned): …
-join Marius at right
-Marius(concerned): ...
 leave Mikhela
-join Alfonso at right
+join Marius center
+Marius(concerned): ...
+leave Marius 
+join Alfonso center
 Alfonso(concerned): ...
-leave Marius
-join Ardana at left
+leave Alfonso
+join Ardana left
 Ardana(concerned): ...
 leave Alfonso 
-join Mikhela(nervous) at right
+join Mikhela(nervous) right
 Mikhela(nervous): Oh well...
 Mikhela(nervous): We’ll get it next time.
 Ardana(frustrated): sigh…
 Ardana(frustrated): Do you think there will even be a next time?
 Ardana(frustrated): We can’t have these meager mistakes again.
-Ardana(frustrated): There won’t be another chance-\
-leave Mikhela 
-join Marius(d) at right
+Ardana(frustrated): There won’t be another chance-
+leave Mikhela
+join Marius(d) right
 Marius: Your Highness, dwelling on what has already happened will do us no good.
 Ardana(frustrated): And pretending it doesn't matter will?
 Marius: I never said that.
 Marius: But mistakes are inevitable.
 Marius: What matters is what we do afterward.
 leave Marius 
-join Alfonso(nervous) at right
+join Alfonso(nervous) right
 Alfonso(nervous): Perhaps Sir Marius is right…
 Alfonso(nervous): We haven’t had rest all day,
 Alfonso(d): Even the sharpest sword becomes dull when wielded without rest.
@@ -38,21 +39,21 @@ leave Ardana
 [i]Perhaps you weirdly feel alienated,
 [i]But you can’t help but feel insulted
 [i]Shouldn't they mourn the death of their imperial highness too?
-join Ardana(frustrated) at left
+join Ardana(frustrated) left
 Ardana(frustrated): ...
-join Mikhela(d) at right
+join Mikhela(d) right
 Mikhela: ...
 leave Mikhela 
-join Alfonso(d) at right
+join Alfonso(d) right
 Alfonso: ...
 Alfonso(concerned): Is something else the matter your highness?
 Ardana: It's nothing…
 leave Alfonso 
-join Mikhela(d) at right
+join Mikhela(d) right
 Mikhela: Are you sure?
 Ardana(frustrated): Yes...
 leave Ardana 
-join Alfonso(concerned) at left
+join Alfonso(concerned) left
 [i]Dame Mikhelea and Sir Alfonso look at each other in concern
 Mikhela(concerned): Hey, you can talk to us you know.
 Alfonso(concerned): It’s not good to keep it bottled up.
@@ -63,24 +64,24 @@ Mikhela(concerned): You don’t have to tell us everything right away, but pleas
 "Alfonso and Mikhela": Tell us…
 leave Mikhela 
 leave Alfonso 
-join Marius at center 
+join Marius center 
 Marius: Your highness-
 leave Marius
 - Tell them to back off
-	join Ardana(displeased) at center
+	join Ardana(displeased) center
 	Ardana(displeased): STOP IT!
 	Ardana(displeased): You listen to me.
 	Ardana(displeased): We have other things to do,
 	Ardana(displeased): Why don't you all do something useful?
 	Ardana(teary): ...
 	update Ardana left
-	join Mikhela(concerned) at right
+	join Mikhela(concerned) right
 	Mikhela(concerned): ...
 	leave Mikhela 
-	join Alfonso(concerned) at right
+	join Alfonso(concerned) right
 	Alfonso(concerned): ...
 	leave Alfonso 
-	join Marius(concerned) at right
+	join Marius(concerned) right
 	Marius(concerned): I apologize, your highness.
 	Marius(d): Our behaviours were unacceptable.
 	- Accept their apology
@@ -90,10 +91,10 @@ leave Marius
 		Ardana(teary): ...
 		Marius(concerned): ...
 		leave Marius 
-		join Mikhela at right
+		join Mikhela right
 		Mikhela: ...
 		leave Mikhela 
-		join Alfonso(concerned) at right
+		join Alfonso(concerned) right
 		Alfonso(concerned): Please don't cry, your highness.
 		Alfonso(concerned): We didn't mean to insult you.
 		leave Alfonso
@@ -104,9 +105,9 @@ leave Marius
 		Ardana(d): That's all.
 		[i]You wipe your tears
 - Stay quiet
-	join Ardana(teary)
+	join Ardana(teary) left
 	Ardana(teary): ...
-	join Alfonso(concerned) at right
+	join Alfonso(concerned) right
 	Alfonso(concerned):...
 	Alfonso(calm): I understand.
 	Mikhela(confused): ?
@@ -116,12 +117,12 @@ leave Marius
 	Ardana(concerned): ...
 	Ardana: Thank you.
 - Lie
-	join Ardana(frustrated) at left
+	join Ardana(frustrated) left
 	Ardana: It's nothing.
 	Ardana(frustrated): I'm just...
 	Ardana(frustrated): Tired.
 	Ardana: Very tired.
-	join Mikhelea(empathetic) at right
+	join Mikhela(empathetic) right
 	[i]You look at Mikhelea solemnly
 	Mikhela: ...
 	Mikhela: I see…
