@@ -1,15 +1,15 @@
 [i]The Journey back to your kingdom was quiet
 [i]It felt longer than it should’ve
 [i]Henry’s men sing of the horrors of war behind you
-join Marius(irked) at left
-join Alfonso(d) at right
+join Marius(irked) left
+join Alfonso(d) right
 Marius(irked): Watch where you’re going!
 Marius(irked): sigh… What brutes.
 Alfonso: At least Dame Mikhelea seems to be having fun.
 
 [i]You look back to see Dame Mikhelea dance along to a bard’s tune
 leave Marius 
-join Ardana(confused) at left
+join Ardana(confused) left
 Ardana(confused): Where did they get a performer?
 Alfonso(confused): What do you mean?
 Alfonso(d): That’s a mercenary.
@@ -24,7 +24,7 @@ leave --All--
 [i]Your eyes start to well up from the chaos unraveling in front of you
 [i]A pair of metal hands cover your eyes from the sight
 [i]As they take you into an embrace
-join Mikhela(concerned) at center
+join Mikhela(concerned) center
 Mikhela(concerned): Please, Your Highness, spare yourself this dreadful sight.
 leave --All--
 [i]You think of the life you’ve led wearing rose tinted glasses
@@ -38,7 +38,7 @@ leave --All--
 Random: Ardana…?
 
 [i]A familiar voice you miss passes your ears
-join Ardana(d) at center
+join Ardana(d) center
 Ardana: Alwin…?
 leave Ardana
 [i]You run to your brother in all but blood
@@ -60,8 +60,8 @@ leave Ardana
 [i]You realize,
 [i]You’ve been completely fooled
 [i]You think back to the words King Gabriel II mouthed to you
-join Ardana(d) at left
-join Alwin at right
+join Ardana(d) left
+join Alwin right
 Ardana: Long... Live… Alwin… The Great
 Alwin: That stupid man, he couldn’t even kill you when you were fully in his domain.
 Alwin: After what I did for him?
@@ -81,7 +81,7 @@ Alwin: An unholy body.
 
 [i]Alwin looks at your knights one by one
 leave Ardana 
-update Alwin at center
+update Alwin center
 Alwin: I’m not desperate for God’s attention
 Marius: …
 Alwin: I don’t falter under the pressure of my people
@@ -108,7 +108,7 @@ leave Alwin
 [i]And faster
 [i]And faster
 [i]And faster
-join Mikhela(concerned) at left
+join Mikhela(concerned) center
 Mikhela(concerned): No time to think, your highness.
 leave Mikhela
 [i]Dame Mikhelea takes you far away from the field

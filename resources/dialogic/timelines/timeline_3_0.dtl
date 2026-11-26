@@ -1,6 +1,6 @@
 [i]You’ve finally reached the end of your journey
 [i]The unfamiliar castle walls overwhelm you
-join Alfonso (d) at center
+join Alfonso (d) center
 Alfonso: I, Sir Alfonso. Vice captain of the royal knights./;
 Alfonso: In the name of Thallein
 Alfonso: We request permission to enter.
@@ -17,7 +17,7 @@ leave Alfonso
 [i]Its towering walls and grand architecture making yours seem modest in comparison
 [i]A young man sat at the end of the corridor
 [i]His smile filled with malice and overconfidence
-join Gabe at center
+join Gabe center
 Random: Princess Ardama Saint Olivier
 Random: What irony that you come crawling to my kingdom.
 Random: This one should truly be written for the history books.
@@ -29,22 +29,22 @@ Ardana (confused): I believe we’ve never met.
 Random: Oh we’ve never met,
 Random: and judging by your lapdogs’ reaction…
 Random: They haven’t got a clue on who they just brought their precious princess to.
-leave 
-- Ask for the King
-	join Ardana (concerned) at left
-	join  at right
+leave Gabe
+- Ask for the king
+	join Ardana (concerned) left
+	join Gabe right
 	Ardana (concerned): Where’s his highness King Gabriel?
 	Random: You’re looking right at him
 - Antagonize him
-	join Ardana (smug) at left
-	join  at right
+	join Ardana (smug) left
+	join Gabe right
 	Ardana (smug): You hardly look fit to be sitting on that throne.
 	Random: Do I?
 Random: Let me formally introduce myself.
 Gabe: I am his highness King Gabriel.
 Gabe: King Gabriel the II to be exact.
 Gabe: Much more good looking than that old fart aren’t I?
-Ardana: Ergh…
+Ardana (d): Ergh…
 Gabe: I guess the news hasn't traveled far.
 Gabe: King Gabriel the Ist has died…
 Gabe: And I-
@@ -91,8 +91,8 @@ Gabe: Long Live @#*&$# The Great
 [i]Shamefully stared at by his subjects
 
 leave Gabe
-join Mikhela (irked) at left
-join Alfonso (concerned) at right
+join Mikhela (irked) left
+join Alfonso (concerned) right
 Lea (irked): That Pompous BASTARD!
 
 [i]Dame Mikhelea kicks a nearby tree
@@ -103,7 +103,7 @@ Alfonso (concerned): I do remember a meeting with King Gabriel I-
 Alfonso (concerned): But that was long ago!
 Alfonso (concerned): More than that, It went incredibly well.
 leave Alfonso
-join Marius (concerned) at right
+join Marius (concerned) right
 Marius (concerned): I don’t understand this sudden change in authority…
 Marius (concerned): I should’ve known.
 Marius (concerned): I’ve checked (insert kingdom name) multiple times before we came here.
@@ -116,8 +116,8 @@ leave --All--
 [i]Your head can’t make sense of the name he said
 
 “No it can’t be”
-join Ardana (d) at left
-join Marius (d) at right
+join Ardana (d) left
+join Marius (d) right
 
 Ardana: What was I thinking-
 Marius: Your highness, for the time being we’ll go back west.

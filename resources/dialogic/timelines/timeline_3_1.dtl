@@ -2,23 +2,23 @@
 [i]You wait outside for Sir Alfonso to find suitable rooms
 
 Random: Lea?
-join Marius (d) at left
-join  right
+join Marius (d) left
+join Mikhela(d) right
 Marius: That’s Dame Mikhelea to you sir-
 Mikhela: Henry!
 Mikhela: Oh lighten up Marius, He’s my friend.
 Marius (irked): ...
 Mikhela: Your highness, let me introduce you to Sir Henry Fischer.
 leave Marius
-join Ardana (d) at left
+join Ardana (d) left
 Ardana: Good evening sir Fischer
 leave Mikhela
-join Henry at right
+join Henry right
 Henry: Oh please, your highness. Call me Henry.
 Henry: I see, you’re coming back east.
 Henry: I suppose the journey went well?
 leave Ardana
-join Mikhela (concerned) at left
+join Mikhela (concerned) left
 Mikhela (concerned): Not really…
 Mikhela (irked): That arrogant King Gabriel II was a real pain in the a-
 Henry: Language.
@@ -29,13 +29,13 @@ Henry: Now I know this is a stretch…
 Henry: You see, I own a Mercenary guild
 Henry: For the right price-
 leave Mikhela
-join Marius (d) at left
+join Marius (d) left
 Marius: You’d lend us enough men to stop the coup.
 Henry: …
 Henry: Exactly correct, Sir Marius.
 Marius: Not a bad idea…
 leave Henry
-join Mikhela (concerned) at right
+join Mikhela (concerned) right
 Mikhela (concerned): Marius!
 Marius (confused): Lea?
 Mikhela (concerned): I know you’re like strategy-y and stuff but do you really think this is a good idea-
@@ -43,22 +43,22 @@ Mikhela (d): No offense Henry.
 Mikhela: You’re my friend,
 Mikhela: But you’re a mercenary man first.
 leave Marius
-join Henry at left
+join Henry left
 Henry: What a cut throat observation Mikhelea.
 Henry: And my job is loyal to the client…
 Henry: So, do we have a deal?
 leave Mikhela
-join Marius (d) at right
+join Marius (d) right
 Marius: Your highness?
 leave --All--
 - Agree with Marius
-	join Ardana (concerned) at left
-	join Marius (d) at right
+	join Ardana (concerned) left
+	join Marius (d) right
 	Ardana (concerned): Time is ticking fast…
 	Marius: Exactly.
 	Marius: Mercenaries are loyal to their clients.
 	leave Ardana
-	join Mikhela (concerned) at left
+	join Mikhela (concerned) left
 	Mikhela (concerned): You’re a holy knight-
 	Mikhela (concerned): This goes against everything you believe in.
 	Mikhela (concerned): The very ideals you've sworn to uphold!
@@ -68,8 +68,8 @@ leave --All--
 	Marius: Even if heaven was on the line.
 	Ardana (d): …
 - Agree with Mikhela
-	join Ardana (concerned) at left
-	join Mikhela (d) at right
+	join Ardana (concerned) left
+	join Mikhela (d) right
 	Ardana (concerned): Maybe we should take our time.
 	Ardana (d): I’m sorry Sir Marius, I don’t fully trust Henry.
 	Ardana: I’d rather gamble my chances with Queen Martina.
@@ -77,7 +77,7 @@ leave --All--
 	Mikhela: Sorry Henry.
 	Mikhela: Her highness has decided.
 leave --All--
-join Henry at center
+join Henry center
 Henry: hmm…
 Henry: Since, it’s fallen to this.
 Henry: I’ll give you a discount!
@@ -88,19 +88,19 @@ Henry: What do you think?
 Henry: My men, for a plot of land.
 "Ardana, Lea, Marius": ...
 leave Henry
-join Alfonso (d) at left
+join Alfonso (d) left
 Alfonso: I say take it.
-join Mikhela (irked) at right
+join Mikhela (irked) right
 Mikhela (irked): Al?!
 leave Mikhela
-join Ardana (d) at right
+join Ardana (d) right
 Ardana: You think so?
 Alfonso: Yes.
 Alfonso: He isn’t trying to deceive you, I can tell.
 Alfonso: I’ve met Sir Fischer before.
 Alfonso: He’s been trying to expand in the kingdom for years.
 leave Ardana
-join Henry at right
+join Henry rightmost right
 Henry: Oh please, call me Henry.
 Henry: Sir Alfonso, I haven’t seen you since you were just a squire!
 Alfonso: It’s vice captain Alfonso now.
@@ -108,20 +108,20 @@ Henry: Prickly! Just how I remember you.
 
 [i]Sir Marius pats Henry on the back
 leave Alfonso
-join Marius (d) at left
+join Marius (d) left
 Marius: How about we discuss the plan?
 Henry: Hard working aren’t we…
 Henry: Say, why does Mikhelea call Sir Alfonso by a nickname?
 Marius: None of your business.
 leave --All--
-join Alfonso (d) at center
+join Alfonso (d) center
 Alfonso: What a nuisance.
 leave --All--
 - Ask about Henry
-	join Ardana (d) at left
+	join Ardana (d) left
 	Ardana: You seem to have history with Henry Sir Alfonso.
 	[i]Dame Mikhelea follows Sir Marius and Henry inside the tavern
-	join Alfonso (d) at right
+	join Alfonso (d) right
 	Alfonso: It isn’t a coincidence we met him here.
 	Alfonso: He’s been conjuring up schemes to enter the kingdom since I was just a squire.
 	Ardana (confused): Then why do you trust him to lend us his men?
@@ -138,8 +138,8 @@ leave --All--
 	[i]You look at his red hair
 	[i]It seems to flow with the wind begrudgingly
 - Apologize to Dame Mikhelea
-	join Ardana (d) at left
-	join Mikhela (d) at right
+	join Ardana (d) left
+	join Mikhela (d) right
 	Ardana: I’m sorry I didn’t trust your judgment Dame Mikhelea.
 	[i]Sir Alfonso follows Sir Marius and Henry inside the tavern
 	Mikhela: No It’s fine!
@@ -163,7 +163,7 @@ leave --All--
 [i]Your mind thinks fondly of your memories with the knights
 [i]A selfish part of you not wanting it to end
 [i]Not wanting to face the reality
-join Marius (d) at center
+join Marius (d) center
 Marius: Your highness, It’s cold outside.
 Marius: Come in.
 leave --All--
