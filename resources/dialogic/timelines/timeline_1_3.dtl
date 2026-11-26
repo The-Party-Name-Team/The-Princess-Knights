@@ -1,3 +1,4 @@
+[background arg="res://assets/visuals/Backgrounds/Forest_Night.png" fade="0.0"]
 - accept
 	join Ardana(d) left
 	join Marius(flustered) right
@@ -40,7 +41,7 @@ Ardana(d): ...
 	Ardana: I suppose you're right
 	chuckle
 	Ardana(smile): You really did calm me down.
-	
+
 - Wish him goodnight
 	Ardana(d): I'm quite tired, thank you for the gesture.
 Ardana(d): Good night sir Marius.

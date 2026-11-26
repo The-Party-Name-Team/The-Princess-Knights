@@ -1,7 +1,7 @@
 [background arg="res://assets/visuals/Backgrounds/Forest_Night.png" fade="0.0"]
 Random: Your highness, the map is ready.
 [i]You hear someone’s voice echoing behind your book[/i]
-join Marius center
+join Marius left
 Marius (d): We’ve circled all potential allies in our vicinity.
 Marius (d): If all goes well, we should be able to set out at the crack of dawn.
 join Alfonso right
@@ -17,10 +17,10 @@ Marius (d): hm...
 	Ardana (d): No, sir Marius is right. We should make haste.
 	Marius (d): hm.
 	leave Marius
-	join Mikhela left
-	Mikhela (d): Alright! It’s settled. We should all get some rest. We’ve got a long day ahead of us.
+	join Mikhelea left
+	Mikhelea (d): Alright! It’s settled. We should all get some rest. We’ve got a long day ahead of us.
 	leave Ardana
-	leave Mikhela
+	leave Mikhelea
 - Agree with Alfonso
 	do AlfonsoData.change_relation(1)
 	leave Marius
@@ -35,12 +35,12 @@ Marius (d): hm...
 	leave --All--
 	join Ardana right
 	Ardana (d): ...
-	join Mikhela left
-	Mikhela (d): I’ll say, I’m beat!
-	Mikhela (d): I agree with Al, I’m due some beauty sleep.
-	Mikhela (d): See you all tomorrow.
+	join Mikhelea left
+	Mikhelea (d): I’ll say, I’m beat!
+	Mikhelea (d): I agree with Al, I’m due some beauty sleep.
+	Mikhelea (d): See you all tomorrow.
 	leave Ardana
-	leave Mikhela
+	leave Mikhelea
 join Marius right
 Marius (d): Then I'll keep watch for tonight.
 Marius (d): ...
@@ -48,32 +48,32 @@ Marius (rattled): Good night, your highness.
 leave Marius
 if {choice} == 1.0:
 	join Ardana left
-	join Mikhela right
-	Mikhela: Can't sleep huh?
-	Mikhela: Me neither.
-	Mikhela: oh! You're probably wondering why I'm awake.
+	join Mikhelea right
+	Mikhelea: Can't sleep huh?
+	Mikhelea: Me neither.
+	Mikhelea: oh! You're probably wondering why I'm awake.
 	- Not really...
-		Mikhela (irked): Well I'll tell you anyway!
-		Mikhela: It's no fun being awake alone.
+		Mikhelea (irked): Well I'll tell you anyway!
+		Mikhelea: It's no fun being awake alone.
 	- Sure.
 	Ardana: Sir Marius…
 	Ardana: He's sound asleep.
-	Mikhela: Heh… He always acts so tough around people.
-	Mikhela: In reality, he can barely stay awake when keeping watch.
-	Mikhela (melancholic): I miss seeing him so calm like this.
-	Mikhela (melancholic): He's always so stiff sometimes…
+	Mikhelea: Heh… He always acts so tough around people.
+	Mikhelea: In reality, he can barely stay awake when keeping watch.
+	Mikhelea (melancholic): I miss seeing him so calm like this.
+	Mikhelea (melancholic): He's always so stiff sometimes…
 	[i]You both see Sir Marius move slightly in his sleep[/i]
-	Mikhela (empathetic): sigh… always so restless.
-	Mikhela (empathetic): I just…
-	Mikhela (empathetic): I just wish he’d be more honest with me. I’m his family.
-	Mikhela (sad): Aren’t I?
-	Mikhela (sad): These days… I feel like I'm drifting away from what’s important-
-	Mikhela (shock): ...
+	Mikhelea (empathetic): sigh… always so restless.
+	Mikhelea (empathetic): I just…
+	Mikhelea (empathetic): I just wish he’d be more honest with me. I’m his family.
+	Mikhelea (sad): Aren’t I?
+	Mikhelea (sad): These days… I feel like I'm drifting away from what’s important-
+	Mikhelea (shock): ...
 	Ardana: ...
-	Mikhela (d): What am I doing?
-	Mikhela: You should head back to sleep.
-	Mikhela: C’mon I’ll take you back to your tent.
+	Mikhelea (d): What am I doing?
+	Mikhelea: You should head back to sleep.
+	Mikhelea: C’mon I’ll take you back to your tent.
 	[i]Dame Mikhelea takes you back to your tent and ushered you in[/i]
-	Mikhela: Sweet dreams your highness.
+	Mikhelea: Sweet dreams your highness.
 	leave Ardana
-	leave Mikhela
+	leave Mikhelea

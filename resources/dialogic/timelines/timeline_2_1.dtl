@@ -1,18 +1,18 @@
 [background arg="res://assets/visuals/Backgrounds/Forest_Night.png" fade="0.0"]
-join Mikhela (d) left
-Mikhela: What a day…
-Mikhela: I can feel my bones aching.
+join Mikhelea (d) left
+Mikhelea: What a day…
+Mikhelea: I can feel my bones aching.
 join Alfonso (d) right
 Alfonso: We did well.
-Mikhela (excited): If we keep this up…
-Mikhela: We’ll be strong in no time!
-Mikhela: Hah, this'll be a piece of cake.
-Mikhela: Dinner's on me!
-Mikhela: Al, fire up the food, let's feast!
+Mikhelea (excited): If we keep this up…
+Mikhelea: We’ll be strong in no time!
+Mikhelea: Hah, this'll be a piece of cake.
+Mikhelea: Dinner's on me!
+Mikhelea: Al, fire up the food, let's feast!
 leave Alfonso
 join Marius (d) right
 Marius (irked): Dinner's never on you.
-Mikhela (irked): Then don't eat you little punk-
+Mikhelea (irked): Then don't eat you little punk-
 leave --All--
 [i]You look at the celebrating knights
 [i]You feel a sense of proudness fill your heart
