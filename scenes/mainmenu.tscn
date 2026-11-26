@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://dlldbr5pacigc"]
 
 [ext_resource type="Script" uid="uid://cvujrm5xy2opl" path="res://scripts/mainmenu.gd" id="1_5mbse"]
-[ext_resource type="Texture2D" uid="uid://bojbj8hoqm68b" path="res://assets/visuals/mainmenus/mainmenu.png" id="2_r3g3c"]
-[ext_resource type="Texture2D" uid="uid://gklinu1ykhsl" path="res://assets/visuals/UI/mainmenu-logo.png" id="3_h73c4"]
-[ext_resource type="Texture2D" uid="uid://cwj1cj76irgqy" path="res://assets/visuals/UI/buttons/base/mainmenu-start.png" id="4_3vvtq"]
+[ext_resource type="AudioStream" uid="uid://bkkhxmhwhbtkx" path="res://assets/sounds/buttonhover.wav" id="2_gjjcl"]
+[ext_resource type="Texture2D" uid="uid://bojbj8hoqm68b" path="res://assets/mainmenus/mainmenu.png" id="2_r3g3c"]
+[ext_resource type="Texture2D" uid="uid://gklinu1ykhsl" path="res://media/UI/mainmenu-logo.png" id="3_h73c4"]
+[ext_resource type="AudioStream" uid="uid://c0h4kqw8ho015" path="res://assets/sounds/buttonclick.wav" id="3_kait0"]
+[ext_resource type="Texture2D" uid="uid://cwj1cj76irgqy" path="res://media/UI/buttons/base/mainmenu-start.png" id="4_3vvtq"]
 [ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scripts/button_styling.gd" id="4_s5g8n"]
 [ext_resource type="FontFile" uid="uid://ijt12uand1uh" path="res://assets/fonts/Cardinal.ttf" id="4_uui5l"]
 [ext_resource type="Texture2D" uid="uid://c66583weh4bcf" path="res://assets/visuals/UI/buttons/hover/mainmenu-start-hover.png" id="6_7yvfd"]
@@ -14,6 +16,12 @@
 
 [node name="MainMenu" type="Node2D" unique_id=1921545605]
 script = ExtResource("1_5mbse")
+
+[node name="buttonhover" type="AudioStreamPlayer" parent="." unique_id=1230004675]
+stream = ExtResource("2_gjjcl")
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="." unique_id=259849007]
+stream = ExtResource("3_kait0")
 
 [node name="MainMenu" type="Sprite2D" parent="." unique_id=669501699]
 position = Vector2(540, 360)
@@ -44,7 +52,7 @@ offset_bottom = -30.0
 grow_vertical = 0
 scale = Vector2(0.8, 0.8)
 
-[node name="Start" type="Button" parent="CanvasLayer/MainMenuButtons/Container" unique_id=1410600979 node_paths=PackedStringArray("_texture_label")]
+[node name="Start" type="Button" parent="CanvasLayer/MainMenuButtons/Container" unique_id=1213786842 node_paths=PackedStringArray("_texture_label")]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_vertical = 3
@@ -142,7 +150,10 @@ theme_override_font_sizes/font_size = 50
 text = "map
 "
 
+[connection signal="mouse_entered" from="CanvasLayer/MainMenuButtons/Container/Start" to="." method="_on_start_mouse_entered"]
 [connection signal="pressed" from="CanvasLayer/MainMenuButtons/Container/Start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/MainMenuButtons/Container/Config" to="." method="_on_config_mouse_entered"]
 [connection signal="pressed" from="CanvasLayer/MainMenuButtons/Container/Config" to="." method="_on_config_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/MainMenuButtons/Container/Leave" to="." method="_on_leave_mouse_entered"]
 [connection signal="pressed" from="CanvasLayer/MainMenuButtons/Container/Leave" to="." method="_on_leave_pressed"]
 [connection signal="pressed" from="CanvasLayer/MainMenuButtons/mapbut" to="." method="_on_mapbut_pressed"]
