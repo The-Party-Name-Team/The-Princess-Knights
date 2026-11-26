@@ -1,9 +1,10 @@
+[background arg="res://assets/visuals/Backgrounds/Forest_Day.png" fade="0.0"]
 [i]You all stop at a nearby tavern
 [i]You wait outside for Sir Alfonso to find suitable rooms
 
 Random: Lea?
 join Marius (d) left
-join Mikhela(d) right
+join Mikhela (d) right
 Marius: That’s Dame Mikhelea to you sir-
 Mikhela: Henry!
 Mikhela: Oh lighten up Marius, He’s my friend.

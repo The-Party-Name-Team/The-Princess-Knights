@@ -15,7 +15,7 @@ func _ready():
 
 func _forwards():
 	if current_step < length:
-		get_parent().transition()
+		get_parent().crossfade()
 		children_list[current_step].start()
 	else:
 		finished.emit()

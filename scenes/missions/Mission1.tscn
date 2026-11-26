@@ -1,0 +1,213 @@
+[gd_scene format=3 uid="uid://2s6ne1kdn2gn"]
+
+[ext_resource type="Script" uid="uid://chib5j7rrasw2" path="res://scenes/quest.gd" id="1_ewiq8"]
+[ext_resource type="Texture2D" uid="uid://wgroauaf1hjl" path="res://assets/visuals/Dice/dice-side1.png" id="2_ikqs1"]
+[ext_resource type="Texture2D" uid="uid://br1x42opxjivv" path="res://assets/visuals/Dice/dice-side2.png" id="3_t0gw3"]
+[ext_resource type="Texture2D" uid="uid://dbnggv82pbcb6" path="res://assets/visuals/Dice/dice-side3.png" id="4_3jjtx"]
+[ext_resource type="Texture2D" uid="uid://c26dj4gtoioa2" path="res://assets/visuals/Dice/dice-side4.png" id="5_5pmlm"]
+[ext_resource type="Texture2D" uid="uid://c7ftt7xk1uikk" path="res://assets/visuals/Dice/dice-side5.png" id="6_moa7u"]
+[ext_resource type="Texture2D" uid="uid://c3b7pdmvajtuk" path="res://assets/visuals/Dice/dice-side6.png" id="7_hdf2l"]
+[ext_resource type="Texture2D" uid="uid://ltny7sl34gq0" path="res://assets/visuals/sprites/Alfonso/Untitled111_20261125225912.png" id="8_3jjtx"]
+[ext_resource type="Texture2D" uid="uid://c2dqiaoeiaal0" path="res://assets/visuals/sprites/Marius/Untitled111_20261125225848.png" id="9_5pmlm"]
+[ext_resource type="Texture2D" uid="uid://cl4io3sq2v8kp" path="res://assets/visuals/sprites/Mikhelea/Untitled111_20261125233001.png" id="10_moa7u"]
+[ext_resource type="Resource" uid="uid://cnoiy3ff2xf3s" path="res://data/player_data.tres" id="11_hdf2l"]
+[ext_resource type="Texture2D" uid="uid://qb8ad4ewk2cm" path="res://assets/visuals/UI/diary-knightselection.png" id="11_pxbpa"]
+[ext_resource type="FontFile" uid="uid://u16bdrwd3xqf" path="res://assets/fonts/AppleGaramond-Bold.ttf" id="13_1i735"]
+[ext_resource type="FontFile" uid="uid://by85dch1nluya" path="res://assets/fonts/AppleGaramond.ttf" id="14_pxbpa"]
+[ext_resource type="Texture2D" uid="uid://cs4d7tyufn5gy" path="res://assets/visuals/UI/textures/diary-marius.png" id="15_7dwkt"]
+
+[node name="Mission1" type="Control" unique_id=1122708768 node_paths=PackedStringArray("_dice", "_background_instance", "_knight")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ewiq8")
+requirements = Array[String](["STR", "CHA", "WIS"])
+_win_stats = Dictionary[String, int]({
+"Glory": 5,
+"Gold": 5
+})
+_dice_textures = Array[Texture]([ExtResource("2_ikqs1"), ExtResource("3_t0gw3"), ExtResource("4_3jjtx"), ExtResource("5_5pmlm"), ExtResource("6_moa7u"), ExtResource("7_hdf2l")])
+_knight_textures = Dictionary[String, Texture]({
+"Alfonso": ExtResource("8_3jjtx"),
+"Marius": ExtResource("9_5pmlm"),
+"Mikhelea": ExtResource("10_moa7u")
+})
+_dice = NodePath("Quest/Dice")
+_background_instance = NodePath("Quest/Background")
+_knight = NodePath("Quest/Knight")
+_background = ExtResource("11_pxbpa")
+_player_data = ExtResource("11_hdf2l")
+
+[node name="Quest" type="Control" parent="." unique_id=1988402264]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Dice" type="TextureRect" parent="Quest" unique_id=1159712898]
+z_index = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -504.0
+offset_top = -684.0
+offset_right = 1544.0
+offset_bottom = 1364.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.1, 0.1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("2_ikqs1")
+
+[node name="Knight" type="TextureRect" parent="Quest" unique_id=1318259270]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -504.0
+offset_top = -1920.0
+offset_right = 1544.0
+offset_bottom = 680.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.25, 0.25)
+pivot_offset_ratio = Vector2(0.5, 1)
+texture = ExtResource("8_3jjtx")
+
+[node name="Background" type="TextureRect" parent="Quest" unique_id=318442625]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2040.0
+offset_top = -1100.0
+offset_right = 3080.0
+offset_bottom = 1780.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UI" type="Control" parent="." unique_id=1494229037]
+visible = false
+custom_minimum_size = Vector2(1080, 720)
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Heading" type="Label" parent="UI" unique_id=1618924764]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -132.5
+offset_top = 60.0
+offset_right = 132.5
+offset_bottom = 133.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("13_1i735")
+theme_override_font_sizes/font_size = 64
+text = "MISSION 1"
+horizontal_alignment = 1
+
+[node name="Text" type="Label" parent="UI" unique_id=1911876253]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.0
+offset_top = -203.5
+offset_right = 450.0
+offset_bottom = 203.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("14_pxbpa")
+theme_override_font_sizes/font_size = 32
+text = "A gang of bandits have recently pillaged a village near the outskirts of town. A known group that steals mostly gold and silver. 
+
+The terrified villagers described how violent and ruthless they were while looting their banks. Your knights remind you this village was known for corruption in the local government. 
+
+Their gold will meet the same fate even with different hands. You meet a stowaway bandit that explains how they don’t steal from the innocent and they need it themselves to live."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=846130870]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -450.0
+offset_top = -140.0
+offset_right = 450.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="1" type="Button" parent="UI/HBoxContainer" unique_id=1418983484]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+text = "Fight the bandits and return the gold to the villagers"
+autowrap_mode = 2
+
+[node name="Label" type="Label" parent="UI/HBoxContainer" unique_id=1647519100]
+layout_mode = 2
+
+[node name="2" type="Button" parent="UI/HBoxContainer" unique_id=1958085262]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+text = "Sweet talk the bandits into giving up gold for a better life for your kingdom"
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="UI/HBoxContainer" unique_id=1258219546]
+layout_mode = 2
+
+[node name="3" type="Button" parent="UI/HBoxContainer" unique_id=737060124]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+text = "Stop the corrupt government"
+autowrap_mode = 2
+
+[node name="KnightSelection" type="TextureRect" parent="." unique_id=1787946629]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2560.0
+offset_top = -1440.0
+offset_right = 2560.0
+offset_bottom = 1440.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.211, 0.25)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("11_pxbpa")
+
+[node name="TextureButton" type="TextureButton" parent="KnightSelection" unique_id=786557461]
+layout_mode = 0
+offset_left = 2943.886
+offset_top = 516.00024
+offset_right = 4991.8857
+offset_bottom = 2564.0002
+rotation = -0.15533431
+scale = Vector2(0.7, 0.6)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture_normal = ExtResource("15_7dwkt")

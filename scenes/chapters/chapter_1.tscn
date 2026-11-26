@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bsnydp2ob5imt" path="res://scenes/chapters/chapter.gd" id="1_ukf1f"]
 [ext_resource type="Script" uid="uid://ck615hef0umhq" path="res://scenes/chapters/dialogic_connector.gd" id="2_fod51"]
+[ext_resource type="PackedScene" uid="uid://2s6ne1kdn2gn" path="res://scenes/missions/Mission1.tscn" id="3_ei3mf"]
 
 [node name="Chapter1" type="Control" unique_id=559526500 node_paths=PackedStringArray("children_list")]
 layout_mode = 3
@@ -17,6 +18,10 @@ metadata/_custom_type_script = "uid://bsnydp2ob5imt"
 [node name="DialogicConnector" type="Node" parent="." unique_id=826246961]
 script = ExtResource("2_fod51")
 timeline_name = "timeline_1_0"
+
+[node name="Mission1" parent="." unique_id=1122708768 instance=ExtResource("3_ei3mf")]
+visible = false
+layout_mode = 1
 
 [node name="DialogicConnector2" type="Node" parent="." unique_id=2052113929]
 script = ExtResource("2_fod51")
