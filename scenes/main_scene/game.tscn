@@ -9,7 +9,7 @@
 script = ExtResource("1_wqds7")
 HUD = NodePath("CanvasLayer/MainUI/HUD")
 
-[node name="SampleQuest" parent="." unique_id=1122708768 instance=ExtResource("2_wqds7")]
+[node name="Quest" parent="." unique_id=1122708768 instance=ExtResource("2_wqds7")]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
