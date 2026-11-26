@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://x8cx7tgc6ygp"]
 
-[ext_resource type="Script" uid="uid://ccce8e5axem1a" path="res://scripts/diary_handler.gd" id="1_vybku"]
+[ext_resource type="Script" uid="uid://ccce8e5axem1a" path="res://scripts/diary_typewriter.gd" id="1_vybku"]
 
 [node name="diary" type="Control" unique_id=1075798468]
 layout_mode = 3

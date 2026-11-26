@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://df6w2ido8t3ub"]
 
-[ext_resource type="Texture2D" uid="uid://8skjg1es6pa7" path="res://media/UI/buttons/base/screenwide-border.png" id="1_0i1j5"]
+[ext_resource type="Texture2D" uid="uid://8skjg1es6pa7" path="res://assets/visuals/UI/buttons/base/screenwide-border.png" id="1_0i1j5"]
 [ext_resource type="Script" uid="uid://btslig2kxbe1o" path="res://scenes/side_buttons_hud.gd" id="2_uo2fv"]
-[ext_resource type="Texture2D" uid="uid://bol27wwgiaauv" path="res://media/UI/buttons/base/mapbutton.png" id="3_047uy"]
-[ext_resource type="Texture2D" uid="uid://u3airrjul5sn" path="res://media/UI/buttons/base/convohistorybutton.png" id="4_5pdws"]
-[ext_resource type="Texture2D" uid="uid://c685urinflnxf" path="res://media/UI/buttons/base/statsbutton.png" id="5_hd3ao"]
+[ext_resource type="Texture2D" uid="uid://bol27wwgiaauv" path="res://assets/visuals/UI/buttons/base/mapbutton.png" id="3_047uy"]
+[ext_resource type="Texture2D" uid="uid://u3airrjul5sn" path="res://assets/visuals/UI/buttons/base/convohistorybutton.png" id="4_5pdws"]
+[ext_resource type="Texture2D" uid="uid://c685urinflnxf" path="res://assets/visuals/UI/buttons/base/statsbutton.png" id="5_hd3ao"]
 [ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scripts/button_styling.gd" id="6_047uy"]
-[ext_resource type="Texture2D" uid="uid://cqguhayrfa3s0" path="res://media/UI/buttons/hover/mapbutton-hover.png" id="7_0i1j5"]
-[ext_resource type="Texture2D" uid="uid://cx6jcq601gqhe" path="res://media/UI/buttons/hover/convohistorybutton-hover.png" id="8_mphia"]
-[ext_resource type="Texture2D" uid="uid://ciffiecdok4a5" path="res://media/UI/buttons/hover/statsbutton-hover.png" id="9_0m4u7"]
+[ext_resource type="Texture2D" uid="uid://cqguhayrfa3s0" path="res://assets/visuals/UI/buttons/hover/mapbutton-hover.png" id="7_0i1j5"]
+[ext_resource type="Texture2D" uid="uid://cx6jcq601gqhe" path="res://assets/visuals/UI/buttons/hover/convohistorybutton-hover.png" id="8_mphia"]
+[ext_resource type="Texture2D" uid="uid://ciffiecdok4a5" path="res://assets/visuals/UI/buttons/hover/statsbutton-hover.png" id="9_0m4u7"]
 
 [node name="HUD" type="Control" unique_id=1421785620]
 layout_mode = 3
@@ -18,17 +18,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Border" type="TextureRect" parent="." unique_id=1355626394]
-z_index = -1
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_0i1j5")
-
 [node name="SideButtons" type="Control" parent="." unique_id=1541738748]
 anchors_preset = 0
-offset_right = 1080.0
 offset_bottom = 720.0
 script = ExtResource("2_uo2fv")
 
@@ -38,7 +29,6 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_top = -309.0
-offset_right = 211.0
 offset_bottom = 927.0
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
@@ -82,7 +72,6 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_top = -125.0
-offset_right = 80.0
 offset_bottom = 125.0
 grow_vertical = 2
 
@@ -136,3 +125,12 @@ _event_textures = Dictionary[String, Texture2D]({
 })
 _texture_label = NodePath("../../Marks/Stats")
 _how_much_rise = 10.0
+
+[node name="Borders" type="TextureRect" parent="." unique_id=1355626394]
+z_index = -1
+layout_mode = 0
+offset_right = 2160.0
+offset_bottom = 1440.0
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("1_0i1j5")
