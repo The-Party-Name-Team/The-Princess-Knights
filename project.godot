@@ -26,6 +26,7 @@ Player="*uid://bnr8bewg7v6rs"
 MariusData="*uid://boxrivn4b8nm0"
 AlfonsoData="*uid://fw35twdw6ryy"
 MikheleaData="*uid://bidj5xjcf10eg"
+Global="*uid://b5drinx6hsind"
 
 [dialogic]
 
@@ -105,7 +106,6 @@ variables={}
 window/size/viewport_width=1080
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [dotnet]
 

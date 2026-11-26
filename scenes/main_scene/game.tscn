@@ -29,9 +29,11 @@ offset_bottom = 40.0
 z_index = 1
 layout_mode = 1
 
-[node name="pausemenu" parent="CanvasLayer/MainUI" unique_id=191889806 instance=ExtResource("1_uwrxv")]
+[node name="HUD" parent="CanvasLayer" unique_id=64814607 instance=ExtResource("2_lnu2h")]
+mouse_filter = 2
+
+[node name="pausemenu" parent="CanvasLayer" unique_id=191889806 instance=ExtResource("1_uwrxv")]
 z_index = 1
-layout_mode = 1
 
 [node name="Transition" type="Control" parent="CanvasLayer" unique_id=800213193]
 modulate = Color(1, 1, 1, 0)

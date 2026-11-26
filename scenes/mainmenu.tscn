@@ -1,21 +1,27 @@
 [gd_scene format=3 uid="uid://dlldbr5pacigc"]
 
 [ext_resource type="Script" uid="uid://cvujrm5xy2opl" path="res://scripts/mainmenu.gd" id="1_5mbse"]
-[ext_resource type="AudioStream" uid="uid://bkkhxmhwhbtkx" path="res://assets/sounds/buttonhover.wav" id="2_gjjcl"]
-[ext_resource type="Texture2D" uid="uid://bojbj8hoqm68b" path="res://assets/mainmenus/mainmenu.png" id="2_r3g3c"]
-[ext_resource type="Texture2D" uid="uid://gklinu1ykhsl" path="res://media/UI/mainmenu-logo.png" id="3_h73c4"]
-[ext_resource type="AudioStream" uid="uid://c0h4kqw8ho015" path="res://assets/sounds/buttonclick.wav" id="3_kait0"]
-[ext_resource type="Texture2D" uid="uid://cwj1cj76irgqy" path="res://media/UI/buttons/base/mainmenu-start.png" id="4_3vvtq"]
+[ext_resource type="AudioStream" uid="uid://bkkhxmhwhbtkx" path="res://assets/fonts/sounds/buttonhover.wav" id="2_gjjcl"]
+[ext_resource type="AudioStream" uid="uid://bxidnn8iup25" path="res://assets/fonts/sounds/mus_the_princessknights_menu_loop.mp3" id="2_kait0"]
+[ext_resource type="Texture2D" uid="uid://gklinu1ykhsl" path="res://assets/visuals/UI/mainmenu-logo.png" id="3_h73c4"]
+[ext_resource type="AudioStream" uid="uid://c0h4kqw8ho015" path="res://assets/fonts/sounds/buttonclick.wav" id="3_kait0"]
+[ext_resource type="Texture2D" uid="uid://cwj1cj76irgqy" path="res://assets/visuals/UI/buttons/base/mainmenu-start.png" id="4_3vvtq"]
 [ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scripts/button_styling.gd" id="4_s5g8n"]
 [ext_resource type="FontFile" uid="uid://ijt12uand1uh" path="res://assets/fonts/Cardinal.ttf" id="4_uui5l"]
+[ext_resource type="Texture2D" uid="uid://bwrw5cbx0q7ll" path="res://assets/visuals/mainmenus/mainmenu-illust.png" id="5_kait0"]
 [ext_resource type="Texture2D" uid="uid://c66583weh4bcf" path="res://assets/visuals/UI/buttons/hover/mainmenu-start-hover.png" id="6_7yvfd"]
 [ext_resource type="Texture2D" uid="uid://brmrqyyfikfnl" path="res://assets/visuals/UI/buttons/base/mainmenu-config.png" id="7_h73c4"]
 [ext_resource type="Texture2D" uid="uid://du4oyaf4gl8ng" path="res://assets/visuals/UI/buttons/hover/mainmenu-config-hover.png" id="8_uui5l"]
 [ext_resource type="Texture2D" uid="uid://bpsgleva0lddd" path="res://assets/visuals/UI/buttons/base/mainmenu-leave.png" id="9_4hago"]
 [ext_resource type="Texture2D" uid="uid://b1potiduk0yib" path="res://assets/visuals/UI/buttons/hover/mainmenu-leave-hover.png" id="10_gjjcl"]
+[ext_resource type="FontFile" uid="uid://u16bdrwd3xqf" path="res://assets/fonts/AppleGaramond-Bold.ttf" id="15_6pj40"]
 
 [node name="MainMenu" type="Node2D" unique_id=1921545605]
 script = ExtResource("1_5mbse")
+
+[node name="MusThePrincessknightsMenuLoop" type="AudioStreamPlayer" parent="." unique_id=1303743602]
+stream = ExtResource("2_kait0")
+parameters/looping = true
 
 [node name="buttonhover" type="AudioStreamPlayer" parent="." unique_id=1230004675]
 stream = ExtResource("2_gjjcl")
@@ -24,8 +30,9 @@ stream = ExtResource("2_gjjcl")
 stream = ExtResource("3_kait0")
 
 [node name="MainMenu" type="Sprite2D" parent="." unique_id=669501699]
-position = Vector2(540, 360)
-texture = ExtResource("2_r3g3c")
+position = Vector2(545, 368)
+scale = Vector2(0.5083334, 0.5083334)
+texture = ExtResource("5_kait0")
 
 [node name="MainmenuLogo" type="Sprite2D" parent="." unique_id=1769264153]
 position = Vector2(240, 170)
@@ -141,14 +148,32 @@ stretch_mode = 3
 
 [node name="mapbut" type="Button" parent="CanvasLayer/MainMenuButtons" unique_id=1170097964]
 layout_mode = 0
-offset_left = 477.0
-offset_top = 55.0
-offset_right = 673.0
-offset_bottom = 141.0
+offset_left = 880.0
+offset_top = 628.0
+offset_right = 1076.0
+offset_bottom = 714.0
 theme_override_fonts/font = ExtResource("4_uui5l")
 theme_override_font_sizes/font_size = 50
 text = "map
 "
+
+[node name="tbc" type="Label" parent="." unique_id=1583625085]
+offset_left = 884.0
+offset_top = 597.0
+offset_right = 1232.0
+offset_bottom = 729.0
+theme_override_fonts/font = ExtResource("15_6pj40")
+theme_override_font_sizes/font_size = 27
+text = "To Be Continued..."
+
+[node name="pressesc" type="Label" parent="." unique_id=151311735]
+offset_left = 14.0
+offset_top = 682.0
+offset_right = 362.0
+offset_bottom = 814.0
+theme_override_fonts/font = ExtResource("15_6pj40")
+theme_override_font_sizes/font_size = 27
+text = "Note : Press Esc to Pause"
 
 [connection signal="mouse_entered" from="CanvasLayer/MainMenuButtons/Container/Start" to="." method="_on_start_mouse_entered"]
 [connection signal="pressed" from="CanvasLayer/MainMenuButtons/Container/Start" to="." method="_on_start_pressed"]
