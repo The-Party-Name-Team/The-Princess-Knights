@@ -85,7 +85,7 @@ size_flags_horizontal = 3
 mouse_filter = 2
 script = ExtResource("2_w3um1")
 _container = NodePath("Content")
-_interval_in_seconds = 0.0
+_interval_in_seconds = 0.5
 _letters_per_seconds = 120.0
 should_run = true
 
@@ -185,7 +185,7 @@ size_flags_horizontal = 3
 mouse_filter = 2
 script = ExtResource("2_w3um1")
 _container = NodePath("Content")
-_interval_in_seconds = 0.0
+_interval_in_seconds = 0.5
 _letters_per_seconds = 120.0
 
 [node name="Content" type="VBoxContainer" parent="1/2" unique_id=1240544220]
@@ -291,7 +291,7 @@ size_flags_horizontal = 3
 mouse_filter = 2
 script = ExtResource("2_w3um1")
 _container = NodePath("Content")
-_interval_in_seconds = 0.0
+_interval_in_seconds = 0.5
 _letters_per_seconds = 120.0
 
 [node name="Content" type="VBoxContainer" parent="2/1" unique_id=386085748]
@@ -353,7 +353,7 @@ size_flags_horizontal = 3
 mouse_filter = 2
 script = ExtResource("2_w3um1")
 _container = NodePath("Content")
-_interval_in_seconds = 0.0
+_interval_in_seconds = 0.5
 _letters_per_seconds = 120.0
 
 [node name="Content" type="VBoxContainer" parent="2/2" unique_id=1993626227]
