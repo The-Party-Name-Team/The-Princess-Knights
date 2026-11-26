@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q7vbao04am2u"
-path="res://.godot/imported/night_camp.png-1eeff369d797e0c6799734153364e974.ctex"
+uid="uid://jgtmldfxary7"
+path="res://.godot/imported/Alwin.png-01e2684562241fd6241506c1bf8ef8b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/visuals/night_camp.png"
-dest_files=["res://.godot/imported/night_camp.png-1eeff369d797e0c6799734153364e974.ctex"]
+source_file="res://assets/visuals/sprites/Alwin.png"
+dest_files=["res://.godot/imported/Alwin.png-01e2684562241fd6241506c1bf8ef8b6.ctex"]
 
 [params]
 

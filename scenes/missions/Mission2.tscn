@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://dujv8qvxgvl7v"]
+
+[ext_resource type="Script" uid="uid://chib5j7rrasw2" path="res://scenes/quest.gd" id="1_npn0g"]
+[ext_resource type="Texture2D" uid="uid://wgroauaf1hjl" path="res://assets/visuals/Dice/dice-side1.png" id="2_tnx6b"]
+[ext_resource type="Texture2D" uid="uid://br1x42opxjivv" path="res://assets/visuals/Dice/dice-side2.png" id="3_wnfbx"]
+[ext_resource type="Texture2D" uid="uid://dbnggv82pbcb6" path="res://assets/visuals/Dice/dice-side3.png" id="4_epgmx"]
+[ext_resource type="Texture2D" uid="uid://c26dj4gtoioa2" path="res://assets/visuals/Dice/dice-side4.png" id="5_l0bi1"]
+[ext_resource type="Texture2D" uid="uid://c7ftt7xk1uikk" path="res://assets/visuals/Dice/dice-side5.png" id="6_pilcp"]
+[ext_resource type="Texture2D" uid="uid://c3b7pdmvajtuk" path="res://assets/visuals/Dice/dice-side6.png" id="7_om8j3"]
+[ext_resource type="Texture2D" uid="uid://ltny7sl34gq0" path="res://assets/visuals/sprites/Alfonso/Untitled111_20261125225912.png" id="8_yxh8q"]
+[ext_resource type="Texture2D" uid="uid://c2dqiaoeiaal0" path="res://assets/visuals/sprites/Marius/Untitled111_20261125225848.png" id="9_d0uwf"]
+[ext_resource type="Texture2D" uid="uid://cl4io3sq2v8kp" path="res://assets/visuals/sprites/Mikhelea/Untitled111_20261125233001.png" id="10_ilup7"]
+[ext_resource type="Resource" uid="uid://cnoiy3ff2xf3s" path="res://data/player_data.tres" id="11_psyki"]
+
+[node name="SampleQuest" type="Control" unique_id=1122708768 node_paths=PackedStringArray("_dice", "_knight")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_npn0g")
+_dice_textures = Array[Texture]([ExtResource("2_tnx6b"), ExtResource("3_wnfbx"), ExtResource("4_epgmx"), ExtResource("5_l0bi1"), ExtResource("6_pilcp"), ExtResource("7_om8j3")])
+_knight_textures = Dictionary[String, Texture]({
+"Alfonso": ExtResource("8_yxh8q"),
+"Marius": ExtResource("9_d0uwf"),
+"Mikhelea": ExtResource("10_ilup7")
+})
+_dice = NodePath("Dice")
+_knight = NodePath("Knight")
+_player_data = ExtResource("11_psyki")
+
+[node name="Dice" type="TextureRect" parent="." unique_id=1159712898]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1024.0
+offset_top = -1024.0
+offset_right = 1024.0
+offset_bottom = 1024.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.1, 0.1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("2_tnx6b")
+
+[node name="Knight" type="TextureRect" parent="." unique_id=1318259270]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -1024.0
+offset_top = -2600.0
+offset_right = 1024.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.25, 0.25)
+pivot_offset_ratio = Vector2(0.5, 1)
+texture = ExtResource("8_yxh8q")

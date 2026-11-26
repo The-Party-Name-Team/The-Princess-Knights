@@ -1,3 +1,4 @@
+[background arg="res://assets/visuals/Backgrounds/Forest_Day.png" fade="0.0"]
 [i]The morning dew fills your lungs with fresh air
 [i]Mornings are usually noisy with the three bickering over small things
 [i]Today was different
@@ -65,7 +66,7 @@
 		Ardana: You aren’t lying…
 		Ardana: Are you?
 		Alfonso: I...
-		Alfonso(smile): would [b]never.
+		Alfonso (smile): would [b]never.
 		Alfonso: ...
 		leave --All--
 - Talk to Lea
@@ -127,7 +128,7 @@
 	Ardana: You aren’t lying…
 	Ardana: Are you?
 	Alfonso: I...
-	Alfonso(smile): would [b]never.
+	Alfonso (smile): would [b]never.
 	Alfonso: ...
 	leave --All--
 join Mikhela center
