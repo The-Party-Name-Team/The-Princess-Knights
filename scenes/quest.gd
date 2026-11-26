@@ -1,5 +1,7 @@
 extends Control
 
+@export var requirements: Array[String]
+
 @export var _win_stats: Dictionary[String, int]
 @export var _lose_stats: Dictionary[String, int]
 
@@ -7,8 +9,10 @@ extends Control
 @export var _knight_textures: Dictionary[String, Texture]
 
 @export var _dice: TextureRect
-
+@export var _background_instance: TextureRect
 @export var _knight: Control
+
+@export var _background: Texture
 
 @export var _initial_roll_int: float = 0.1
 @export var _final_roll_int: float = 1
@@ -20,6 +24,8 @@ var _roll_interval: float
 
 @export var _result_val:int
 
+signal finished
+
 var _slowed_down:= false
 var _roll_time:float = 0
 var _time_taken:float = 0
@@ -28,18 +34,23 @@ var _time_after_change:float = 0
 
 var _rolled := false
 
+var _started := false
+
 func _ready() -> void:
 	_roll_interval = _initial_roll_int
 	if _dice == null:
 		_dice = get_node_or_null("Dice")
 	_roll_time = randf()*3 ###the time that it rolls
+	if _background_instance:
+		_background_instance.texture = _background
 	
 func _process(delta: float) -> void:
-	_time_taken+=delta
+	if _started:
+		_time_taken+=delta
 	
-	#roll
-	if _time_taken >= _roll_time && not _slowed_down:
-		_slow_roll()
+		#roll
+		if _time_taken >= _roll_time && not _slowed_down:
+			_slow_roll()
 		
 func _physics_process(delta: float) -> void:
 	if not _rolled:
@@ -72,7 +83,7 @@ func _pick_result():
 	var tween:= _dice.create_tween()
 	tween.tween_property(_dice, "scale", Vector2(.15, .15), .25)
 	_rolled = true
-	_fail()
+	finished.emit()
 	
 func _success():
 	pass
@@ -104,3 +115,7 @@ func _fail():
 		twen2.tween_property(_knight, "position", initpos-Vector2(10-2*x, 0), .1)
 		await twen2.finished
 	_knight.position = initpos
+	
+func start():
+	_started = true
+	visible = true
