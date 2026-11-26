@@ -10,12 +10,175 @@
 "style": "standard",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "d",
 &"description": "",
 &"display_name": "Mikhelea",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"Concerned": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Empathetic 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Empathetic": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Empathetic 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Excited": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Excited 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Irked": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Irked 1 _ angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Melancholic": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Sad 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Nervous": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Nervous 1 (looks away, open mouth).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Sad": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Sad 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Shock": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Shocked 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"concerned": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Empathetic 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"confused": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Confused 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"d": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Untitled111_20261125232522.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"empathetic": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Empathetic 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"excited": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Excited 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"irked": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Irked 1 _ angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"melancholic": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Sad 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"nervous": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Nervous 1 (looks away, open mouth).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sad": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Mikhelea - Sad 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"shock": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Mikhelea/Shocked 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }
