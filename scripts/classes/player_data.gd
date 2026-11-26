@@ -9,7 +9,6 @@ class_name PlayerData
 	set(val):
 		Glory = max(0, val)
 		
-
 @export var Gospel: int = 0:
 	set(val):
 		Gospel = max(0, val)

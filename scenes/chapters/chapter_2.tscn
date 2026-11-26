@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://l52kifeu7130"]
+
+[ext_resource type="Script" uid="uid://ck615hef0umhq" path="res://scenes/chapters/dialogic_connector.gd" id="1_3hgx5"]
+[ext_resource type="Script" uid="uid://bsnydp2ob5imt" path="res://scenes/chapters/chapter.gd" id="1_v6yd1"]
+
+[node name="Chapter2" type="Control" unique_id=1207373782 node_paths=PackedStringArray("children_list")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v6yd1")
+children_list = [NodePath("DialogicConnector"), NodePath("DialogicConnector2"), NodePath("DialogicConnector3")]
+metadata/_custom_type_script = "uid://bsnydp2ob5imt"
+
+[node name="DialogicConnector" type="Node" parent="." unique_id=1222906262]
+script = ExtResource("1_3hgx5")
+timeline_name = "timeline_2_0"
+
+[node name="DialogicConnector2" type="Node" parent="." unique_id=110849458]
+script = ExtResource("1_3hgx5")
+timeline_name = "timeline_2_1"
+
+[node name="DialogicConnector3" type="Node" parent="." unique_id=814988132]
+script = ExtResource("1_3hgx5")
+timeline_name = "timeline_2_2"

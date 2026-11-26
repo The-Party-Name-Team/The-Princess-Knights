@@ -1,0 +1,240 @@
+[gd_scene format=3 uid="uid://4e3fwnb130uy"]
+
+[ext_resource type="Texture2D" uid="uid://bf2kke7f7ikpo" path="res://assets/visuals/UI/dialoguebox.png" id="1_n8bx0"]
+[ext_resource type="Script" uid="uid://c8d470kti274h" path="res://addons/dialogic/Resources/dialogic_layout_layer.gd" id="1_prwog"]
+[ext_resource type="Script" uid="uid://drhfq6rmdeuri" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="3_duvfh"]
+[ext_resource type="FontFile" uid="uid://by85dch1nluya" path="res://assets/fonts/AppleGaramond.ttf" id="3_prwog"]
+[ext_resource type="FontFile" uid="uid://dv1snibk5nbx6" path="res://assets/fonts/AppleGaramond-Italic.ttf" id="4_fs68x"]
+[ext_resource type="FontFile" uid="uid://ccg3mlcwplqss" path="res://assets/fonts/Saltblackcombat-Regular.ttf" id="5_5sx6j"]
+[ext_resource type="FontFile" uid="uid://u16bdrwd3xqf" path="res://assets/fonts/AppleGaramond-Bold.ttf" id="5_hauq8"]
+[ext_resource type="Script" uid="uid://bak74s0kcr0ao" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="6_87n5f"]
+[ext_resource type="Script" uid="uid://bldt7xlfum7ov" path="res://addons/dialogic/Modules/Choice/node_choice_button.gd" id="7_udcp2"]
+[ext_resource type="Texture2D" uid="uid://qcq4ww1vbe7c" path="res://assets/visuals/UI/buttons/base/dialogueoption.png" id="8_j3lw5"]
+[ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scripts/button_styling.gd" id="9_5sx6j"]
+[ext_resource type="Texture2D" uid="uid://6ykm6k1gx7dd" path="res://assets/visuals/UI/buttons/hover/dialogueoption-hover.png" id="10_45ord"]
+[ext_resource type="Script" uid="uid://bdnpkwbsdfik5" path="res://scenes/choice_label.gd" id="12_tom73"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_duvfh"]
+texture = ExtResource("1_n8bx0")
+
+[node name="Dialogictest" type="Node" unique_id=1994974604]
+script = ExtResource("1_prwog")
+metadata/_custom_type_script = "uid://c8d470kti274h"
+
+[node name="Background" type="Panel" parent="." unique_id=197125070]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -270.0
+offset_right = 400.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_duvfh")
+
+[node name="DialogicNode_DialogText" type="RichTextLabel" parent="Background" unique_id=286016683 node_paths=PackedStringArray("textbox_root")]
+custom_minimum_size = Vector2(0, 126)
+custom_maximum_size = Vector2(-1, 126)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -30.0
+offset_right = 300.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_colors/default_color = Color(0.4, 0.17254902, 0.09019608, 1)
+theme_override_fonts/normal_font = ExtResource("3_prwog")
+theme_override_fonts/bold_font = ExtResource("3_prwog")
+theme_override_fonts/bold_italics_font = ExtResource("4_fs68x")
+theme_override_fonts/italics_font = ExtResource("4_fs68x")
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+theme_override_font_sizes/bold_italics_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+text = "Dialog"
+fit_content = true
+script = ExtResource("3_duvfh")
+textbox_root = NodePath(".")
+metadata/_custom_type_script = "uid://drhfq6rmdeuri"
+
+[node name="DialogicNode_NameLabel" type="Label" parent="Background" unique_id=901359151]
+layout_mode = 1
+offset_left = 100.0
+offset_top = 20.0
+offset_right = 219.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(0.4, 0.17254902, 0.09019608, 1)
+theme_override_fonts/font = ExtResource("5_5sx6j")
+theme_override_font_sizes/font_size = 40
+text = "Character"
+script = ExtResource("6_87n5f")
+metadata/_custom_type_script = "uid://bak74s0kcr0ao"
+
+[node name="Choices" type="VBoxContainer" parent="." unique_id=1900400123]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 60.0
+offset_right = 250.0
+offset_bottom = 450.0
+grow_horizontal = 2
+pivot_offset_ratio = Vector2(0.5, 0)
+alignment = 1
+
+[node name="Choice1" type="Button" parent="Choices" unique_id=851212932]
+self_modulate = Color(1, 1, 1, 0)
+custom_maximum_size = Vector2(-1, 120)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("7_udcp2")
+metadata/_custom_type_script = "uid://bldt7xlfum7ov"
+
+[node name="TextureRect" type="TextureRect" parent="Choices/Choice1" unique_id=1349651990 node_paths=PackedStringArray("_texture_label", "_button")]
+layout_mode = 0
+offset_left = -830.0
+offset_top = -329.0
+offset_right = 1330.0
+offset_bottom = 449.0
+scale = Vector2(0.2, 0.2)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("8_j3lw5")
+script = ExtResource("9_5sx6j")
+_event_textures = Dictionary[String, Texture2D]({
+"base": ExtResource("8_j3lw5"),
+"hover": ExtResource("10_45ord")
+})
+_texture_label = NodePath(".")
+_button = NodePath("..")
+_how_much_rise = 10.0
+
+[node name="ChoiceLabel" type="Label" parent="Choices/Choice1/TextureRect" unique_id=691444960 node_paths=PackedStringArray("ref_label")]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -600.0001
+offset_top = -514.0001
+offset_right = -360.00012
+offset_bottom = -451.0001
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(5, 5)
+theme_override_colors/font_color = Color(0.33333334, 0.11764706, 0.05882353, 1)
+theme_override_fonts/font = ExtResource("5_hauq8")
+theme_override_font_sizes/font_size = 24
+text = "OPTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12_tom73")
+ref_label = NodePath("../..")
+
+[node name="Choice2" type="Button" parent="Choices" unique_id=633321915]
+self_modulate = Color(1, 1, 1, 0)
+custom_maximum_size = Vector2(-1, 120)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("7_udcp2")
+metadata/_custom_type_script = "uid://bldt7xlfum7ov"
+
+[node name="TextureRect" type="TextureRect" parent="Choices/Choice2" unique_id=86045638 node_paths=PackedStringArray("_texture_label", "_button")]
+layout_mode = 0
+offset_left = -830.0
+offset_top = -329.0
+offset_right = 1330.0
+offset_bottom = 449.0
+scale = Vector2(0.2, 0.2)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("8_j3lw5")
+script = ExtResource("9_5sx6j")
+_event_textures = Dictionary[String, Texture2D]({
+"base": ExtResource("8_j3lw5"),
+"hover": ExtResource("10_45ord")
+})
+_texture_label = NodePath(".")
+_button = NodePath("..")
+_how_much_rise = 10.0
+
+[node name="ChoiceLabel" type="Label" parent="Choices/Choice2/TextureRect" unique_id=1356457678 node_paths=PackedStringArray("ref_label")]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -600.0001
+offset_top = -514.0001
+offset_right = -360.00012
+offset_bottom = -451.0001
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(5, 5)
+theme_override_colors/font_color = Color(0.33333334, 0.11764706, 0.05882353, 1)
+theme_override_fonts/font = ExtResource("5_hauq8")
+theme_override_font_sizes/font_size = 24
+text = "OPTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12_tom73")
+ref_label = NodePath("../..")
+
+[node name="Choice3" type="Button" parent="Choices" unique_id=1385340595]
+self_modulate = Color(1, 1, 1, 0)
+custom_maximum_size = Vector2(-1, 120)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("7_udcp2")
+metadata/_custom_type_script = "uid://bldt7xlfum7ov"
+
+[node name="TextureRect" type="TextureRect" parent="Choices/Choice3" unique_id=194838170 node_paths=PackedStringArray("_texture_label", "_button")]
+layout_mode = 0
+offset_left = -830.0
+offset_top = -329.0
+offset_right = 1330.0
+offset_bottom = 449.0
+scale = Vector2(0.2, 0.2)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("8_j3lw5")
+script = ExtResource("9_5sx6j")
+_event_textures = Dictionary[String, Texture2D]({
+"base": ExtResource("8_j3lw5"),
+"hover": ExtResource("10_45ord")
+})
+_texture_label = NodePath(".")
+_button = NodePath("..")
+_how_much_rise = 10.0
+
+[node name="ChoiceLabel" type="Label" parent="Choices/Choice3/TextureRect" unique_id=188951473 node_paths=PackedStringArray("ref_label")]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -600.0001
+offset_top = -514.0001
+offset_right = -360.00012
+offset_bottom = -451.0001
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(5, 5)
+theme_override_colors/font_color = Color(0.33333334, 0.11764706, 0.05882353, 1)
+theme_override_fonts/font = ExtResource("5_hauq8")
+theme_override_font_sizes/font_size = 24
+text = "OPTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12_tom73")
+ref_label = NodePath("../..")

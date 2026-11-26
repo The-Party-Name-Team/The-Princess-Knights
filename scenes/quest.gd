@@ -61,14 +61,16 @@ func _slow_roll() -> void:
 	
 func _change_dice():
 	_current_val = randi_range(1, 6)
-	var twen:= _dice.create_tween()
-	twen.tween_property(_dice, "scale", Vector2(.11, .11), .05)
-	await twen.finished
+	var tween:= _dice.create_tween()
+	tween.tween_property(_dice, "scale", Vector2(.11, .11), .05)
+	await tween.finished
 	_dice.scale = Vector2(.1, .1)
 	_dice.texture = _dice_textures[_current_val-1]
 
 func _pick_result():
 	_result_val = _current_val
+	var tween:= _dice.create_tween()
+	tween.tween_property(_dice, "scale", Vector2(.15, .15), .25)
 	_rolled = true
 	_fail()
 	

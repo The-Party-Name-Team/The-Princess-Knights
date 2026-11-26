@@ -1,4 +1,4 @@
-extends Button
+extends Control
 
 #exported properties
 @export var _event_textures: Dictionary[String, Texture2D] = {
@@ -6,6 +6,7 @@ extends Button
 	"hover": null
 }
 @export var _texture_label: TextureRect
+@export var _button: Control
 
 @export var _hover_anim_duration: float = 0.1
 
@@ -17,9 +18,12 @@ var _init_position: Vector2 #before rising
 var _final_position: Vector2 #after rising
 
 func _ready() -> void:	
+	if _button == null:
+		_button = self
+		
 	if not _texture_label == null:
-		mouse_entered.connect(_on_mouse_enter)
-		mouse_exited.connect(_on_mouse_exit)
+		_button.mouse_entered.connect(_on_mouse_enter)
+		_button.mouse_exited.connect(_on_mouse_exit)
 		
 		if _event_textures.get("hover") == null:
 			_event_textures.base = _texture_label.texture
@@ -29,6 +33,7 @@ func _ready() -> void:
 		if _has_tween_position:
 			_init_position = _texture_label.position
 			_final_position = _init_position + Vector2(0, -_how_much_rise)
+			print(_init_position)
 	
 func _on_mouse_enter() -> void:
 	if not _event_textures.get("hover") == null:

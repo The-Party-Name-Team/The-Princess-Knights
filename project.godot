@@ -23,6 +23,10 @@ buses/default_bus_layout="uid://cygptmycfb0rb"
 
 Dialogic="*uid://ds2q0uclmolvu"
 Global="*uid://b5drinx6hsind"
+Player="*uid://bnr8bewg7v6rs"
+MariusData="*uid://boxrivn4b8nm0"
+AlfonsoData="*uid://fw35twdw6ryy"
+MikheleaData="*uid://bidj5xjcf10eg"
 
 [dialogic]
 
@@ -37,8 +41,9 @@ directories/dch_directory={
 "Henry": "res://resources/dialogic/characters/Henry.dch",
 "Marius": "res://resources/dialogic/characters/Marius.dch",
 "Marius and Lea": "res://resources/dialogic/characters/Marius and Lea.dch",
-"Mikhela": "res://resources/dialogic/characters/Mikhela.dch",
-"Random": "res://resources/dialogic/characters/Random.dch"
+"Mikhela": "res://resources/dialogic/characters/Mikhelea.dch",
+"Random": "res://resources/dialogic/characters/Random.dch",
+"characters/Mikhela": "res://resources/dialogic/characters/Mikhela.dch"
 }
 directories/dtl_directory={
 "chapter_0": "res://resources/dialogic/timelines/chapter_0.dtl",
@@ -56,11 +61,11 @@ directories/dtl_directory={
 "timeline_4_0": "res://resources/dialogic/timelines/timeline_4_0.dtl"
 }
 layout/style_directory={
-"": "res://resources/dialogic/styles/standard.tres",
-"standard": "res://resources/dialogic/styles/standard.tres"
+"": "res://resources/dialogic/styles/base.tres",
+"base": "res://resources/dialogic/styles/base.tres"
 }
-layout/style_list=["res://resources/dialogic/styles/standard.tres"]
-layout/default_style="res://resources/dialogic/styles/standard.tres"
+layout/style_list=["res://resources/dialogic/styles/base.tres"]
+layout/default_style="res://resources/dialogic/styles/base.tres"
 glossary/default_case_sensitive=true
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

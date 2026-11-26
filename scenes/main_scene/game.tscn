@@ -1,24 +1,32 @@
 [gd_scene format=3 uid="uid://d8lbfbanm4aw"]
 
-[ext_resource type="PackedScene" uid="uid://bi2iptnj0yccm" path="res://scenes/diary.tscn" id="1_8vd3g"]
 [ext_resource type="PackedScene" uid="uid://coatf4kod7m3q" path="res://scenes/pausemenu.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://cbqtu60aoogil" path="res://scenes/main_scene/main_game.gd" id="1_wqds7"]
 [ext_resource type="PackedScene" uid="uid://df6w2ido8t3ub" path="res://scenes/hud.tscn" id="2_lnu2h"]
+[ext_resource type="Script" uid="uid://b2byw3vt2tvru" path="res://scenes/main_scene/transition.gd" id="4_7kmie"]
+[ext_resource type="Script" uid="uid://dbm3ridw4chta" path="res://scenes/main_scene/game_scene.gd" id="4_u0hqi"]
+[ext_resource type="PackedScene" uid="uid://csnotlof17mvj" path="res://scenes/chapters/chapter_0.tscn" id="4_wqds7"]
+[ext_resource type="PackedScene" uid="uid://bv7hpkvi3xccm" path="res://scenes/chapters/chapter_1.tscn" id="7_2egyx"]
+[ext_resource type="PackedScene" uid="uid://dxwnjx6iv6wy1" path="res://scenes/chapters/chapter_3.tscn" id="8_2egyx"]
+[ext_resource type="PackedScene" uid="uid://l52kifeu7130" path="res://scenes/chapters/chapter_2.tscn" id="8_dweqh"]
+[ext_resource type="PackedScene" uid="uid://dkb1xve1gf0wy" path="res://scenes/chapters/chapter_4.tscn" id="9_7kmie"]
 
 [node name="GAME" type="Node2D" unique_id=612820248 node_paths=PackedStringArray("HUD")]
 script = ExtResource("1_wqds7")
 HUD = NodePath("CanvasLayer/MainUI/HUD")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1620995083]
+layer = 2
 
 [node name="MainUI" type="Control" parent="CanvasLayer" unique_id=1688173147]
+z_index = 2
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="HUD" parent="CanvasLayer/MainUI" unique_id=1421785620 instance=ExtResource("2_lnu2h")]
-z_index = -1
+z_index = 1
 layout_mode = 1
 
 [node name="HUD" parent="CanvasLayer" unique_id=64814607 instance=ExtResource("2_lnu2h")]
@@ -27,11 +35,66 @@ mouse_filter = 2
 [node name="pausemenu" parent="CanvasLayer" unique_id=191889806 instance=ExtResource("1_uwrxv")]
 z_index = 1
 
-[node name="Diary" parent="." unique_id=284882189 instance=ExtResource("1_8vd3g")]
+[node name="Transition" type="Control" parent="CanvasLayer" unique_id=800213193]
+modulate = Color(1, 1, 1, 0)
+z_index = 10
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("4_7kmie")
+init_black = true
+metadata/_custom_type_script = "uid://b2byw3vt2tvru"
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Transition" unique_id=359610808]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="GameScene" type="Control" parent="." unique_id=1727202033 node_paths=PackedStringArray("HUD")]
+custom_minimum_size = Vector2(1080, 720)
+layout_mode = 3
 anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
 offset_right = 1080.0
 offset_bottom = 720.0
-grow_horizontal = 1
-grow_vertical = 1
+pivot_offset_ratio = Vector2(0.5, 0.5)
+script = ExtResource("4_u0hqi")
+HUD = NodePath("../CanvasLayer")
+
+[node name="Chapter0" parent="GameScene" unique_id=1731282069 instance=ExtResource("4_wqds7")]
+custom_minimum_size = Vector2(1080, 720)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = -360.0
+offset_right = 540.0
+offset_bottom = 360.0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Chapter1" parent="GameScene" unique_id=559526500 instance=ExtResource("7_2egyx")]
+visible = false
+layout_mode = 1
+
+[node name="Chapter2" parent="GameScene" unique_id=2075373182 instance=ExtResource("8_dweqh")]
+visible = false
+layout_mode = 1
+
+[node name="Chapter3" parent="GameScene" unique_id=725180095 instance=ExtResource("8_2egyx")]
+visible = false
+layout_mode = 1
+
+[node name="Chapter4" parent="GameScene" unique_id=1644781613 instance=ExtResource("9_7kmie")]
+visible = false
+layout_mode = 1
