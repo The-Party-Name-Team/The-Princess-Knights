@@ -5,19 +5,8 @@
 &"color": Color(1, 1, 1, 1),
 &"custom_info": {
 "prefix": "",
-"sound_mood_default": "Base",
-"sound_moods": {
-"Base": {
-"mode": 2,
-"name": "Base",
-"pitch_base": 1.0,
-"pitch_variance": -0.1,
-"skip_characters": 0.0,
-"sound_path": "res://assets/audio/vo_male1c.wav",
-"volume_base": 0.0,
-"volume_variance": 0.0
-}
-},
+"sound_mood_default": "",
+"sound_moods": {},
 "style": "",
 "suffix": ""
 },
@@ -30,7 +19,7 @@
 &"portraits": {
 "Henry": {
 "export_overrides": {
-"image": "\"res://assets/visuals/sprites/Henry.png\""
+"image": "\"res://assets/Charactersprites/Henry/Henry.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

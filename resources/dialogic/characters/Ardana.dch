@@ -5,32 +5,174 @@
 &"color": Color(0.91764706, 0.6, 0.6, 1),
 &"custom_info": {
 "prefix": "",
-"sound_mood_default": "Base",
-"sound_moods": {
-"Base": {
-"mode": 2,
-"name": "Base",
-"pitch_base": 1.0,
-"pitch_variance": 0.1,
-"skip_characters": 0.0,
-"sound_path": "res://assets/audio/vo_female1b.wav",
-"volume_base": 0.0,
-"volume_variance": 0.0
-}
-},
+"sound_mood_default": "",
+"sound_moods": {},
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "d",
+&"default_portrait": "New portrait",
 &"description": "",
 &"display_name": "Ardana",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"New portrait": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"concerned": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - Tired 2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"confused": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Confused 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "d": {
 "export_overrides": {
-"image": "\"res://assets/visuals/sprites/Ardana/Normal.png\""
+"image": "\"res://assets/Charactersprites/Ardana/Normal (1).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"displeased": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Displeased 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"dumbfounded": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - VERY Shocked 3 _ flustered .png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"flustered": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/VERY Shocked 3 _ flustered .png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"frustrated": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - Sulking (closed eyes).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"laugh": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - Happy 2_ laughing (open mouth, closed eyes).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"melancholic": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - Sad _ nervous _ worried (smiling).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"melancholy": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - Sad _ nervous _ worried (smiling).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"mortified": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/download (1).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"rattled": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - Shocked 1 _ rattled .png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sad": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - Sad 1 (teary).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"smug": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/ARDANA-SMUG(open).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"suspicious": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - Displeased 3 (looks away).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"teary": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - Sad 1 (teary).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"tired": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Ardana/Ardana - Tired 1 (looks away).png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
