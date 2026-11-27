@@ -46,6 +46,7 @@ func _on_options_pressed() -> void:
 	await get_tree().create_timer(0.2).timeout
 	if not is_instance_valid(options_instance):
 		options_instance = OPTIONS_SCENE.instantiate()
+		options_instance.scale = Vector2(.9,.9)
 		add_child(options_instance)
 		
 

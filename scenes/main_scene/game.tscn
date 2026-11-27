@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://coatf4kod7m3q" path="res://scenes/pausemenu.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://cbqtu60aoogil" path="res://scenes/main_scene/main_game.gd" id="1_wqds7"]
 [ext_resource type="PackedScene" uid="uid://df6w2ido8t3ub" path="res://scenes/hud.tscn" id="2_lnu2h"]
-[ext_resource type="PackedScene" uid="uid://2s6ne1kdn2gn" path="res://scenes/missions/Mission1.tscn" id="2_vf26v"]
 [ext_resource type="Script" uid="uid://b2byw3vt2tvru" path="res://scenes/main_scene/transition.gd" id="4_7kmie"]
 [ext_resource type="Script" uid="uid://dbm3ridw4chta" path="res://scenes/main_scene/game_scene.gd" id="4_u0hqi"]
 [ext_resource type="PackedScene" uid="uid://csnotlof17mvj" path="res://scenes/chapters/chapter_0.tscn" id="4_wqds7"]
@@ -15,17 +14,6 @@
 [node name="GAME" type="Node2D" unique_id=612820248 node_paths=PackedStringArray("HUD")]
 script = ExtResource("1_wqds7")
 HUD = NodePath("CanvasLayer/MainUI/HUD")
-
-[node name="SampleQuest" parent="." unique_id=1122708768 instance=ExtResource("2_vf26v")]
-visible = false
-custom_minimum_size = Vector2(1080, 720)
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_right = 1080.0
-offset_bottom = 720.0
-grow_horizontal = 1
-grow_vertical = 1
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1620995083]
 layer = 2
@@ -41,11 +29,8 @@ offset_bottom = 40.0
 z_index = 1
 layout_mode = 1
 
-[node name="HUD" parent="CanvasLayer" unique_id=64814607 instance=ExtResource("2_lnu2h")]
-mouse_filter = 2
-
 [node name="pausemenu" parent="CanvasLayer" unique_id=191889806 instance=ExtResource("1_uwrxv")]
-z_index = 1
+z_index = 2
 
 [node name="Transition" type="Control" parent="CanvasLayer" unique_id=800213193]
 modulate = Color(1, 1, 1, 0)

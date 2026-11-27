@@ -18,6 +18,7 @@ offset_left = 72.0
 offset_top = 114.0
 offset_right = 1010.0
 offset_bottom = 531.0
+pivot_offset_ratio = Vector2(0.5, 0.5)
 script = ExtResource("1_85aq5")
 settings_res = ExtResource("2_gyu1t")
 
