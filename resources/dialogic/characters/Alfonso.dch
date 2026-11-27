@@ -5,19 +5,8 @@
 &"color": Color(0.91764706, 0.6, 0.6, 1),
 &"custom_info": {
 "prefix": "",
-"sound_mood_default": "Base",
-"sound_moods": {
-"Base": {
-"mode": 2,
-"name": "Base",
-"pitch_base": 0.9,
-"pitch_variance": -0.1,
-"skip_characters": 1.0,
-"sound_path": "res://assets/audio/vo_male1b.wav",
-"volume_base": 0.0,
-"volume_variance": 0.0
-}
-},
+"sound_mood_default": "",
+"sound_moods": {},
 "style": "",
 "suffix": ""
 },
@@ -28,9 +17,90 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"calm": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Alfonso/ALFONSO-NORMAL(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"concerned": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Alfonso/ALFONSO-CONCERNED(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"confused": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Alfonso/ALFONSO-CONFUSED, SWEAT(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "d": {
 "export_overrides": {
-"image": "\"res://assets/visuals/sprites/Alfonso/Untitled111_20261125225815.png\""
+"image": "\"res://assets/Charactersprites/Alfonso/Untitled111_20261125225815.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"irked": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Alfonso/ALFONSO-IRKED(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"melancholic": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Alfonso/ALFONSO-MELANCHOLIC(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"mortified": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Alfonso/ALFONSO-MELANCHOLIC(closed, eye closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"nervous": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Alfonso/ALFONSO-NERVOUS(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"shocked": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Alfonso/ALFONSO-SHOCKED(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"smile": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Alfonso/ALFONSO-SMILE(closed).png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

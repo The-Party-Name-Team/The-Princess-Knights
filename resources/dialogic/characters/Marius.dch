@@ -5,19 +5,8 @@
 &"color": Color(0.1968, 0.18239999, 0.24, 1),
 &"custom_info": {
 "prefix": "",
-"sound_mood_default": "Base",
-"sound_moods": {
-"Base": {
-"mode": 2,
-"name": "Base",
-"pitch_base": 1.0,
-"pitch_variance": -0.1,
-"skip_characters": 0.0,
-"sound_path": "res://assets/audio/vo_male1a.wav",
-"volume_base": 0.0,
-"volume_variance": 0.0
-}
-},
+"sound_mood_default": "",
+"sound_moods": {},
 "style": "",
 "suffix": ""
 },
@@ -28,9 +17,63 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"concerned": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Marius/MARIUS-CONCERNED(side look).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"confused": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Marius/MARIUS-CONFUSED(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "d": {
 "export_overrides": {
-"image": "\"res://assets/visuals/sprites/Marius/Untitled111_20261125225809.png\""
+"image": "\"res://assets/Charactersprites/Marius/Untitled111_20261125225809.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"empathetic": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Marius/MARIUS-EMPATHETIC(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"flustered": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Marius/MARIUS-FLUSTERED(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"irked": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Marius/MARIUS-IRKED(closed).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"rattled": {
+"export_overrides": {
+"image": "\"res://assets/Charactersprites/Marius/MARIUS-NERVOUS(open) (1).png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
