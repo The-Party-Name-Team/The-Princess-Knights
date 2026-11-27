@@ -81,6 +81,7 @@ mouse_filter = 2
 texture = ExtResource("5_hd3ao")
 
 [node name="Buttons" type="Control" parent="SideButtons" unique_id=497049016]
+custom_minimum_size = Vector2(60, 0)
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -96,7 +97,7 @@ layout_mode = 0
 offset_right = 65.0
 offset_bottom = 80.0
 size_flags_horizontal = 3
-mouse_filter = 2
+mouse_filter = 1
 script = ExtResource("6_047uy")
 _event_textures = Dictionary[String, Texture2D]({
 "base": ExtResource("3_047uy"),
@@ -116,7 +117,7 @@ offset_right = 65.0
 offset_bottom = 45.0
 grow_vertical = 2
 size_flags_horizontal = 3
-mouse_filter = 2
+mouse_filter = 1
 script = ExtResource("6_047uy")
 _event_textures = Dictionary[String, Texture2D]({
 "base": ExtResource("4_5pdws"),
@@ -135,7 +136,7 @@ offset_top = -65.0
 offset_right = 65.0
 grow_vertical = 0
 size_flags_horizontal = 3
-mouse_filter = 2
+mouse_filter = 1
 script = ExtResource("6_047uy")
 _event_textures = Dictionary[String, Texture2D]({
 "base": ExtResource("5_hd3ao"),
@@ -144,7 +145,7 @@ _event_textures = Dictionary[String, Texture2D]({
 _texture_label = NodePath("../../Marks/Stats")
 _how_much_rise = 10.0
 
-[node name="Borders" type="TextureRect" parent="." unique_id=1355626394]
+[node name="Borders" type="TextureRect" parent="." unique_id=2119163508]
 z_index = -1
 layout_mode = 0
 offset_right = 2160.0

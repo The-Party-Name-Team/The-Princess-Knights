@@ -15,6 +15,9 @@
 [ext_resource type="FontFile" uid="uid://u16bdrwd3xqf" path="res://assets/fonts/AppleGaramond-Bold.ttf" id="13_1i735"]
 [ext_resource type="FontFile" uid="uid://by85dch1nluya" path="res://assets/fonts/AppleGaramond.ttf" id="14_pxbpa"]
 [ext_resource type="Texture2D" uid="uid://cs4d7tyufn5gy" path="res://assets/visuals/UI/textures/diary-marius.png" id="15_7dwkt"]
+[ext_resource type="Texture2D" uid="uid://bnjk8gb6tfifx" path="res://assets/visuals/UI/diary-intro.png" id="15_nwino"]
+[ext_resource type="PackedScene" uid="uid://kkikvcrscjls" path="res://DEVELOPMENTFILES/ggg_counter.tscn" id="17_eio4g"]
+[ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scripts/button_styling.gd" id="17_hpahp"]
 
 [node name="Mission1" type="Control" unique_id=1122708768 node_paths=PackedStringArray("_dice", "_background_instance", "_knight")]
 layout_mode = 3
@@ -184,7 +187,8 @@ layout_mode = 2
 text = "Stop the corrupt government"
 autowrap_mode = 2
 
-[node name="KnightSelection" type="TextureRect" parent="." unique_id=1787946629]
+[node name="MissionBriefing" type="TextureRect" parent="." unique_id=290179167]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -199,15 +203,49 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.211, 0.25)
 pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("15_nwino")
+
+[node name="KnightSelection" type="TextureRect" parent="." unique_id=1787946629]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2560.0
+offset_top = -1440.0
+offset_right = 2560.0
+offset_bottom = 1440.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 0
 texture = ExtResource("11_pxbpa")
 
-[node name="TextureButton" type="TextureButton" parent="KnightSelection" unique_id=786557461]
+[node name="GGGCounter" parent="KnightSelection" unique_id=1511584280 instance=ExtResource("17_eio4g")]
+layout_mode = 1
+offset_left = 1550.0
+offset_top = 350.0
+offset_right = 1550.0
+offset_bottom = 350.0
+
+[node name="Button" type="Button" parent="." unique_id=1924645431 node_paths=PackedStringArray("_texture_label", "_button")]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 2943.886
-offset_top = 516.00024
-offset_right = 4991.8857
-offset_bottom = 2564.0002
+offset_left = 446.80756
+offset_top = -266.9203
+offset_right = 2494.8074
+offset_bottom = 1781.0797
 rotation = -0.15533431
 scale = Vector2(0.7, 0.6)
 pivot_offset_ratio = Vector2(0.5, 0.5)
-texture_normal = ExtResource("15_7dwkt")
+script = ExtResource("17_hpahp")
+_texture_label = NodePath("TextureRect")
+_button = NodePath(".")
+
+[node name="TextureRect" type="TextureRect" parent="Button" unique_id=218089542]
+layout_mode = 0
+offset_right = 2048.0
+offset_bottom = 2048.0
+texture = ExtResource("15_7dwkt")

@@ -55,6 +55,7 @@ if {choice} == 1.0:
 		Mikhelea (irked): Well I'll tell you anyway!
 		Mikhelea: It's no fun being awake alone.
 	- Sure.
+		do MikheleaData.change_relation(2)
 	Ardana: Sir Marius…
 	Ardana: He's sound asleep.
 	Mikhelea: Heh… He always acts so tough around people.

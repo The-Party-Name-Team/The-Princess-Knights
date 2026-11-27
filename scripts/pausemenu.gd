@@ -48,6 +48,7 @@ func _on_options_pressed() -> void:
 	if not is_instance_valid(options_instance):
 		options_instance = OPTIONS_SCENE.instantiate()
 		options_instance.scale = Vector2(.9,.9)
+		options_instance.z_index = 4
 		add_child(options_instance)
 		
 

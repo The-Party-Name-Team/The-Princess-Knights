@@ -116,6 +116,7 @@ grow_vertical = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1827810842]
 modulate = Color(1, 1, 1, 0)
+z_index = 1
 layout_mode = 0
 offset_left = 206.0
 offset_top = 173.0

@@ -1,20 +1,14 @@
 [gd_scene format=3 uid="uid://kkikvcrscjls"]
 
-[ext_resource type="Texture2D" uid="uid://bcksnj8b24f7q" path="res://media/UI/GGG.png" id="1_455di"]
 [ext_resource type="Script" uid="uid://dyxwacakefpos" path="res://scripts/ggg_counter.gd" id="2_ptl7v"]
-[ext_resource type="Resource" uid="uid://cnoiy3ff2xf3s" path="res://data/player_data.tres" id="3_qy10h"]
 [ext_resource type="FontFile" uid="uid://by85dch1nluya" path="res://assets/fonts/AppleGaramond.ttf" id="4_ut0hb"]
 
-[node name="GGGCounter" type="TextureRect" unique_id=1513347338 node_paths=PackedStringArray("_Container")]
-offset_left = 30.0
-offset_top = 30.0
-offset_right = 1886.0
-offset_bottom = 1017.0
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("1_455di")
+[node name="GGGCounter" type="Control" unique_id=1511584280 node_paths=PackedStringArray("_Container")]
+layout_mode = 3
+anchors_preset = 0
+pivot_offset_ratio = Vector2(0.5, 0.5)
 script = ExtResource("2_ptl7v")
 _Container = NodePath("HBoxContainer")
-_Player_Data = ExtResource("3_qy10h")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1225614033]
 custom_minimum_size = Vector2(1400, 350)
@@ -38,7 +32,7 @@ size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_ut0hb")
 theme_override_font_sizes/font_size = 240
-text = "999"
+text = "0"
 horizontal_alignment = 1
 
 [node name="Glory" type="Label" parent="HBoxContainer" unique_id=1515006033]
@@ -48,7 +42,7 @@ size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_ut0hb")
 theme_override_font_sizes/font_size = 240
-text = "999"
+text = "0"
 horizontal_alignment = 1
 
 [node name="Gospel" type="Label" parent="HBoxContainer" unique_id=390790369]
@@ -58,5 +52,5 @@ size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_ut0hb")
 theme_override_font_sizes/font_size = 240
-text = "999"
+text = "0"
 horizontal_alignment = 1
