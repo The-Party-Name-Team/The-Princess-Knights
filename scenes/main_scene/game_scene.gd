@@ -16,12 +16,12 @@ func update_scene():
 	max_children = self.get_child_count()
 	
 	transition()
+	await HUD.get_node("Transition").finished
 	
 	current_scene.visible = false
 	current_scene = get_child(current_chapter)
 	current_scene.visible = true
 	
-	await HUD.get_node("Transition").finished
 	current_scene._forwards()
 	current_scene.finished.connect(on_finish)
 
