@@ -1,0 +1,97 @@
+join Alfonso(mortified) left
+Alfonso: …
+Alfonso:your highness-
+- Say your nonsense
+	join Ardana(sad) right
+	Ardana: I don’t understand, I thought we just became closer…?
+	Ardana: Was I wrong?
+	Ardana: You don’t trust me with my own kingdom?
+	Alfonso(nervous): O-Ofcourse I do, Your highness…
+	Alfonso(nervous): I… I…
+	[i]You see Sir Alfonso freeze up under the pressure
+- Let him explain
+	join Ardana(suspicious) right
+	Ardana(suspicious):Tell me, what is this?
+	Alfonso(concerned): ...
+	Alfonso: Apologies, your highness
+	Alfonso: We thought that showing it to you would overwhelm you-
+	Alfonso: You were so happy-
+	Alfonso(nervous): We thought that it wouldn’t matter if-
+	Ardana(melancholic): I need some time.
+leave --All--
+[i]You walk away from your campsite feeling betrayed
+[i]Your heart sank, and a heavy feeling settled deep within you,
+[i]That trust you had built felt superficial
+[i]You look down to the crumpled letter
+[i]Doubts settle in your mind once again
+Random: Your highness!
+join Alfonso(d) left
+Alfonso: I see it clearly now.
+Alfonso: I think I’ve finally found the words… To explain myself.
+Alfonso(concerned): You deserve the truth and we withheld it from you.
+Alfonso: ...
+Alfonso: We’ve already gotten a few letters from Lady Thalia…
+Ardana: ...
+Alfonso: Yes, we decided a few weeks ago to keep it hidden from you.
+Alfonso: We know now we shouldn’t have done that.
+Alfonso: There’s no excuse.
+- Forgive them
+	join Ardana(sad) right
+	Ardana: I guess… I understand why you did that.
+	Ardana(melancholic): I have been a wreck, have I?
+	Ardana(concerned): But still…
+	Ardana: You needn’t hide these things from me.
+	Ardana: I am, after all, the one who will one day become your Queen.
+	Ardana: It’s my job to know everything-
+	Ardana: and anything
+	Ardana: Even at the expense of my own demise.
+	Alfonso(melancholic): That’s exactly what I fear…
+	Alfonso: You shouldn't have to bear the weight of every burden the crown holds.
+	Alfonso: You’re still young,
+	Alfonso: You deserve nothing but happiness.
+- Don't forgive them
+	join Ardana(sad) right
+	Ardana: I’m sorry, it’ll take time for me to trust you again.
+	Alfonso(concerned): I understand…
+	Alfonso: What we did was unforgivable.
+	Alfonso: We deserve your disappointment…
+	Alfonso: I hope that one day, I can earn your trust again.
+leave --All--
+[i]You both walk back to the campsite
+[i]From afar you hear the sound of Sir Marius and Dame Mikhelea arguing
+join Marius(irked) left
+join Mikhela(irked) right
+Marius: I knew we should’ve just told her!
+Mikhela: Are you crazy?!
+Mikhela: She had just lost their highness’ and you think it’s a perfect idea-
+Mikhela: To tell her that not only is she alone, her kingdom is GONE.
+Marius: Nip it in the bud-
+Marius: Have you heard of that-
+leave --All--
+join Alfonso(irked) center
+Alfonso: Enough
+Alfonso: Do you really think it’s a great idea to bicker right now?
+leave Alfonso 
+join Mikhela(concerned) left
+join Marius(concerned) right
+[i]Sir Marius and Dame Mikhelea look at each other in guilt
+"Marius and Lea": We’re sorry, your highness.
+[i]You look at the siblings in disbelief
+[i]You find their little argument quite amusing
+leave --All--
+join Ardana(laugh) center
+Ardana (laugh): Pfft-
+Ardana (laugh): HAHAHAHAHAHAHA
+[i]You don’t understand why you find this so humorous
+[i]Perhaps it’s the feeling of dissociation from reality
+[i]You find everything in your life is just a small drop of water
+[i]In a bountiful ocean
+Ardana (laugh): HAHAHA…
+Ardana(d): Whatever, I give up.
+Ardana: Even if I knew about everything, it wouldn’t matter.
+Ardana: I don’t have the power to change anything.
+leave --All--
+Mikhela (concerned): Perhaps not now, but I believe that, in time, we will.
+[i]You reminisce about the future
+[i]A prosperous kingdom ruled by your hands
+[i]You’re elated, imagining a brighter future
