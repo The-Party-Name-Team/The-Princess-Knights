@@ -19,3 +19,6 @@ func start():
 		Dialogic.start(timeline.resource_path)
 		await Dialogic.timeline_ended
 		finished.emit()
+
+func end_process():
+	process_mode = Node.PROCESS_MODE_DISABLED

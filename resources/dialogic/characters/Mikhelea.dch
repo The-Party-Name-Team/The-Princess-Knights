@@ -5,9 +5,20 @@
 &"color": Color(0.1882353, 0.33333334, 0.38431373, 1),
 &"custom_info": {
 "prefix": "",
-"sound_mood_default": "",
-"sound_moods": {},
-"style": "standard",
+"sound_mood_default": "Base",
+"sound_moods": {
+"Base": {
+"mode": 2,
+"name": "Base",
+"pitch_base": 0.9,
+"pitch_variance": -0.1,
+"skip_characters": 0.0,
+"sound_path": "res://assets/audio/vo_female1c.wav",
+"volume_base": 0.0,
+"volume_variance": 0.0
+}
+},
+"style": "",
 "suffix": ""
 },
 &"default_portrait": "d",

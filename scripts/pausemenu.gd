@@ -34,6 +34,7 @@ func _on_resume_pressed() -> void:
 func _on_quit_pressed() -> void:
 	$Buttonclick2.play()
 	Dialogic.end_timeline()
+	await Dialogic.timeline_ended
 	await get_tree().create_timer(0.2).timeout
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://scenes/mainmenu.tscn")

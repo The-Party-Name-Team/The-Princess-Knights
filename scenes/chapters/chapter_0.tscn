@@ -15,11 +15,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_43rfn")
-children_list = [NodePath("DialogicConnector")]
+children_list = [NodePath("Diary"), NodePath("DialogicConnector")]
 metadata/_custom_type_script = "uid://bsnydp2ob5imt"
 
 [node name="Diary" parent="." unique_id=284882189 instance=ExtResource("1_xxedx")]
-visible = false
 layout_mode = 0
 anchors_preset = 0
 anchor_right = 0.0
@@ -30,7 +29,7 @@ offset_right = 540.0
 offset_bottom = 360.0
 grow_horizontal = 1
 grow_vertical = 1
-scale = Vector2(1.1, 1.1)
+scale = Vector2(1.05, 1.05)
 
 [node name="BackgroundUI" type="TextureRect" parent="." unique_id=1248186369]
 z_index = -1

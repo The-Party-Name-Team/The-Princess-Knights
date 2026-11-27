@@ -65,33 +65,4 @@ offset_bottom = 720.0
 pivot_offset_ratio = Vector2(0.5, 0.5)
 script = ExtResource("4_u0hqi")
 HUD = NodePath("../CanvasLayer")
-
-[node name="Chapter0" parent="GameScene" unique_id=1731282069 instance=ExtResource("4_wqds7")]
-custom_minimum_size = Vector2(1080, 720)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -540.0
-offset_top = -360.0
-offset_right = 540.0
-offset_bottom = 360.0
-pivot_offset_ratio = Vector2(0.5, 0.5)
-
-[node name="Chapter1" parent="GameScene" unique_id=559526500 instance=ExtResource("7_2egyx")]
-visible = false
-layout_mode = 1
-
-[node name="Chapter2" parent="GameScene" unique_id=2075373182 instance=ExtResource("8_dweqh")]
-visible = false
-layout_mode = 1
-
-[node name="Chapter3" parent="GameScene" unique_id=725180095 instance=ExtResource("8_2egyx")]
-visible = false
-layout_mode = 1
-
-[node name="Chapter4" parent="GameScene" unique_id=1644781613 instance=ExtResource("9_7kmie")]
-visible = false
-layout_mode = 1
+ChapterResources = Array[PackedScene]([ExtResource("4_wqds7"), ExtResource("7_2egyx"), ExtResource("8_dweqh"), ExtResource("8_2egyx"), ExtResource("9_7kmie")])

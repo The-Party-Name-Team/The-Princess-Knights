@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://daoirlqifix10" path="res://assets/visuals/Backgrounds/Forest_Day.png" id="5_r7jkp"]
 [ext_resource type="Resource" uid="uid://c2kpjg64llb1" path="res://resources/dialogic/timelines/timeline_1_2.dtl" id="6_r7jkp"]
 [ext_resource type="Resource" uid="uid://coc001ofod2uf" path="res://resources/dialogic/timelines/timeline_1_3.dtl" id="7_0ad4i"]
+[ext_resource type="Texture2D" uid="uid://bic2yf4awsf2o" path="res://assets/visuals/Backgrounds/Campsite.png" id="7_l01ag"]
 [ext_resource type="Texture2D" uid="uid://bik4kqtig3i6h" path="res://assets/visuals/Backgrounds/Forest_Night.png" id="8_0ad4i"]
 
 [node name="Chapter1" type="Control" unique_id=559526500 node_paths=PackedStringArray("children_list")]
@@ -41,6 +42,7 @@ background_texture = ExtResource("5_r7jkp")
 script = ExtResource("2_fod51")
 timeline = ExtResource("5_gbphn")
 background_ui = NodePath("../BackgroundUI")
+background_texture = ExtResource("7_l01ag")
 
 [node name="DialogicConnector2" type="Node" parent="." unique_id=1084027327 node_paths=PackedStringArray("background_ui")]
 script = ExtResource("2_fod51")

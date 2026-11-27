@@ -29,12 +29,14 @@ func _on_next() -> void:
 		_sheets[_current_sheet].visible = true
 		_sheets[_current_sheet].get_node_or_null("1").start()
 	else:
-		_end_process()
+		final()
 
-func _end_process() -> void:
+func final():
+	finished.emit()
+
+func end_process() -> void:
 	visible = false
 	process_mode = Node.PROCESS_MODE_DISABLED
-	finished.emit()
 
 func start():
 	_sheets[_current_sheet].get_node_or_null("1").start()

@@ -17,6 +17,8 @@ func _forwards():
 	if current_step < length:
 		if current_step != 0:
 			get_parent().crossfade()
+			await get_parent().crossfade_finished
+		children_list[current_step-1].end_process()
 		children_list[current_step].start()
 	else:
 		finished.emit()

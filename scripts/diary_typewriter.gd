@@ -4,9 +4,18 @@ extends Control
 @export var _interval_in_seconds: float = 1
 @export var _letters_per_seconds: float = 60
 
-@export var _len_s: Array[int] = []
+@export var _len_s: Array[int]
+
 
 @export var should_run := false
+
+@export var sounds: Array[AudioStream] = [
+	preload("res://assets/audio/writing1.wav"),
+	preload("res://assets/audio/writing2.wav"),
+	preload("res://assets/audio/writing3.wav"),
+	preload("res://assets/audio/writing4.wav"),
+	preload("res://assets/audio/writing5.wav"),
+]
 
 var is_ready := false
 
@@ -77,11 +86,17 @@ func _continue() -> void:
 			_ended = true
 
 func _typewrite(item: CanvasItem) -> void:
+	var currsound := AudioStreamPlayer.new()
+	add_child(currsound)
+	currsound.stream = sounds[randi_range(0, 4)]
+	currsound.play()
+	
 	var tween := item.create_tween()
-	var str_length = _len_s[_current_iteration]
+	var str_length:int = _len_s[_current_iteration]
 	tween.tween_property(item, "visible_characters", str_length, str_length / _letters_per_seconds)
 	
 	await tween.finished
+	currsound.queue_free()
 	_continue_disabled = false
 	_time_passed = 0
 	_current_iteration += 1

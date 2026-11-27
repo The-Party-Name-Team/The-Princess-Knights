@@ -1,37 +1,43 @@
 extends Control
 
-var current_scene: ChapterScript
 
 @export var HUD:CanvasLayer
 @export var current_chapter:int = 0
 
-var max_children
+@export var ChapterResources:Array[PackedScene]
+
+var max_chapters:int
+signal crossfade_finished
 
 func _ready() -> void:
+	max_chapters = len(ChapterResources)
 	update_scene()
-	current_scene = get_child(0)
 
 func update_scene():
 	await get_tree().process_frame
-	max_children = self.get_child_count()
 	
-	transition()
-	await HUD.get_node("Transition").finished
+	transition(3)
+	await HUD.get_node("Transition").finished #fully opaque
 	
-	current_scene.visible = false
-	current_scene = get_child(current_chapter)
+	for child in get_children(): #clear scene
+		child.queue_free()
+	
+	var current_scene := ChapterResources[current_chapter].instantiate()
+	add_child(current_scene)
 	current_scene.visible = true
 	
 	current_scene._forwards()
 	current_scene.finished.connect(on_finish)
 
 func on_finish():
-	if current_chapter < max_children-1:
+	if current_chapter < max_chapters-1:
 		current_chapter+=1
 		update_scene()
 
-func transition():
-	HUD.get_node("Transition").inter_fade()
+func transition(seconds:float):
+	HUD.get_node("Transition").inter_fade(seconds)
 
 func crossfade():
 	HUD.get_node("Transition").cross_fade()
+	await HUD.get_node("Transition").finished
+	crossfade_finished.emit()

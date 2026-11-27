@@ -8,12 +8,13 @@ func _ready() -> void:
 	if init_black:
 		modulate.a = 1
 
-func inter_fade():
+func inter_fade(_seconds: float=1):
 	var twn := create_tween()
 	twn.tween_property(self, "modulate:a", 1, 1)
 	await twn.finished
 	twn = create_tween()
-	twn.tween_property(self, "modulate:a", 1, 1)
+	twn.tween_property(self, "modulate:a", 1, _seconds)
+	await twn.finished
 	finished.emit()
 	twn = create_tween()
 	twn.tween_property(self, "modulate:a", 0, 2)
@@ -21,6 +22,8 @@ func inter_fade():
 func cross_fade():
 	var twn := create_tween()
 	twn.tween_property(self, "modulate:a", 1, .8)
+	await twn.finished
+	finished.emit()
 	twn = create_tween()
 	twn.tween_property(self, "modulate:a", 0, 1.2)
-	finished.emit()
+	await twn.finished
