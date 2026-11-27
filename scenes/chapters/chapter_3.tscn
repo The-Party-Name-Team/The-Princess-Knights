@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://bsnydp2ob5imt" path="res://scenes/chapters/chapter.gd" id="1_s7wks"]
 [ext_resource type="Script" uid="uid://ck615hef0umhq" path="res://scenes/chapters/dialogic_connector.gd" id="2_j10aj"]
+[ext_resource type="Texture2D" uid="uid://chcxk4s4s2eju" path="res://assets/visuals/Backgrounds/Plains_Day.png" id="2_nxxdi"]
+[ext_resource type="Resource" uid="uid://ccqpn6p444yks" path="res://resources/dialogic/timelines/timeline_3_0.dtl" id="4_82et5"]
+[ext_resource type="Resource" uid="uid://bt8j4vsvfik4d" path="res://resources/dialogic/timelines/timeline_3_1.dtl" id="5_cp1hc"]
+[ext_resource type="Texture2D" uid="uid://daoirlqifix10" path="res://assets/visuals/Backgrounds/Forest_Day.png" id="6_82et5"]
 
 [node name="Chapter3" type="Control" unique_id=725180095 node_paths=PackedStringArray("children_list")]
 layout_mode = 3
@@ -11,13 +15,27 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_s7wks")
-children_list = [NodePath("DialogicConnector"), NodePath("DialogicConnector2")]
+children_list = [NodePath("DialogicConnector0"), NodePath("DialogicConnector1")]
 metadata/_custom_type_script = "uid://bsnydp2ob5imt"
 
-[node name="DialogicConnector" type="Node" parent="." unique_id=587521206]
-script = ExtResource("2_j10aj")
-timeline_name = "timeline_3_0"
+[node name="BackgroundUI" type="TextureRect" parent="." unique_id=381422516]
+z_index = -1
+custom_minimum_size = Vector2(1080, 720)
+layout_mode = 0
+offset_right = 1080.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("2_nxxdi")
+expand_mode = 1
 
-[node name="DialogicConnector2" type="Node" parent="." unique_id=776271602]
+[node name="DialogicConnector0" type="Node" parent="." unique_id=587521206 node_paths=PackedStringArray("background_ui")]
 script = ExtResource("2_j10aj")
-timeline_name = "timeline_3_1"
+timeline = ExtResource("4_82et5")
+background_ui = NodePath("../BackgroundUI")
+background_texture = ExtResource("2_nxxdi")
+
+[node name="DialogicConnector1" type="Node" parent="." unique_id=776271602 node_paths=PackedStringArray("background_ui")]
+script = ExtResource("2_j10aj")
+timeline = ExtResource("5_cp1hc")
+background_ui = NodePath("../BackgroundUI")
+background_texture = ExtResource("6_82et5")
