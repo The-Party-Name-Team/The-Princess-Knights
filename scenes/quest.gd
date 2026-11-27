@@ -53,19 +53,20 @@ func _process(delta: float) -> void:
 			_slow_roll()
 		
 func _physics_process(delta: float) -> void:
-	if not _rolled:
-		if _slowed_down:
-			_roll_interval += (_final_roll_int-_initial_roll_int)/300 ##slowingdownfactor
-			if _roll_interval >= _final_roll_int:
-				_pick_result()
-				_roll_interval = 999
+	if _started:
+		if not _rolled:
+			if _slowed_down:
+				_roll_interval += (_final_roll_int-_initial_roll_int)/300 ##slowingdownfactor
+				if _roll_interval >= _final_roll_int:
+					_pick_result()
+					_roll_interval = 999
+			
+			if _time_after_change >= _roll_interval-.05:
+				_change_dice()
+				print(_current_val)
+				_time_after_change=0
 		
-		if _time_after_change >= _roll_interval-.05:
-			_change_dice()
-			print(_current_val)
-			_time_after_change=0
-	
-		_time_after_change += delta
+			_time_after_change += delta
 
 func _slow_roll() -> void:
 	_slowed_down = true

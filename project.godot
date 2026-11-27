@@ -22,6 +22,7 @@ buses/default_bus_layout="uid://cygptmycfb0rb"
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
+Global="*uid://b5drinx6hsind"
 Player="*uid://bnr8bewg7v6rs"
 MariusData="*uid://boxrivn4b8nm0"
 AlfonsoData="*uid://fw35twdw6ryy"
@@ -103,7 +104,6 @@ variables={
 window/size/viewport_width=1080
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [dotnet]
 

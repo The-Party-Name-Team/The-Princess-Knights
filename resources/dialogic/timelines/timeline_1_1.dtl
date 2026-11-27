@@ -1,7 +1,7 @@
 [i]An almost sacred stillness enveloped your surroundings
-join Mikhela center
-Mikhela(concerned): …
-leave Mikhela
+join Mikhelea center
+Mikhelea(concerned): …
+leave Mikhelea
 join Marius center
 Marius(concerned): ...
 leave Marius 
@@ -11,14 +11,14 @@ leave Alfonso
 join Ardana left
 Ardana(concerned): ...
 leave Alfonso 
-join Mikhela(nervous) right
-Mikhela(nervous): Oh well...
-Mikhela(nervous): We’ll get it next time.
+join Mikhelea(nervous) right
+Mikhelea(nervous): Oh well...
+Mikhelea(nervous): We’ll get it next time.
 Ardana(frustrated): sigh…
 Ardana(frustrated): Do you think there will even be a next time?
 Ardana(frustrated): We can’t have these meager mistakes again.
 Ardana(frustrated): There won’t be another chance-
-leave Mikhela
+leave Mikhelea
 join Marius(d) right
 Marius: Your Highness, dwelling on what has already happened will do us no good.
 Ardana(frustrated): And pretending it doesn't matter will?
@@ -41,28 +41,28 @@ leave Ardana
 [i]Shouldn't they mourn the death of their imperial highness too?
 join Ardana(frustrated) left
 Ardana(frustrated): ...
-join Mikhela(d) right
-Mikhela: ...
-leave Mikhela 
+join Mikhelea(d) right
+Mikhelea: ...
+leave Mikhelea 
 join Alfonso(d) right
 Alfonso: ...
 Alfonso(concerned): Is something else the matter your highness?
 Ardana: It's nothing…
 leave Alfonso 
-join Mikhela(d) right
-Mikhela: Are you sure?
+join Mikhelea(d) right
+Mikhelea: Are you sure?
 Ardana(frustrated): Yes...
 leave Ardana 
 join Alfonso(concerned) left
 [i]Dame Mikhelea and Sir Alfonso look at each other in concern
-Mikhela(concerned): Hey, you can talk to us you know.
+Mikhelea(concerned): Hey, you can talk to us you know.
 Alfonso(concerned): It’s not good to keep it bottled up.
-Mikhela(concerned): We might just understand…
-Mikhela(concerned): Is it the last mission?
+Mikhelea(concerned): We might just understand…
+Mikhelea(concerned): Is it the last mission?
 Alfonso(concerned): We’re worried about you. We just want to help…
-Mikhela(concerned): You don’t have to tell us everything right away, but please don’t shut us out.
-"Alfonso and Mikhela": Tell us…
-leave Mikhela 
+Mikhelea(concerned): You don’t have to tell us everything right away, but please don’t shut us out.
+"Alfonso and Mikhelea": Tell us…
+leave Mikhelea 
 leave Alfonso 
 join Marius center 
 Marius: Your highness-
@@ -75,9 +75,9 @@ leave Marius
 	Ardana(displeased): Why don't you all do something useful?
 	Ardana(teary): ...
 	update Ardana left
-	join Mikhela(concerned) right
-	Mikhela(concerned): ...
-	leave Mikhela 
+	join Mikhelea(concerned) right
+	Mikhelea(concerned): ...
+	leave Mikhelea 
 	join Alfonso(concerned) right
 	Alfonso(concerned): ...
 	leave Alfonso 
@@ -91,9 +91,9 @@ leave Marius
 		Ardana(teary): ...
 		Marius(concerned): ...
 		leave Marius 
-		join Mikhela right
-		Mikhela: ...
-		leave Mikhela 
+		join Mikhelea right
+		Mikhelea: ...
+		leave Mikhelea 
 		join Alfonso(concerned) right
 		Alfonso(concerned): Please don't cry, your highness.
 		Alfonso(concerned): We didn't mean to insult you.
@@ -110,7 +110,7 @@ leave Marius
 	join Alfonso(concerned) right
 	Alfonso(concerned):...
 	Alfonso(calm): I understand.
-	Mikhela(confused): ?
+	Mikhelea(confused): ?
 	Marius(confused): ?
 	Alfonso(d): There’s nothing to be confused about.
 	Alfonso: There’s a time for everything.
@@ -122,13 +122,13 @@ leave Marius
 	Ardana(frustrated): I'm just...
 	Ardana(frustrated): Tired.
 	Ardana: Very tired.
-	join Mikhela(empathetic) right
+	join Mikhelea(empathetic) right
 	[i]You look at Mikhelea solemnly
-	Mikhela: ...
-	Mikhela: I see…
-	Mikhela: Ardana… I just want you to know.
-	Mikhela: We’re here for you.
-	Mikhela: I’m here for you, whenever you’re ready.
+	Mikhelea: ...
+	Mikhelea: I see…
+	Mikhelea: Ardana… I just want you to know.
+	Mikhelea: We’re here for you.
+	Mikhelea: I’m here for you, whenever you’re ready.
 	leave --All--
 [i]You sit by the fire as the three of them whisper to each other
 [i]You close your eyes to the sound of the crackling firewood

@@ -18,11 +18,11 @@ leave Alfonso
 [i]A young man sat at the end of the corridor
 [i]His smile filled with malice and overconfidence
 join Gabe center
-Random: Princess Ardama Saint Olivier
+Random: Princess Ardana Saint Olivier
 Random: What irony that you come crawling to my kingdom.
 Random: This one should truly be written for the history books.
 Marius (irked): ...
-Mikhela (irked): What insolence-
+Mikhelea (irked): What insolence-
 Alfonso (concerned): ...
 Ardana (confused): I don’t follow…?
 Ardana (confused): I believe we’ve never met.
@@ -91,14 +91,14 @@ Gabe: Long Live @#*&$# The Great
 [i]Shamefully stared at by his subjects
 
 leave Gabe
-join Mikhela (irked) left
+join Mikhelea (irked) left
 join Alfonso (concerned) right
 Lea (irked): That Pompous BASTARD!
 
 [i]Dame Mikhelea kicks a nearby tree
 Lea (irked): Tsk. What was he even spouting?
 Alfonso (concerned): ...
-Mikhela (concerned): Al?
+Mikhelea (concerned): Al?
 Alfonso (concerned): I do remember a meeting with King Gabriel I-
 Alfonso (concerned): But that was long ago!
 Alfonso (concerned): More than that, It went incredibly well.
@@ -107,7 +107,7 @@ join Marius (concerned) right
 Marius (concerned): I don’t understand this sudden change in authority…
 Marius (concerned): I should’ve known.
 Marius (concerned): I’ve checked (insert kingdom name) multiple times before we came here.
-Mikhela (irked): Whatever! We’ll do just fine without him!
+Mikhelea (irked): Whatever! We’ll do just fine without him!
 Marius (concerned): With what army.
 Marius (concerned): We’ll be torn to shreds even before we reach the castle.
 leave --All--

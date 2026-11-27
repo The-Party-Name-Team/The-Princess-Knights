@@ -24,8 +24,8 @@ leave --All--
 [i]Your eyes start to well up from the chaos unraveling in front of you
 [i]A pair of metal hands cover your eyes from the sight
 [i]As they take you into an embrace
-join Mikhela (concerned) center
-Mikhela (concerned): Please, Your Highness, spare yourself this dreadful sight.
+join Mikhelea (concerned) center
+Mikhelea (concerned): Please, Your Highness, spare yourself this dreadful sight.
 leave --All--
 [i]You think of the life you’ve led wearing rose tinted glasses
 [i]You remember the times you thought your kingdom was flawless
@@ -85,7 +85,7 @@ update Alwin center
 Alwin: I’m not desperate for God’s attention
 Marius: …
 Alwin: I don’t falter under the pressure of my people
-Mikhela: ...
+Mikhelea: ...
 Alwin: and I’m far capable of making a simple decision.
 Alfonso: ...
 Alwin: Ardana, you even surround yourself with worthless people.
@@ -108,9 +108,9 @@ leave Alwin
 [i]And faster
 [i]And faster
 [i]And faster
-join Mikhela (concerned) center
-Mikhela (concerned): No time to think, your highness.
-leave Mikhela
+join Mikhelea (concerned) center
+Mikhelea (concerned): No time to think, your highness.
+leave Mikhelea
 [i]Dame Mikhelea takes you far away from the field
 [i]The others follow close behind you
 [i]You glance back at once was your home

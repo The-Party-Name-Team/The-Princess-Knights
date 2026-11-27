@@ -1,0 +1,122 @@
+[i]The Journey back to your kingdom was quiet
+[i]It felt longer than it should’ve
+[i]Henry’s men sing of the horrors of war behind you
+join Marius(irked) left
+join Alfonso(d) right
+Marius(irked): Watch where you’re going!
+Marius(irked): sigh… What brutes.
+Alfonso: At least Dame Mikhelea seems to be having fun.
+[i]You look back to see Dame Mikhelea dance along to a bard’s tune
+leave Marius 
+join Ardana(confused) left
+Ardana(confused): Where did they get a performer?
+Alfonso(confused): What do you mean?
+Alfonso(d): That’s a mercenary.
+Ardana(dumbfounded):...
+leave --All--
+
+[i]As you reach the front gates 
+[i]You all are mortified with state of your home
+[i]Royal banners burned in front of the gates
+[i]Silver armor hung from the walls, a silent testament to their unwavering loyalty
+[i]The gates stood adorned with the kingdom's bravest, their final watch far crueler than the last
+[i]Your eyes start to well up from the chaos unraveling in front of you
+[i]A pair of metal hands cover your eyes from the sight
+[i]As they take you into an embrace
+join Mikhela(concerned) center
+Mikhela(concerned): Please, Your Highness, spare yourself this dreadful sight.
+leave --All--
+[i]You think of the life you’ve led wearing rose tinted glasses
+[i]You remember the times you thought your kingdom was flawless
+[i]How foolish
+[i]How naive
+[i]A young child could never rule a kingdom
+[i]Your demise is close
+[i]You feel death's embrace  inching towards you
+
+Random: Ardana…?
+
+[i]A familiar voice you miss passes your ears
+join Ardana(d) center
+Ardana: Alwin…?
+leave Ardana
+[i]You run to your brother in all but blood
+[i]Tears run down each step of the way
+[i]He takes you in a tight embrace
+[i]In the same minute,
+[i]A chilling wind creeps up your spine
+[i]You hear the sound of metal clanking
+[i]You look to your right
+[i]A silver knife was left on the grass
+[i]You look up to your “brother”
+[i]A guiltless look was seen across his face
+[i]Sir Marius pulled you back from his embrace
+[i]You look around you
+[i]You’re surrounded 
+[i]hat an end to a pathetic adventure
+[i]Your soldiers look at each other in fear
+[i]Right then and there
+[i]You realize,
+[i]You’ve been completely fooled
+[i]You think back to the words King Gabriel II mouthed to you
+join Ardana(d) left
+join Alwin right
+Ardana: Long... Live… Alwin… The Great
+Alwin: That stupid man, he couldn’t even kill you when you were fully in his domain.
+Alwin: After what I did for him?
+Alwin: Poisoning King George I wasn’t easy you know.
+Alwin: I ought to teach him a lesson soon.
+Ardana(mortified): I don’t understand…
+Ardana(d): why…?
+Alwin: Eugh, you look completely pathetic.
+Alwin: Ardana, don’t you remember?
+Alwin: I’m a commoner.
+Alwin: Yet I’m just as smart, 
+Alwin: just as capable to rule this ratched kingdom…
+Alwin: as you
+Alwin: With the only difference…
+Alwin: I do not possess the blood of a royal.
+Alwin: An unholy body.
+
+[i]Alwin looks at your knights one by one
+leave Ardana 
+update Alwin center
+Alwin: I’m not desperate for God’s attention
+Marius: …
+Alwin: I don’t falter under the pressure of my people
+Mikhela:...
+Alwin: and I’m far capable of making a simple decision.
+Alfonso:...
+Alwin: Ardana, you even surround yourself with worthless people.
+Alwin: How do you expect to grow?
+Alwin: Your soldiers?
+Alwin: Barbaric mercenaries.
+Alwin: You’ve lost.
+Alwin: So rather than acting all pathetic and miserable.
+Alwin: Why don’t you accept your death with honor?
+Alwin: I really want to celebrate being an only child.
+Alwin: Guards.
+leave Alwin
+[i]The fishy smell of blood taint the beautifully green grass
+[i]You stand in the midst of a battleground 
+[i]Unable to move
+[i]Staying stagnant in a fast pace environment
+[i]Your world stands still in time
+[i]Your breath pants 
+[i]Your heart beats faster and faster
+[i]And faster
+[i]And faster
+[i]And faster
+join Mikhela(concerned) center
+Mikhela(concerned): No time to think, your highness.
+leave Mikhela
+[i]Dame Mikhelea takes you far away from the field
+[i]The others follow close behind you
+[i]You glance back at once was your home
+[i]A foreign man will now sit on your vacant throne
+[i]For time is the harbinger of change,
+[i]And we are but pieces upon its board
+[i]For even the lowliest pawn,
+[i]May one day rise to become a Queen.
+
+[b]TO BE CONTINUED

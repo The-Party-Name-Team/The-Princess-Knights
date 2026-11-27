@@ -1,41 +1,91 @@
 [gd_scene format=3 uid="uid://coatf4kod7m3q"]
 
 [ext_resource type="Script" uid="uid://brby58sxkege5" path="res://scripts/pausemenu.gd" id="1_3otxd"]
+[ext_resource type="AudioStream" uid="uid://c0h4kqw8ho015" path="res://assets/fonts/sounds/buttonclick.wav" id="2_elpj7"]
+[ext_resource type="AudioStream" uid="uid://bkkhxmhwhbtkx" path="res://assets/fonts/sounds/buttonhover.wav" id="2_kv823"]
+[ext_resource type="Shader" uid="uid://objnmioit6gu" path="res://scenes/pausemenu.gdshader" id="2_r33we"]
+[ext_resource type="Texture2D" uid="uid://o24qbesdyi0q" path="res://assets/visuals/maps/blankmap.png" id="3_vpyy4"]
+[ext_resource type="Script" uid="uid://df2ayacmevcfs" path="res://scripts/button_styling.gd" id="4_e0wba"]
+[ext_resource type="Texture2D" uid="uid://c6n7cu40bw61u" path="res://assets/visuals/mainmenus/resumebutton.png" id="5_klbn3"]
+[ext_resource type="Texture2D" uid="uid://d3lbls17ym0wq" path="res://assets/visuals/mainmenus/resumebutton-hover.png" id="6_g5jmi"]
+[ext_resource type="Texture2D" uid="uid://c50txs8rsrvsf" path="res://assets/visuals/mainmenus/mainmenu-logo (2).png" id="6_kv823"]
+[ext_resource type="Texture2D" uid="uid://dqlsntb6d23n5" path="res://assets/visuals/mainmenus/mainmenu-config.png" id="7_v4mab"]
+[ext_resource type="Texture2D" uid="uid://dbho7tg1jc4n5" path="res://assets/visuals/mainmenus/quitbutton.png" id="8_lkswt"]
+[ext_resource type="Texture2D" uid="uid://bmvdgg22epkw3" path="res://assets/visuals/mainmenus/quitbutton-hover.png" id="11_elpj7"]
+[ext_resource type="Texture2D" uid="uid://bdbln5021rciq" path="res://assets/visuals/mainmenus/mainmenu-config-hover.png" id="11_sqm04"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bh68p"]
+shader = ExtResource("2_r33we")
+shader_parameter/lod = 0.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bh68p"]
+texture = ExtResource("3_vpyy4")
+expand_margin_left = 747.0
+expand_margin_right = 810.0
 
 [sub_resource type="Animation" id="Animation_r33we"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible")
+tracks/0/path = NodePath("../ColorRect:material:shader_parameter/lod")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vpyy4"]
+resource_name = "blur"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../ColorRect:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.8330000870675]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_8ljkb"]
 resource_name = "pausing"
 length = 0.06666667
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.03),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, true]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vpyy4"]
 _data = {
 &"RESET": SubResource("Animation_r33we"),
+&"blur": SubResource("Animation_vpyy4"),
 &"pausing": SubResource("Animation_8ljkb")
 }
 
@@ -49,31 +99,111 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_3otxd")
 
+[node name="Buttonclick2" type="AudioStreamPlayer" parent="." unique_id=737452096]
+stream = ExtResource("2_elpj7")
+
+[node name="Buttonhover" type="AudioStreamPlayer" parent="." unique_id=109786247]
+stream = ExtResource("2_kv823")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1307688829]
+material = SubResource("ShaderMaterial_bh68p")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1827810842]
-visible = false
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 249.0
-offset_top = 131.0
-offset_right = 897.0
-offset_bottom = 508.0
+offset_left = 206.0
+offset_top = 173.0
+offset_right = 854.0
+offset_bottom = 550.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_bh68p")
+
+[node name="stuff`" type="Sprite2D" parent="PanelContainer" unique_id=765822608]
+position = Vector2(27.999992, 180.00002)
+scale = Vector2(0.1373291, 0.1373291)
+texture = ExtResource("6_kv823")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1612560047]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_constants/separation = 32
+theme_override_constants/separation = 51
 
-[node name="resume" type="Button" parent="PanelContainer/VBoxContainer" unique_id=307416916]
+[node name="resume" type="Button" parent="PanelContainer/VBoxContainer" unique_id=307416916 node_paths=PackedStringArray("_texture_label")]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 text = "resume"
+script = ExtResource("4_e0wba")
+_event_textures = Dictionary[String, Texture2D]({
+"base": ExtResource("5_klbn3"),
+"hover": ExtResource("6_g5jmi")
+})
+_texture_label = NodePath("resumeimage")
+_how_much_rise = 5.0
 
-[node name="quit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=560166229]
+[node name="resumeimage" type="TextureRect" parent="PanelContainer/VBoxContainer/resume" unique_id=40488958]
+layout_mode = 0
+offset_left = -47.0
+offset_top = -51.0
+offset_right = 117.0
+offset_bottom = 113.0
+texture = ExtResource("5_klbn3")
+expand_mode = 1
+
+[node name="options" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1077285273 node_paths=PackedStringArray("_texture_label")]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+text = "settings"
+script = ExtResource("4_e0wba")
+_event_textures = Dictionary[String, Texture2D]({
+"base": ExtResource("7_v4mab"),
+"hover": ExtResource("11_sqm04")
+})
+_texture_label = NodePath("optionsimage")
+_how_much_rise = 5.0
+
+[node name="optionsimage" type="TextureRect" parent="PanelContainer/VBoxContainer/options" unique_id=915496713]
+layout_mode = 0
+offset_left = -47.0
+offset_top = -54.0
+offset_right = 119.0
+offset_bottom = 112.0
+texture = ExtResource("7_v4mab")
+expand_mode = 1
+
+[node name="quit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=560166229 node_paths=PackedStringArray("_texture_label")]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 text = "quit"
+script = ExtResource("4_e0wba")
+_event_textures = Dictionary[String, Texture2D]({
+"base": ExtResource("8_lkswt"),
+"hover": ExtResource("11_elpj7")
+})
+_texture_label = NodePath("quitimage")
+_how_much_rise = 5.0
+
+[node name="quitimage" type="TextureRect" parent="PanelContainer/VBoxContainer/quit" unique_id=1660758074]
+layout_mode = 0
+offset_left = -48.0
+offset_top = -57.0
+offset_right = 119.0
+offset_bottom = 110.0
+texture = ExtResource("8_lkswt")
+expand_mode = 1
 
 [node name="pausinganimation" type="AnimationPlayer" parent="." unique_id=955820586]
 root_node = NodePath("../PanelContainer")
 libraries/ = SubResource("AnimationLibrary_vpyy4")
 
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/resume" to="." method="_on_resume_mouse_entered"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/options" to="." method="_on_options_mouse_entered"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/options" to="." method="_on_options_pressed"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/quit" to="." method="_on_quit_mouse_entered"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]

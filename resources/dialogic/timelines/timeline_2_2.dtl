@@ -60,11 +60,11 @@ leave --All--
 [i]You both walk back to the campsite
 [i]From afar you hear the sound of Sir Marius and Dame Mikhelea arguing
 join Marius (irked) left
-join Mikhela (irked) right
+join Mikhelea (irked) right
 Marius: I knew we should’ve just told her!
-Mikhela: Are you crazy?!
-Mikhela: She had just lost their highness’ and you think it’s a perfect idea-
-Mikhela: To tell her that not only is she alone, her kingdom is GONE.
+Mikhelea: Are you crazy?!
+Mikhelea: She had just lost their highness’ and you think it’s a perfect idea-
+Mikhelea: To tell her that not only is she alone, her kingdom is GONE.
 Marius: Nip it in the bud-
 Marius: Have you heard of that-
 leave --All--
@@ -72,7 +72,7 @@ join Alfonso (irked) center
 Alfonso: Enough
 Alfonso: Do you really think it’s a great idea to bicker right now?
 leave Alfonso
-join Mikhela (concerned) left
+join Mikhelea (concerned) left
 join Marius (concerned) right
 [i]Sir Marius and Dame Mikhelea look at each other in guilt
 "Marius and Lea": We’re sorry, your highness.
@@ -91,7 +91,7 @@ Ardana (d): Whatever, I give up.
 Ardana: Even if I knew about everything, it wouldn’t matter.
 Ardana: I don’t have the power to change anything.
 leave --All--
-Mikhela (concerned): Perhaps not now, but I believe that, in time, we will.
+Mikhelea (concerned): Perhaps not now, but I believe that, in time, we will.
 [i]You reminisce about the future
 [i]A prosperous kingdom ruled by your hands
 [i]You’re elated, imagining a brighter future
