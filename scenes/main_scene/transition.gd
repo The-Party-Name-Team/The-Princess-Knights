@@ -14,12 +14,11 @@ func inter_fade():
 	await twn.finished
 	twn = create_tween()
 	twn.tween_property(self, "modulate:a", 1, 1)
+	finished.emit()
 	twn = create_tween()
 	twn.tween_property(self, "modulate:a", 0, 2)
-	finished.emit()
 
 func cross_fade():
-	print(2)
 	var twn := create_tween()
 	twn.tween_property(self, "modulate:a", 1, .8)
 	twn = create_tween()

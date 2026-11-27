@@ -38,12 +38,11 @@ directories/dch_directory={
 "Henry": "res://resources/dialogic/characters/Henry.dch",
 "Marius": "res://resources/dialogic/characters/Marius.dch",
 "Marius and Lea": "res://resources/dialogic/characters/Marius and Lea.dch",
-"Mikhela": "res://resources/dialogic/characters/Mikhelea.dch",
+"Mikhelea": "res://resources/dialogic/characters/Mikhelea.dch",
 "Random": "res://resources/dialogic/characters/Random.dch"
 }
 directories/dtl_directory={
-"chapter_0": "res://resources/dialogic/timelines/chapter_0.dtl",
-"first_dialog": "res://resources/dialogic/timelines/first_dialog.dtl",
+"first_dialog": "res://first_dialog.dtl",
 "timeline_0_1": "res://resources/dialogic/timelines/timeline_0_1.dtl",
 "timeline_1_0": "res://resources/dialogic/timelines/timeline_1_0.dtl",
 "timeline_1_1": "res://resources/dialogic/timelines/timeline_1_1.dtl",
@@ -95,7 +94,9 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
-variables={}
+variables={
+"choice": 0.0
+}
 
 [display]
 

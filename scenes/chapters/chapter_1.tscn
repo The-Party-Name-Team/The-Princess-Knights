@@ -1,8 +1,14 @@
 [gd_scene format=3 uid="uid://bv7hpkvi3xccm"]
 
 [ext_resource type="Script" uid="uid://bsnydp2ob5imt" path="res://scenes/chapters/chapter.gd" id="1_ukf1f"]
+[ext_resource type="Texture2D" uid="uid://chcxk4s4s2eju" path="res://assets/visuals/Backgrounds/Plains_Day.png" id="2_ei3mf"]
 [ext_resource type="Script" uid="uid://ck615hef0umhq" path="res://scenes/chapters/dialogic_connector.gd" id="2_fod51"]
-[ext_resource type="PackedScene" uid="uid://2s6ne1kdn2gn" path="res://scenes/missions/Mission1.tscn" id="3_ei3mf"]
+[ext_resource type="Resource" uid="uid://6hlbkfp0qt3x" path="res://resources/dialogic/timelines/timeline_1_0.dtl" id="4_sx3b6"]
+[ext_resource type="Resource" uid="uid://d1dd5kg7ox4ig" path="res://resources/dialogic/timelines/timeline_1_1.dtl" id="5_gbphn"]
+[ext_resource type="Texture2D" uid="uid://daoirlqifix10" path="res://assets/visuals/Backgrounds/Forest_Day.png" id="5_r7jkp"]
+[ext_resource type="Resource" uid="uid://c2kpjg64llb1" path="res://resources/dialogic/timelines/timeline_1_2.dtl" id="6_r7jkp"]
+[ext_resource type="Resource" uid="uid://coc001ofod2uf" path="res://resources/dialogic/timelines/timeline_1_3.dtl" id="7_0ad4i"]
+[ext_resource type="Texture2D" uid="uid://bik4kqtig3i6h" path="res://assets/visuals/Backgrounds/Forest_Night.png" id="8_0ad4i"]
 
 [node name="Chapter1" type="Control" unique_id=559526500 node_paths=PackedStringArray("children_list")]
 layout_mode = 3
@@ -12,21 +18,38 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ukf1f")
-children_list = [NodePath("DialogicConnector"), NodePath("DialogicConnector2"), NodePath("DialogicConnector3")]
+children_list = [NodePath("DialogicConnector0"), NodePath("DialogicConnector1"), NodePath("DialogicConnector2"), NodePath("DialogicConnector3")]
 metadata/_custom_type_script = "uid://bsnydp2ob5imt"
 
-[node name="DialogicConnector" type="Node" parent="." unique_id=826246961]
-script = ExtResource("2_fod51")
-timeline_name = "timeline_1_0"
+[node name="BackgroundUI" type="TextureRect" parent="." unique_id=294799762]
+z_index = -1
+custom_minimum_size = Vector2(1080, 720)
+layout_mode = 0
+offset_right = 1080.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("2_ei3mf")
+expand_mode = 1
 
-[node name="Mission1" parent="." unique_id=1122708768 instance=ExtResource("3_ei3mf")]
-visible = false
-layout_mode = 1
-
-[node name="DialogicConnector2" type="Node" parent="." unique_id=2052113929]
+[node name="DialogicConnector0" type="Node" parent="." unique_id=826246961 node_paths=PackedStringArray("background_ui")]
 script = ExtResource("2_fod51")
-timeline_name = "timeline_1_2"
+timeline = ExtResource("4_sx3b6")
+background_ui = NodePath("../BackgroundUI")
+background_texture = ExtResource("5_r7jkp")
 
-[node name="DialogicConnector3" type="Node" parent="." unique_id=1084027327]
+[node name="DialogicConnector1" type="Node" parent="." unique_id=2052113929 node_paths=PackedStringArray("background_ui")]
 script = ExtResource("2_fod51")
-timeline_name = "timeline_1_3"
+timeline = ExtResource("5_gbphn")
+background_ui = NodePath("../BackgroundUI")
+
+[node name="DialogicConnector2" type="Node" parent="." unique_id=1084027327 node_paths=PackedStringArray("background_ui")]
+script = ExtResource("2_fod51")
+timeline = ExtResource("6_r7jkp")
+background_ui = NodePath("../BackgroundUI")
+background_texture = ExtResource("8_0ad4i")
+
+[node name="DialogicConnector3" type="Node" parent="." unique_id=2117906663 node_paths=PackedStringArray("background_ui")]
+script = ExtResource("2_fod51")
+timeline = ExtResource("7_0ad4i")
+background_ui = NodePath("../BackgroundUI")
+background_texture = ExtResource("8_0ad4i")
